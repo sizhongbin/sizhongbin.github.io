@@ -14,18 +14,18 @@ const DEBUG = 1;
 const Game = {
   start: function() {
     if (DEBUG) console.log('Game.start start');
-    let body = document.createElement("div");
-    body.innerHTML = Components.title.template();
-    if(DEBUG)console.log(body.childNodes);
-    body = body.childNodes[0];
-    componentHandler.upgradeElement(body);
-    //document.getElementsByTagName('body')[0].appendChild(body);
-    $("body").html(body);
+    $('body').append(Components.title.template);
+    let elements = document.body.children;
+    if (DEBUG) console.log(elements);
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].className.includes('mdl-'))
+        componentHandler.upgradeElement(elements[i]);
+    }
     if (DEBUG) console.log('Game.start end');
   }
 };
 
 // 游戏主流程开始
-window.onload = function() {
+$(window).on('load',function() {
   Game.start();
-};
+});
