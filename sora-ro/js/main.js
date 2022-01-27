@@ -14,16 +14,15 @@ const DEBUG = 1;
 const Game = {
   start: function() {
     if (DEBUG) console.log('Game.start start');
-    $('#game').html('');
-    $('#game').html(Components.title.template);
-    componentHandler.upgradeAllRegistered();
-    if(DEBUG) console.log('after upgrade: ' + $('#game').html());
+    $('main').html('');
+    $('main').append(Components.mainMenu.getTemplate());
+     if (DEBUG) console.log('main: ');
+      if (DEBUG) console.dir($('main'));
     if (DEBUG) console.log('Game.start end');
   }
 };
 
 // 游戏主流程开始
-
-document.fonts.onloadingdone = function() {
-  //Game.start();
-};
+$(window).on('load', function() {
+  Game.start();
+});
