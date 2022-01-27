@@ -15,21 +15,15 @@ const Game = {
   start: function() {
     if (DEBUG) console.log('Game.start start');
     $('#game').html('');
-    $('#game').append(Components.title.template);
-    let elements = document.getElementById('game').children;
-    if (DEBUG) console.log(elements);
-
-    function handle(element) {
-      for (let i = 0; i < elements.length; i++) {
-        if (elements[i].children.length > 0) hendle(elements[i]);
-        else componentHandler.upgradeElement(elements[i]);
-      }
-    }(elements[0]);
+    $('#game').html(Components.title.template);
+    componentHandler.upgradeAllRegistered();
+    if(DEBUG) console.log('after upgrade: ' + $('#game').html());
     if (DEBUG) console.log('Game.start end');
   }
 };
 
 // 游戏主流程开始
+
 document.fonts.onloadingdone = function() {
-  Game.start();
+  //Game.start();
 };

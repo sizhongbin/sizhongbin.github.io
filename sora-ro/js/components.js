@@ -41,7 +41,7 @@ function createTemplate(arr) {
       }
       if (DEBUG) console.dir(Nodes[Nodes.length - 1]);
     }
-    if (DEBUG) console.log('Nodes: '+Nodes);
+    if (DEBUG) console.log('Nodes: ' + Nodes);
   }
   if (DEBUG) console.log(Nodes[0]);
   if (DEBUG) console.log('createTemplate(arr) end');
@@ -52,14 +52,14 @@ function createTemplate(arr) {
  * 组件
  */
 export const Components = {
-  // 常驻标题框
-  title: {
+  // 游戏主菜单
+  mainMenu: {
     /**
      * 组件HTML模板
      * 自执行函数，返回document.element对象
      */
     template: (() => {
-      if (DEBUG) console.log('Components.title.template start');
+      if (DEBUG) console.log('Components.mainMenu.template start');
       let template = createTemplate([
         ['div', ['class', 'mdl-layout mdl-js-layout mdl-layout--fixed-header']],
         // 标题栏 
@@ -89,7 +89,7 @@ export const Components = {
         '/',
         '/']);
       if (DEBUG) console.log(template);
-      if (DEBUG) console.log('Components.title.template end');
+      if (DEBUG) console.log('Components.mainMenu.template end');
       return template;
     })()
   }

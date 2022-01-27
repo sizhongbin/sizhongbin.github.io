@@ -3,33 +3,23 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>天禁仙境</title>
-
-  <!-- HTML -->
-
-  <!-- Google Material Design Lite -->
-  <link rel="stylesheet" href="./css/material.cyan-blue.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="./css/pico.min.css" />
   <!-- 自定义CSS -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <div id="game">
-    <div class="loading">loading...</div>
-    <!-- 强制加载Material Icons避免展示问题 -->
-    <a style="font-family: 'Material Icons'">&nbsp</a>
-  </div>
-
-  <!-- Google Material Design Lite-->
-  <script defer src="./js/material.min.js"></script>
+  <main class="container">
+    <span class="middle" aria-busy="true">Loading……</span>
+  
+  </main>
   <!-- JQuery -->
-  <script defer src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
   <!-- 自定义JS -->
-  <script defer type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
