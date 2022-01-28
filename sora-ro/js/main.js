@@ -1,24 +1,36 @@
 /**
  * 游戏主流程控制
  */
-import { Components } from './components.js'
-/**
- * Boolean常量
- * DEBUG模式开关，合并到master时改成0
- */
-const DEBUG = 1;
+import { DEBUG } from './debug.js'
+import { Pages } from './pages.js'
+import { Dialogs } from './dialogs.js'
 
 /* Object常量
  * 主流程控制函数
  */
 const Game = {
+  //游戏主流程开始
   start: function() {
-    if (DEBUG) console.log('Game.start start');
-    $('main').html('');
-    $('main').append(Components.mainMenu.getTemplate());
-     if (DEBUG) console.log('main: ');
+    if (DEBUG) console.log('===Game.start===');
+    // 加载游戏主菜单
+    this.mainMenu.load();
+    if (DEBUG) console.log('===Game.start===');
+  },
+  // 游戏主菜单
+  mainMenu: {
+    load: function() {
+      if (DEBUG) console.log('===Game.mainMenu.load===');
+      $('main').html('');
+      $('main').append(Pages.mainMenu.template());
+      if (DEBUG) console.log('main: ');
       if (DEBUG) console.dir($('main'));
-    if (DEBUG) console.log('Game.start end');
+      if (DEBUG) console.log('===Game.mainMenu.load===');
+    },
+    updateLog: function() {
+      if (DEBUG) console.log('===Game.updateLog===');
+
+      if (DEBUG) console.log('===Game.updateLog===');
+    }
   }
 };
 

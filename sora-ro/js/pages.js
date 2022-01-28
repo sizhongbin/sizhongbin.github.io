@@ -1,0 +1,45 @@
+/**
+ * 游戏页面模板
+ */
+import { DEBUG } from './debug.js'
+import { Dialogs } from './dialogs.js'
+/**
+
+/* Object常量
+ * 页面
+ */
+export const Pages = {
+  // 游戏主菜单
+  mainMenu: {
+    // 版本号
+    ver: 20220127,
+    // 组件
+    components: {
+      updateLog: Dialogs.updateLog.template()
+    },
+    /**
+     * 组件HTML模板
+     * 自执行函数，返回document.element对象
+     */
+    template: function() {
+      if (DEBUG) console.log('===Components.mainMenu.template===');
+      let template =
+        '<div id="main-menu" class="blank">' +
+        '<section id="main-menu-top">' +
+        '<div class="middle">' +
+        '<h1>𝕊𝕠𝕣𝕒-𝕣𝕠</h1>' +
+        '</section>' +
+        '<section id="main-menu-bottom">' +
+        '<div class="middle">' +
+        '<b role="button">开始游戏</b><br><br>' +
+        '<b role="button" class="outline" data-target="updateLog" onClick="Dialogs.toggle(event)">更新日志</b>' +
+        '</div>' +
+        '<p class="bottom-left"><small>Ver.' + this.ver + '<small></p>' +
+        '</section>' +
+        '</div>';
+      if (DEBUG) console.log('return: ' + template);
+      if (DEBUG) console.log('===Components.mainMenu.template===');
+      return template;
+    }
+  }
+}

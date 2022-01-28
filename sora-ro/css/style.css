@@ -38,7 +38,8 @@
 /* 限高，弹性布局 */
 html,
 body,
-main {
+main,
+.blank{
   width: 100%;
   height: 100%;
 }
@@ -56,6 +57,7 @@ section {
 .bottom-left {
   position: absolute;
   bottom: 0;
+  margin: 0;
 }
 #main-menu-top,
 #main-menu-bottom {
