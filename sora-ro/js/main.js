@@ -6,7 +6,7 @@ import { Pages } from './pages.js'
 // import { Dialogs } from './dialogs.js'
 
 /* Object常量
- * 主流程控制函数
+ * 主流程控制
  */
 const Game = {
   //游戏主流程开始
@@ -22,8 +22,14 @@ const Game = {
       if (DEBUG) console.log('===Game.mainMenu.load===');
       $('main').html('');
       $('main').append(Pages.mainMenu.template());
-      for (let component of Pages.mainMenu.components)
+      for (let component of Pages.mainMenu.components) {
         $('#main-menu').append(component.template());
+        for (let event of component.events) {
+          $(event.elem).on(event.event, event.func);
+          if (DEBUG) console.log('events: ');
+          if (DEBUG) console.dir($._data($(event.elem)[0], 'events'));
+        }
+      }
       for (let event of Pages.mainMenu.events) {
         $(event.elem).on(event.event, event.func);
         if (DEBUG) console.log('events: ');

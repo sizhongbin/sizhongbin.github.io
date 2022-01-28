@@ -27,7 +27,7 @@ export const Pages = {
     ],
     /**
      * 组件HTML模板
-     * 自执行函数，返回document.element对象
+     * 返回字符串
      */
     template: function() {
       if (DEBUG) console.log('===Components.mainMenu.template===');
@@ -40,7 +40,7 @@ export const Pages = {
         '<section id="main-menu-bottom">' +
         '<div class="middle">' +
         '<b id="start-game" role="button">开始游戏</b><br><br>' +
-        '<b id="update-log" role="button" class="outline" data-target="updateLog">更新日志</b>' +
+        '<b id="update-log" role="button" class="outline">更新日志</b>' +
         '</div>' +
         '<p class="bottom-left"><small>Ver.' + this.ver + '<small></p>' +
         '</section>' +
