@@ -32,16 +32,14 @@ export const Pages = {
     template: function() {
       if (DEBUG) console.log('===Components.mainMenu.template===');
       let template =
-        '<page id="main-menu" class="blank">' +
-        '<section id="main-menu-top">' +
-        '<div class="middle">' +
+        '<page id="main-menu" class="flex-column-layout">' +
+        '<section class="flex-column-layout flex-center">' +
         '<h1>𝕊𝕠𝕣𝕒-𝕣𝕠</h1>' +
         '</section>' +
-        '<section id="main-menu-bottom">' +
-        '<div class="middle">' +
-        '<b id="start-game" role="button">开始游戏</b><br><br>' +
-        '<b id="update-log" role="button" class="outline">更新日志</b>' +
-        '</div>' +
+        '<section class="flex-column-layout flex-center">' +
+        '<p id="start-game" role="button">开始游戏</p>' +
+        '<p id="update-log" role="button" class="outline">更新日志</p>' +
+        '</section>' +
         '<p class="bottom-left"><small>Ver.' + this.ver + '<small></p>' +
         '</section>' +
         '</page>';

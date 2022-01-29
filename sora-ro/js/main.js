@@ -49,5 +49,5 @@ const Game = {
 
 // 游戏主流程开始
 $(window).on('load', function() {
-  Game.start();
+ Game.start();
 });

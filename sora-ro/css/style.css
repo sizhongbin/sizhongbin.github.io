@@ -35,24 +35,52 @@
   --switch-color: var(--primary-inverse);
   --switch-checked-background-color: var(--primary);
 }
+
+/* 弹性纵向布局 */
+.flex-column-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 弹性横向布局 */
+.flex-row-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 弹性尺寸 */
+.flex-size {
+  flex: 1;
+}
+
+/* 纵横居中 */
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
 /* 限高，弹性布局 */
 html,
 body,
 main,
-.blank{
+page
+ {
   width: 100%;
   height: 100%;
 }
+
 section {
   margin: 0;
 }
+
 dialog article {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
+
 dialog article>div {
   overflow: auto;
-  height: calc(100% - var(--block-spacing-vertical) * 2);
+  /*height: calc(100% - var(--block-spacing-vertical) * 2);*/
 }
+
 /* 父元素内居中 */
 .middle {
   position: absolute;
@@ -60,25 +88,28 @@ dialog article>div {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 /* 父元素内左下 */
 .bottom-left {
   position: absolute;
   bottom: 0;
   margin: 0;
 }
+
 /* 大对话框 */
 .large-dialog {
   position: absolute;
   width: 80%;
   height: 80%;
 }
+
 /* 关闭按钮 */
 .dialog-close {
   float: right;
 }
-#main-menu-top,
-#main-menu-bottom {
-  position: relative;
+
+#main-menu section {
+  /* position: relative; */
   height: 50%;
   width: 100%;
 }

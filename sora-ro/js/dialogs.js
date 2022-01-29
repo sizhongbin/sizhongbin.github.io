@@ -1,6 +1,6 @@
 /**
  * 游戏对话框
- * 前半为Pico.css的Module相关函数
+ * 前半为Pico.css的Module相关操作函数
  * */
 import { DEBUG } from './debug.js'
 
@@ -16,64 +16,57 @@ const isOpenClass = 'modal-is-open';
 const openingClass = 'modal-is-opening';
 const closingClass = 'modal-is-closing';
 const animationDuration = 400;
-let visibleModal = null;
+let $visibleModal = null;
 
 // Modal开关
 const toggleModal = element => {
   if (DEBUG) console.log('===toggleModal===');
-  const modal = document.getElementById(element);
-  if (DEBUG) console.dir(modal);
-  (typeof(modal) != 'undefined' && modal != null) &&
-  isModalOpen(modal) ? closeModal(modal) : openModal(modal);
+  const $modal = $(element);
+  (typeof($modal) != undefined && $modal != null) &&
+  isModalOpen($modal) ? closeModal($modal) : openModal($modal);
   if (DEBUG) console.log('===toggleModal===');
 }
 
-// Is modal open
-const isModalOpen = modal => {
-  return modal.hasAttribute('open') && modal.getAttribute('open') != 'false' ? true : false;
+// 判断Modal是否已开启
+const isModalOpen = $modal => {
+  return $modal.attr('open') != undefined && $modal.attr('open') != 'false' ? true : false;
 }
 
-// Open modal
-const openModal = modal => {
+// 开启Modal
+const openModal = $modal => {
   if (isScrollbarVisible()) {
-    document.documentElement.style.setProperty('--scrollbar-width', `${getScrollbarWidth()}px`);
+  //document.documentElement.style.setProperty('--scrollbar-width', `${getScrollbarWidth()}px`);
+  $modal.find('#dialog-body').css('--scrollbar-width', `${getScrollbarWidth()}px`);
   }
-  document.documentElement.classList.add(isOpenClass, openingClass);
+  $modal.addClass(isOpenClass, openingClass);
   setTimeout(() => {
-    visibleModal = modal;
-    document.documentElement.classList.remove(openingClass);
+    $visibleModal = $modal;
+    $modal.removeClass(openingClass);
   }, animationDuration);
-  modal.setAttribute('open', true);
+  $modal.attr('open', true);
 }
 
-// Close modal
-const closeModal = modal => {
-  visibleModal = null;
-  document.documentElement.classList.add(closingClass);
+// 关闭Modal
+const closeModal = $modal => {
+  $visibleModal = null;
+  $modal.addClass(closingClass);
   setTimeout(() => {
-    document.documentElement.classList.remove(closingClass, isOpenClass);
-    document.documentElement.style.removeProperty('--scrollbar-width');
-    modal.removeAttribute('open');
+    $modal.removeClass(closingClass, isOpenClass);
+    $modal.find('#dialog-body').css('--scrollbar-width','');
+    $modal.removeAttr('open');
   }, animationDuration);
 }
 
-// Close with a click outside
+// 点击Modal外区域关闭
 document.addEventListener('click', event => {
-  if (visibleModal != null) {
-    const modalContent = visibleModal.querySelector('article');
-    const isClickInside = modalContent.contains(event.target);
-    !isClickInside && closeModal(visibleModal);
+  if ($visibleModal != null) {
+    const $modalContent = $visibleModal.find('article');
+    const isClickInside = $.contains($modalContent, event.target);
+    !isClickInside && closeModal($visibleModal);
   }
 });
 
-// Close with Esc key
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && visibleModal != null) {
-    closeModal(visibleModal);
-  }
-});
-
-// Get scrollbar width
+// 获取滚动条宽
 const getScrollbarWidth = () => {
 
   // Creating invisible container
@@ -96,7 +89,7 @@ const getScrollbarWidth = () => {
   return scrollbarWidth;
 }
 
-// Is scrollbar visible
+// 判断对话框内容滚动条是否展示
 const isScrollbarVisible = () => {
   return document.body.scrollHeight > screen.height;
 }
@@ -123,10 +116,10 @@ export const Dialogs = {
       if (DEBUG) console.log('===Dialogs.updateLog.template===');
       let template =
         '<dialog id="dialog-update-log">' +
-        '<article class="large-dialog">' +
+        '<article class="large-dialog flex-column-layout">' +
         '<header>更新日志<ins id="dialog-update-log-close" class="dialog-close">X</ins></header>' +
-        '<div>' +
-        '<p>开发中</p>' +
+        '<div id="dialog-body" class="flex-size">' +
+        '<p>开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中开发中</p>' +
         '</div>' +
         '</article>' +
         '</dialog>';
@@ -139,7 +132,7 @@ export const Dialogs = {
      */
     toggle: function() {
       if (DEBUG) console.log('===Dialogs.updateLog.toggle===');
-      toggleModal("dialog-update-log");
+      toggleModal("#dialog-update-log");
       if (DEBUG) console.log('===Dialogs.updateLog.toggle===');
     }
   }
