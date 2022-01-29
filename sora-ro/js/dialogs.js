@@ -12,11 +12,11 @@ let $visibleModal = null;
 
 // Modal开关
 const toggleModal = element => {
-  if (DEBUG) console.log('===toggleModal===');
+  if (DEBUG) console.log('=====toggleModal');
   const $modal = $(element);
   (typeof($modal) != undefined && $modal != null) &&
   isModalOpen($modal) ? closeModal($modal) : openModal($modal);
-  if (DEBUG) console.log('===toggleModal===');
+  if (DEBUG) console.log('toggleModal=====');
 }
 
 // 判断Modal是否已开启
@@ -64,7 +64,7 @@ export const Dialogs = {
      * 返回String
      */
     template: function() {
-      if (DEBUG) console.log('===Dialogs.updateLog.template===');
+      if (DEBUG) console.log('=====Dialogs.updateLog.template');
       let template =
         '<dialog id="dialog-update-log">' +
         '<article class="large-dialog flex-column-layout">' +
@@ -78,16 +78,16 @@ export const Dialogs = {
         '</article>' +
         '</dialog>';
       if (DEBUG) console.log('return: ' + template);
-      if (DEBUG) console.log('===Dialogs.updateLog.template===');
+      if (DEBUG) console.log('Dialogs.updateLog.template=====');
       return template;
     },
     /**
      * 开关事件
      */
     toggle: function() {
-      if (DEBUG) console.log('===Dialogs.updateLog.toggle===');
+      if (DEBUG) console.log('=====Dialogs.updateLog.toggle');
       toggleModal("#dialog-update-log");
-      if (DEBUG) console.log('===Dialogs.updateLog.toggle===');
+      if (DEBUG) console.log('Dialogs.updateLog.toggle=====');
     }
   }
 }

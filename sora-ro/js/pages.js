@@ -3,6 +3,8 @@
  */
 import { DEBUG } from './debug.js'
 import { Dialogs } from './dialogs.js'
+import { Methods } from './methods.js'
+import { goto } from './main.js'
 /**
 
 /* Object常量
@@ -13,6 +15,8 @@ export const Pages = {
   mainMenu: {
     // 版本号
     ver: 20220127,
+    // 开始游戏按钮文字
+    startGameText: '开始游戏',
     // 组件
     components: [
       Dialogs.updateLog
@@ -23,6 +27,11 @@ export const Pages = {
         elem: '#update-log',
         event: 'click',
         func: Dialogs.updateLog.toggle
+      },
+      {
+        elem: '#start-game',
+        event: 'click',
+        func: () => { goto('start-game') }
       }
     ],
     /**
@@ -30,21 +39,21 @@ export const Pages = {
      * 返回字符串
      */
     template: function() {
-      if (DEBUG) console.log('===Components.mainMenu.template===');
+      if (DEBUG) console.log('=====Components.mainMenu.template');
       let template =
         '<page id="main-menu" class="flex-column-layout">' +
         '<section class="flex-column-layout flex-center">' +
         '<h1>𝕊𝕠𝕣𝕒-𝕣𝕠</h1>' +
         '</section>' +
         '<section class="flex-column-layout flex-center">' +
-        '<p id="start-game" role="button">开始游戏</p>' +
+        '<p id="start-game" role="button">' + this.startGameText + '</p>' +
         '<p id="update-log" role="button" class="outline">更新日志</p>' +
         '</section>' +
         '<p class="bottom-left"><small>Ver.' + this.ver + '<small></p>' +
         '</section>' +
         '</page>';
       if (DEBUG) console.log('return: ' + template);
-      if (DEBUG) console.log('===Components.mainMenu.template===');
+      if (DEBUG) console.log('Components.mainMenu.template=====');
       return template;
     }
   }
