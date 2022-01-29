@@ -5,6 +5,7 @@ import { DEBUG } from './debug.js'
 import { Dialogs } from './dialogs.js'
 import { Methods } from './methods.js'
 import { goto } from './main.js'
+import { Data } from './data.js'
 /**
 
 /* Object常量
@@ -13,8 +14,6 @@ import { goto } from './main.js'
 export const Pages = {
   // 游戏主菜单
   mainMenu: {
-    // 版本号
-    ver: 20220127,
     // 开始游戏按钮文字
     startGameText: '开始游戏',
     // 组件
@@ -49,7 +48,7 @@ export const Pages = {
         '<p id="start-game" role="button">' + this.startGameText + '</p>' +
         '<p id="update-log" role="button" class="outline">更新日志</p>' +
         '</section>' +
-        '<p class="bottom-left"><small>Ver.' + this.ver + '<small></p>' +
+        '<p class="bottom-left"><small>Ver.' + Data.ver + '<small></p>' +
         '</section>' +
         '</page>';
       if (DEBUG) console.log('return: ' + template);
