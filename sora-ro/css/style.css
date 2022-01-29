@@ -53,12 +53,12 @@
   flex: 1;
 }
 
-/* 纵横居中 */
+/* 弹性纵横居中 */
 .flex-center {
   align-items: center;
   justify-content: center;
 }
-/* 限高，弹性布局 */
+
 html,
 body,
 main,
@@ -66,6 +66,8 @@ page
  {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -73,12 +75,11 @@ section {
 }
 
 dialog article {
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 dialog article>div {
   overflow: auto;
-  /*height: calc(100% - var(--block-spacing-vertical) * 2);*/
 }
 
 /* 父元素内居中 */
@@ -112,4 +113,18 @@ dialog article>div {
   /* position: relative; */
   height: 50%;
   width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-focus);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 0.5rem;
 }
