@@ -3,45 +3,19 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>天禁仙境</title>
-
-  <!-- HTML -->
-
-  <!-- Google Material Design Lite -->
-  <link rel="stylesheet" href="./css/material.cyan-blue.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <title>Sora-ro</title>
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="./css/pico.min.css" />
   <!-- 自定义CSS -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <!-- 标题栏 -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- 标题 -->
-        <span class="mdl-layout-title">天禁仙境</span>
-      </div>
-    </header>
-    <!-- 下拉菜单 -->
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">天禁仙境</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" title="refresh" href="index.html">刷新</a>
-      </nav>
-    </div>
-    <main class="mdl-layout__content">
-      <div id="game-content">
-        <!-- 游戏内容，由JS控制 -->
-      </div>
-    </main>
-  </div>
+  <main page="loading" class="container-fluid flex-column-layout">
+    <span class="flex-size flex-row-layout flex-center" aria-busy="true">Loading……</span>
 
-  <!-- Google Material Design Lite-->
-  <script defer src="./js/material.min.js"></script>
+  </main>
   <!-- JQuery -->
   <script src="./js/jquery-3.6.0.min.js"></script>
   <!-- 自定义JS -->

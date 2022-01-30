@@ -1,6 +1,130 @@
-#game-content {
+/* Cyan Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #00acc1;
+  --primary-hover: #0097a7;
+  --primary-focus: rgba(0, 172, 193, 0.125);
+  --primary-inverse: #FFF;
+}
+
+/* Cyan Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --primary: #00acc1;
+    --primary-hover: #00bcd4;
+    --primary-focus: rgba(0, 172, 193, 0.25);
+    --primary-inverse: #FFF;
+  }
+}
+
+/* Cyan Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #00acc1;
+  --primary-hover: #00bcd4;
+  --primary-focus: rgba(0, 172, 193, 0.25);
+  --primary-inverse: #FFF;
+}
+
+/* Cyan (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}
+
+/* 弹性纵向布局 */
+.flex-column-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 弹性横向布局 */
+.flex-row-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 弹性尺寸 */
+.flex-size {
+  flex: 1;
+}
+
+/* 弹性纵横居中 */
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+html,
+body,
+main,
+page
+ {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+section {
+  margin: 0;
+}
+
+dialog article {
+  overflow: hidden;
+}
+
+dialog article>div {
+  overflow: auto;
+}
+
+/* 父元素内居中 */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 父元素内左下 */
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+/* 大对话框 */
+.large-dialog {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+}
+
+/* 关闭按钮 */
+.dialog-close {
+  float: right;
+}
+
+#main-menu section {
+  /* position: relative; */
+  height: 50%;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-focus);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 0.5rem;
 }
