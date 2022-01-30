@@ -77,8 +77,9 @@ dialog article {
   overflow: hidden;
 }
 
-article div {
+page article div {
   overflow: auto;
+  padding-right: 0.5rem;
 }
 
 article header {
@@ -90,10 +91,10 @@ page article {
 }
 
 page article footer {
-    text-align: right;
+  text-align: right;
 }
 
-page article footer p{
+page article footer p {
   margin: 0;
 }
 
@@ -130,7 +131,7 @@ page article footer p{
   width: 100%;
 }
 
-#story-body p{
+#story-body p {
   text-indent: 2rem;
 }
 

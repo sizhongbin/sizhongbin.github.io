@@ -121,9 +121,10 @@ export function goto(flow) {
       break;
     }
   }
+}
 
-  // 游戏主流程开始
-  $(window).on('load', function() {
-    // 加载游戏主菜单
-    Game.mainMenu.load();
-  });
+// 游戏主流程开始
+$(window).on('load', function() {
+  // 加载游戏主菜单
+  Game.mainMenu.load();
+});
