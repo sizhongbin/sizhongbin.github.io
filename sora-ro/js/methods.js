@@ -1,7 +1,7 @@
 /**
  * 功能函数
  */
-import { Cookies } from './Cookies.js'
+import { Cookies } from './cookies.js'
 import { DEBUG } from './debug.js'
 import { Data } from './data.js'
 import { goto } from './main.js'
