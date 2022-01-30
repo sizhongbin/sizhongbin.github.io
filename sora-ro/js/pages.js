@@ -6,6 +6,7 @@ import { Dialogs } from './dialogs.js'
 import { Methods } from './methods.js'
 import { goto } from './main.js'
 import { Data } from './data.js'
+import { Story } from './story.js'
 /**
 
 /* Object常量
@@ -38,7 +39,7 @@ export const Pages = {
      * 返回字符串
      */
     template: function() {
-      if (DEBUG) console.log('=====Components.mainMenu.template');
+      if (DEBUG) console.log('=====Pages.mainMenu.template');
       let template =
         '<page id="main-menu" class="flex-column-layout">' +
         '<section class="flex-column-layout flex-center">' +
@@ -52,7 +53,42 @@ export const Pages = {
         '</section>' +
         '</page>';
       if (DEBUG) console.log('return: ' + template);
-      if (DEBUG) console.log('Components.mainMenu.template=====');
+      if (DEBUG) console.log('Pages.mainMenu.template=====');
+      return template;
+    }
+  },
+  story: {
+    // 章节
+    chapter: null,
+    /**
+     * 组件HTML模板
+     * 返回字符串
+     */
+    // 组件
+    components: [],
+    // 事件
+    events: [
+      {
+        elem: '#dialog-story-stage-info',
+        event: 'click',
+        func: () => { goto('stage-info') }
+        }
+    ],
+    template: function() {
+      if (DEBUG) console.log('=====Pages.story.template');
+      if (DEBUG) console.log('chapter: ' + this.chapter);
+      let template =
+        '<page id="story" class="flex-column-layout">' +
+        '<article class="full-screen flex-column-layout">' +
+        '<header>' + Story[this.chapter].title + '</header>' +
+        '<div id="story-body" class="flex-size">' + Story[this.chapter].body + '</div>' +
+        '<footer>' +
+        '<p id="dialog-story-stage-info" role="button">进入关卡</p>' +
+        '</footer>' +
+        '</article>' +
+        '</page>';
+      if (DEBUG) console.log('return: ' + template);
+      if (DEBUG) console.log('Pages.story.template=====');
       return template;
     }
   }
