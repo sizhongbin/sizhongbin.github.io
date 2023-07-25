@@ -1,12 +1,3 @@
 body {
-  font-size: 15pt;
-}
-
-.mdl-layout__content {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.mdl-layout__content::-webkit-scrollbar {
-  display: none
+  
 }
