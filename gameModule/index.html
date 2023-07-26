@@ -12,96 +12,178 @@
   <script src="./material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.font.im/icon?family=Material+Icons">
 
-  <!-- Custom -->
+  <!-- 自定义style -->
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--no-drawer-button">
-    <header class="mdl-layout__header mdl-layout__header--scroll ">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <!-- 页头 -->
+    <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">日志</span>
+        <!-- 标题 -->
+        <span class="mdl-layout-title">Game</span>
       </div>
     </header>
+
+    <!-- 主导航 -->
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">菜单</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">读取进度</a>
+        <a class="mdl-navigation__link" href="">重置进度</a>
+      </nav>
+    </div>
+
+    <!-- 正文容器 -->
     <main id="main" class="mdl-layout__content" style="margin: 0 1rem">
-      <!-- Your content goes here -->
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
-      <p style="font-size: 1.5rem">测试</p>
+
+      <!-- 正文 -->
+      <p></p>
+      <div data-id="1" data-key="1" data-hint="0">
+        <p>我好像睡得太沉了，睡得【眼】都睁不开。</p>
+        <p>不对，等等。【关键】在于，现在到哪个站了？</p>
+        <p>我赶紧睁开<span data-type="key" data-pid="1" data-id="1">＿</span><span hidden data-type="key-answer" data-pid="1" data-id="1" data-next-p="2">眼</span>。</p>
+      </div>
+      <hr hidden data-id="1">
+      <div hidden data-id="2" data-key="1" data-hint="0">
+        <p>地铁还在行驶中，应该还没到终点站。</p>
+        <p>我的<span>【记忆】</span>还有点混乱，让我搞不太清楚现状。我需要一些【灵感】。</p>
+      </div>
     </main>
+
+    <!-- 页脚功能区 -->
     <footer class="mdl-mini-footer">
       <div class="mdl-mini-footer__left-section">
         <ul class="mdl-mini-footer__link-list">
-          <li><a id="show-dialog">输入关键词</a></li>
-        </ul>
-      </div>
-      <div class="mdl-mini-footer__right-section">
-        <ul class="mdl-mini-footer__link-list">
-          <li>灵感</li>
+          <li><a id="show-key-dialog">&emsp;关键&emsp;</a></li>
+          <li><a id="show-hint-dialog">&emsp;灵感&emsp;</a></li>
         </ul>
       </div>
     </footer>
   </div>
 
-  <dialog class="mdl-dialog">
-
+  <!-- 关键对话框 -->
+  <dialog id="key-dialog" class="mdl-dialog">
     <div class="mdl-dialog__content">
-      <!-- Textfield with Floating Label -->
-
       <form action="#">
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" id="sample3">
-          <label class="mdl-textfield__label" for="sample3">关键词</label>
+          <input class="mdl-textfield__input" type="text" id="input-key">
+          <label class="mdl-textfield__label" for="input-key">推动故事的关键是？</label>
         </div>
       </form>
     </div>
     <div class="mdl-dialog__actions">
-      <button type="button" class="mdl-button">确定</button>
-      <button type="button" class="mdl-button close">取消</button>
+      <button id="key-confirm" type="button" class="mdl-button confirm">确定</button>
+      <button type="button" class="mdl-button cancel">取消</button>
     </div>
   </dialog>
+
+  <!-- 灵感对话框 -->
+  <dialog id="hint-dialog" class="mdl-dialog">
+    <div class="mdl-dialog__content">
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="input-hint">
+          <label class="mdl-textfield__label" for="input-hint">要从哪里获取灵感？</label>
+        </div>
+      </form>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button id="hint-confirm" type="button" class="mdl-button confirm">确定</button>
+      <button type="button" class="mdl-button cancel">取消</button>
+    </div>
+  </dialog>
+
+  <!-- 提示框 -->
+  <div id="notification" class="mdl-js-snackbar mdl-snackbar">
+    <div class="mdl-snackbar__text"></div>
+    <button class="mdl-snackbar__action" type="button"></button>
+  </div>
   <script>
-    var dialog = document.querySelector('dialog');
-    var showDialogButton = document.querySelector('#show-dialog');
-    if (!dialog.showModal) {
-      dialogPolyfill.registerDialog(dialog);
+    function showNotification(type) {
+      var message;
+      switch (type) {
+        case 'key-hit':
+          message = '关键词命中！故事有了新的进展。';
+          break;
+        case 'key-miss':
+          message = '关键词未命中。';
+          break;
+      }
+      var notification = document.querySelector('.mdl-js-snackbar');
+      notification.MaterialSnackbar.showSnackbar(
+      {
+        message: message
+      });
     }
-    showDialogButton.addEventListener('click', function() {
-      dialog.showModal();
+  </script>
+
+  <!-- 关键按钮功能 -->
+  <script>
+    var keyDialog = document.querySelector('#key-dialog');
+    var showKeyDialogButton = document.querySelector('#show-key-dialog');
+    if (!keyDialog.showModal) {
+      dialogPolyfill.registerDialog(keyDialog);
+    }
+    showKeyDialogButton.addEventListener('click', function() {
+      keyDialog.querySelector('#input-key').value = "";
+      keyDialog.showModal();
     });
-    dialog.querySelector('.close').addEventListener('click', function() {
-      dialog.close();
+    keyDialog.querySelector('.cancel').addEventListener('click', function() {
+      keyDialog.close();
     });
+    keyDialog.querySelector('.confirm').addEventListener('click', function() {
+      var result = matchKey(keyDialog.querySelector('#input-key').value);
+      if (result != 0) {
+        showNotification('key-hit');
+        document.querySelector('main hr[data-id="1"]').hidden = false;
+        document.querySelector('main div[data-id="1"] span[data-type="key"]').hidden = true;
+        document.querySelector('main div[data-id="1"] span[data-type="key-answer"]').hidden = false;
+        document.querySelector('main div[data-id="' + result + '"]').hidden = false;
+      }
+      else showNotification('key-miss');
+      keyDialog.close();
+    });
+  </script>
+
+  <!-- 灵感按钮功能 -->
+  <script>
+    var hintDialog = document.querySelector('#hint-dialog');
+    var showHintDialogButton = document.querySelector('#show-hint-dialog');
+    if (!hintDialog.showModal) {
+      dialogPolyfill.registerDialog(hintDialog);
+    }
+    showHintDialogButton.addEventListener('click', function() {
+      hintDialog.showModal();
+    });
+    hintDialog.querySelector('.cancel').addEventListener('click', function() {
+      hintDialog.close();
+    });
+  </script>
+
+  <!-- 关键词匹配 -->
+  <script>
+    function matchKey(inputKey) {
+      var p = document.querySelector('main div[data-id="1"]');
+      var keyAnswer = p.querySelector('main span[data-type="key-answer"]');
+      if (inputKey == keyAnswer.innerHTML) return keyAnswer.getAttribute('data-next-p');
+      else return 0;
+    }
+  </script>
+
+  <!-- 存档检测 -->
+  <script>
+    if (typeof(Storage) != 'undefined') {
+      var p = localStorage.p;
+      if (!p)
+        localStorage.p = '0';
+      else {
+
+      }
+    }
+    else alert("浏览器不支持本地储存。游戏可能无法正常使用存档功能。");
   </script>
   <!-- Project -->
   <script src="main.js"></script>

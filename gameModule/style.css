@@ -1,3 +1,10 @@
-body {
-  
+main div p{
+  font-size: 1.5rem;
+  text-indent: 3rem;
+  line-height: 150%;
+}
+
+main div p span[data-type="key-answer"] {
+  color: red;
+  text-decoration: underline;
 }
