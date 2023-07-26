@@ -42,14 +42,19 @@
       <!-- 正文 -->
       <p></p>
       <div data-id="1" data-key="1" data-hint="0">
-        <p>我好像睡得太沉了，睡得【眼】都睁不开。</p>
-        <p>不对，等等。【关键】在于，现在到哪个站了？</p>
-        <p>我赶紧睁开<span data-type="key" data-pid="1" data-id="1">＿</span><span hidden data-type="key-answer" data-pid="1" data-id="1" data-next-p="2">眼</span>。</p>
+        <p>我好像睡得太沉了，睡得【眼】都睁不开了。</p>
+        <p>这点感想无关紧要。【关键】在于，我到站了没？</p>
+        <p>我赶紧睁开<span data-type="key" data-div="1" data-id="1">＿</span><span hidden data-type="key-answer" data-div="1" data-id="1" data-nextdiv="2">眼</span>。</p>
       </div>
       <hr hidden data-id="1">
       <div hidden data-id="2" data-key="1" data-hint="0">
-        <p>地铁还在行驶中，应该还没到终点站。</p>
-        <p>我的<span>【记忆】</span>还有点混乱，让我搞不太清楚现状。我需要一些【灵感】。</p>
+        <p>映入眼中的，是摇摇晃晃的地铁车厢。看来地铁还在行驶中。</p>
+        <p>不过，为什么车厢里空无一人？</p>
+        <p>我有点搞不清楚现状。先试着从【<span data-type="hint" data-div="2" data-id="1" data-parent="0" data-hit="0">记忆</span>】中找找【灵感】吧。</p>
+        <span hidden data-type="hint-content" data-div="2" data-hint="1">
+          <p>嗯，我是在下班回家的路上，计划在地铁的终点站下车。</p>
+          <p></p>
+        </span>
       </div>
     </main>
 
@@ -106,10 +111,19 @@
       var message;
       switch (type) {
         case 'key-hit':
-          message = '关键词命中！故事有了新的进展。';
+          message = '关键词命中！有了新的进展。';
           break;
         case 'key-miss':
           message = '关键词未命中。';
+          break;
+        case 'hint-miss':
+          message = '未得到任何灵感。';
+          break;
+        case 'hint-repeat':
+          message = '对此得不到更多的灵感了。';
+          break;
+        case 'hint-hit':
+          message = '得到了灵感，理解了更多细节。';
           break;
       }
       var notification = document.querySelector('.mdl-js-snackbar');
@@ -138,10 +152,12 @@
       var result = matchKey(keyDialog.querySelector('#input-key').value);
       if (result != 0) {
         showNotification('key-hit');
-        document.querySelector('main hr[data-id="1"]').hidden = false;
-        document.querySelector('main div[data-id="1"] span[data-type="key"]').hidden = true;
-        document.querySelector('main div[data-id="1"] span[data-type="key-answer"]').hidden = false;
+        document.querySelector('main hr[data-id="' + localStorage.p + '"]').hidden = false;
+        document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="key"]').hidden = true;
+        document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="key-answer"]').hidden = false;
         document.querySelector('main div[data-id="' + result + '"]').hidden = false;
+        if (result.indexOf('end') == -1)
+          localStorage.p = result;
       }
       else showNotification('key-miss');
       keyDialog.close();
@@ -156,20 +172,56 @@
       dialogPolyfill.registerDialog(hintDialog);
     }
     showHintDialogButton.addEventListener('click', function() {
+      hintDialog.querySelector('#input-hint').value = "";
       hintDialog.showModal();
     });
     hintDialog.querySelector('.cancel').addEventListener('click', function() {
       hintDialog.close();
     });
+    hintDialog.querySelector('.confirm').addEventListener('click', function() {
+      var result = matchHint(hintDialog.querySelector('#input-hint').value);
+      if (result == -1)
+        showNotification('hint-repeat');
+      else if (result == 0)
+        showNotification('hint-miss');
+      else {
+        showNotification('hint-hit');
+        var hitHint = document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="hint"][data-id="' + result + '"]');
+        hitHint.dataset.hit = '1';
+        document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="hint-content"][data-hint="' + result + '"]').hidden = false;
+      }
+      hintDialog.close();
+    });
   </script>
 
-  <!-- 关键词匹配 -->
+  <!-- 关键匹配 -->
   <script>
     function matchKey(inputKey) {
-      var p = document.querySelector('main div[data-id="1"]');
-      var keyAnswer = p.querySelector('main span[data-type="key-answer"]');
-      if (inputKey == keyAnswer.innerHTML) return keyAnswer.getAttribute('data-next-p');
+      var currentDiv = document.querySelector('main div[data-id="' + localStorage.p + '"]');
+      var keyAnswer = currentDiv.querySelector('main span[data-type="key-answer"]');
+      if (inputKey == keyAnswer.innerHTML) {
+        var nextDiv = keyAnswer.dataset.nextdiv;
+        return nextDiv;
+      }
       else return 0;
+    }
+  </script>
+
+  <!-- 灵感匹配 -->
+  <script>
+    function matchHint(inputHint) {
+      var currentDiv = document.querySelector('main div[data-id="' + localStorage.p + '"]');
+      var hintList = currentDiv.querySelectorAll('main span[data-type="hint"]');
+      for (i = 0; i < hintList.length; i++) {
+        if (hintList[i].innerHTML == inputHint) {
+          if (hintList[i].dataset.hit == 1)
+            return -1;
+          else if (hintList[i].dataset.parent != 0 && currentDiv.querySelector('span[data-id="' + hintList[i].dataset.parent + '"]').dataset.hit == 0)
+            return 0;
+          else return hintList[i].dataset.id;
+        }
+      };
+      return 0;
     }
   </script>
 
@@ -178,9 +230,18 @@
     if (typeof(Storage) != 'undefined') {
       var p = localStorage.p;
       if (!p)
-        localStorage.p = '0';
+        localStorage.p = '1';
       else {
-
+        for (i = 1; i < p; i++) {
+          var div = document.querySelector('main div[data-id="' + i + '"]');
+          div.hidden = false;
+          div.querySelector('span[data-type="key"]').hidden = true;
+          div.querySelector('span[data-type="key-answer"]').hidden = false;
+          div.querySelectorAll('span[data-type="hint"]').forEach((item) => { item.dataset.hit = 1; });
+          div.querySelectorAll('span[data-type="hint-content"]').forEach(item => { item.hidden = false; });
+          document.querySelector('main hr[data-id="' + i + '"]').hidden = false;
+          document.querySelector('main div[data-id="' + (i + 1) + '"]').hidden = false;
+        }
       }
     }
     else alert("浏览器不支持本地储存。游戏可能无法正常使用存档功能。");

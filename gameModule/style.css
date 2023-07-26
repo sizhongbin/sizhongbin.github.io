@@ -1,4 +1,4 @@
-main div p{
+main div p {
   font-size: 1.5rem;
   text-indent: 3rem;
   line-height: 150%;
@@ -6,5 +6,10 @@ main div p{
 
 main div p span[data-type="key-answer"] {
   color: red;
+  text-decoration: underline;
+}
+
+main div p span[data-hit="1"] {
+  color: blue;
   text-decoration: underline;
 }
