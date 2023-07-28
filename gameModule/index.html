@@ -42,18 +42,29 @@
       <!-- 正文 -->
       <p></p>
       <div data-id="1" data-key="1" data-hint="0">
-        <p>我好像睡得太沉了，睡得【眼】都睁不开了。</p>
-        <p>这点感想无关紧要。【关键】在于，我到站了没？</p>
-        <p>我赶紧睁开<span data-type="key" data-div="1" data-id="1">＿</span><span hidden data-type="key-answer" data-div="1" data-id="1" data-nextdiv="2">眼</span>。</p>
+        <span class="new">
+          <p>我这是睡了多久？</p>
+          <p>不对，【关键】是，到站了吗？</p>
+          <p>我赶紧睁开<span data-type="key" data-div="1" data-id="1">＿</span><span hidden data-type="key-answer" data-div="1" data-id="1" data-nextdiv="2">眼</span>。</p>
+        </span>
       </div>
       <hr hidden data-id="1">
       <div hidden data-id="2" data-key="1" data-hint="0">
-        <p>映入眼中的，是摇摇晃晃的地铁车厢。看来地铁还在行驶中。</p>
-        <p>不过，为什么车厢里空无一人？</p>
-        <p>我有点搞不清楚现状。先试着从【<span data-type="hint" data-div="2" data-id="1" data-parent="0" data-hit="0">记忆</span>】中找找【灵感】吧。</p>
+        <span>
+          <p>映入眼中的是摇摇晃晃的车厢，看来地铁还在行驶中。</p>
+          <p>然而，车厢里除了我之外，没有其他乘客。这让我有点混乱。</p>
+          <p>我试着从【<span data-type="hint" data-div="2" data-id="1" data-parent="0" data-hit="0">记忆</span>】里找找关于现状的【线索】。</p>
+        </span>
         <span hidden data-type="hint-content" data-div="2" data-hint="1">
-          <p>嗯，我是在下班回家的路上，计划在地铁的终点站下车。</p>
-          <p></p>
+          <p>嗯，我记得很清楚。今天我下了班，像平时一样坐地铁到终点站回家。</p>
+          <p>地铁的工作人员非常可靠，总会在终点站吹哨赶人，所以我可以放心的在地铁上小睡。今天也不例外。</p>
+          <p>但是，<span data-type="hint" data-div="2" data-id="2" data-parent="1" data-hit="0">车厢</span>里只剩我一个人的情况，在我的记忆中并没有出现过。</p>
+          <p>手机……没有信号？而且这个时间，应该早就到终点站了。这是穿越了？</p>
+          <p>整理完记忆的我更加搞不清楚情况了，我需要更多线索。</p>
+        </span>
+        <span hidden data-type="hint-content" data-div="2" data-hint="2">
+          <p>车厢的窗外没有任何灯光，如同在漆黑的隧道中一般。</p>
+          <p>嗯？车厢的门上贴了一张便签纸，门边还贴了一张示意图。地铁上有这样的东西吗？</p>
         </span>
       </div>
     </main>
@@ -63,7 +74,7 @@
       <div class="mdl-mini-footer__left-section">
         <ul class="mdl-mini-footer__link-list">
           <li><a id="show-key-dialog">&emsp;关键&emsp;</a></li>
-          <li><a id="show-hint-dialog">&emsp;灵感&emsp;</a></li>
+          <li><a id="show-hint-dialog">&emsp;线索&emsp;</a></li>
         </ul>
       </div>
     </footer>
@@ -85,13 +96,13 @@
     </div>
   </dialog>
 
-  <!-- 灵感对话框 -->
+  <!-- 线索对话框 -->
   <dialog id="hint-dialog" class="mdl-dialog">
     <div class="mdl-dialog__content">
       <form action="#">
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
           <input class="mdl-textfield__input" type="text" id="input-hint">
-          <label class="mdl-textfield__label" for="input-hint">要从哪里获取灵感？</label>
+          <label class="mdl-textfield__label" for="input-hint">要从哪里获取线索？</label>
         </div>
       </form>
     </div>
@@ -117,13 +128,13 @@
           message = '关键词未命中。';
           break;
         case 'hint-miss':
-          message = '未得到任何灵感。';
+          message = '未发现任何线索。';
           break;
         case 'hint-repeat':
-          message = '对此得不到更多的灵感了。';
+          message = '已经发现过这个线索。';
           break;
         case 'hint-hit':
-          message = '得到了灵感，理解了更多细节。';
+          message = '发现线索！得知了更多细节。';
           break;
       }
       var notification = document.querySelector('.mdl-js-snackbar');
@@ -152,10 +163,12 @@
       var result = matchKey(keyDialog.querySelector('#input-key').value);
       if (result != 0) {
         showNotification('key-hit');
+        document.querySelector('.new').classList.remove('new');
         document.querySelector('main hr[data-id="' + localStorage.p + '"]').hidden = false;
         document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="key"]').hidden = true;
         document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="key-answer"]').hidden = false;
         document.querySelector('main div[data-id="' + result + '"]').hidden = false;
+        document.querySelector('main div[data-id="' + result + '"]').classList.add('new');
         if (result.indexOf('end') == -1)
           localStorage.p = result;
       }
@@ -164,7 +177,7 @@
     });
   </script>
 
-  <!-- 灵感按钮功能 -->
+  <!-- 线索按钮功能 -->
   <script>
     var hintDialog = document.querySelector('#hint-dialog');
     var showHintDialogButton = document.querySelector('#show-hint-dialog');
@@ -186,9 +199,13 @@
         showNotification('hint-miss');
       else {
         showNotification('hint-hit');
+        document.querySelector('.new').classList.remove('new');
         var hitHint = document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="hint"][data-id="' + result + '"]');
         hitHint.dataset.hit = '1';
         document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="hint-content"][data-hint="' + result + '"]').hidden = false;
+        document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="hint-content"][data-hint="' + result + '"]').classList.add('new');
+
+        document.querySelector('main').scrollTop = document.querySelector('main').scrollHeight;
       }
       hintDialog.close();
     });
@@ -207,7 +224,7 @@
     }
   </script>
 
-  <!-- 灵感匹配 -->
+  <!-- 线索匹配 -->
   <script>
     function matchHint(inputHint) {
       var currentDiv = document.querySelector('main div[data-id="' + localStorage.p + '"]');
@@ -232,6 +249,7 @@
       if (!p)
         localStorage.p = '1';
       else {
+        document.querySelector('.new').classList.remove('new');
         for (i = 1; i < p; i++) {
           var div = document.querySelector('main div[data-id="' + i + '"]');
           div.hidden = false;

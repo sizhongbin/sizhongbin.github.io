@@ -13,3 +13,7 @@ main div p span[data-hit="1"] {
   color: blue;
   text-decoration: underline;
 }
+
+.new p{
+  font-style: italic;
+}
