@@ -17,3 +17,7 @@ main div p span[data-hit="1"] {
 .new p{
   font-style: italic;
 }
+
+.tips {
+  color: orange;
+}
