@@ -45,8 +45,8 @@
         <span class="new">
           <p>我这是睡了多久？</p>
           <p>不对，【关键】是，到站了吗？</p>
-          <p>我赶紧睁开<span data-type="key" data-div="1" data-id="1">＿</span><span hidden data-type="key-answer" data-div="1" data-id="1" data-nextdiv="2" data-parent="0">眼</span>。</p>
-          <p class="tips">（提示：点击下方关键按钮，输入文字，填充剧情，推动故事发展。字数与下划线数一致。）
+          <p>我赶紧睁开<span data-type="key" data-div="1" data-id="1">█</span><span hidden data-type="key-answer" data-div="1" data-id="1" data-nextdiv="2" data-parent="0">眼</span>。</p>
+          <p class="tips">（提示：点击《关键》，填充细节。）
           </p>
         </span>
       </div>
@@ -57,7 +57,7 @@
           <p>然而，车厢里除了我之外，没有其他乘客。这让我有点混乱。</p>
           <p>我试着从【<span data-type="hint" data-div="2" data-id="1" data-parent="0" data-hit="0">记忆</span>】里找找关于现状的【线索】。
           </p>
-          <p class="tips">（提示：点击下方线索按钮，输入剧情中可能成为线索的词，获取更多细节。）</p>
+          <p class="tips">（提示：点击《线索》，挖掘细节。）</p>
         </span>
         <span hidden data-type="hint-content" data-div="2" data-hint="1">
           <p>嗯，我记得很清楚。今天我下了班，像平时一样坐地铁到终点站回家。</p>
@@ -65,11 +65,12 @@
           <p>但是，<span data-type="hint" data-div="2" data-id="2" data-parent="1" data-hit="0">车厢</span>里只剩我一个人的情况，在我的记忆中并没有出现过。</p>
           <p>手机……没有信号？而且这个时间，应该早就到终点站了。这是穿越了？</p>
           <p>整理完记忆的我更加搞不清楚情况了，我需要更多线索。</p>
-          <p class="tips">（提示：线索会分布在整一节剧情中，不仅仅在新出现的内容里。找到所有线索并输入正确的关键后，剧情将进入下一节。）</p>
+          <p class="tips">（提示：线索在本节所有已显现的内容中。）</p>
         </span>
         <span hidden data-type="hint-content" data-div="2" data-hint="2">
           <p>车厢的窗外没有任何灯光，如同在漆黑的隧道中一般。</p>
-          <p>嗯？车厢的门上贴了一张便签纸，门边还贴了一张示意图。地铁上有这样的东西吗？</p>
+          <p>嗯？车厢的门上贴了一张便签纸，门边还贴了一张地铁的示意图。以前有这样的东西吗？</p>
+          <p class="tips">（提示：找齐所有线索->命中关键->故事进入下一节）</p>
         </span>
       </div>
     </main>
@@ -127,7 +128,7 @@
       var message;
       switch (type) {
         case 'key-hit':
-          message = '命中关键！故事有了新的进展。';
+          message = '命中关键！故事进入下一节。';
           break;
         case 'key-miss':
           message = '未命中关键。';
@@ -139,7 +140,7 @@
           message = '已经找到过线索了。';
           break;
         case 'hint-hit':
-          message = '找到新的线索！更多故事细节已显现。';
+          message = '找到新的线索！更多故事内容已显现。';
           break;
         case 'no-key':
           message = '目前还看不到关键，需要更多线索。';
