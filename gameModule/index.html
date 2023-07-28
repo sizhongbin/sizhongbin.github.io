@@ -45,7 +45,8 @@
         <span class="new">
           <p>我这是睡了多久？</p>
           <p>不对，【关键】是，到站了吗？</p>
-          <p>我赶紧睁开<span data-type="key" data-div="1" data-id="1">█</span><span hidden data-type="key-answer" data-div="1" data-id="1" data-nextdiv="2" data-parent="0">眼</span>。</p>
+          <p>我赶紧睁开<span data-type="key" data-div="1" data-id="1">█</span><span hidden data-type="key-answer"
+              data-div="1" data-id="1" data-nextdiv="2" data-parent="0">眼</span>。</p>
           <p class="tips">（提示：点击《关键》，填充细节。）
           </p>
         </span>
@@ -62,23 +63,29 @@
         <span hidden data-type="hint-content" data-div="2" data-hint="1">
           <p>嗯，我记得很清楚。今天我下了班，像平时一样坐地铁到终点站回家。</p>
           <p>地铁的工作人员非常可靠，总会在终点站吹哨赶人，所以我可以放心的在地铁上小睡。今天也不例外。</p>
-          <p>但是，<span data-type="hint" data-div="2" data-id="2" data-parent="1" data-hit="0">车厢</span>里只剩我一个人的情况，在我的记忆中并没有出现过。</p>
+          <p>但是，<span data-type="hint" data-div="2" data-id="2" data-parent="1"
+              data-hit="0">车厢</span>里只剩我一个人的情况，在我的记忆中并没有出现过。</p>
           <p>手机……没有信号？而且这个时间，应该早就到终点站了。这是穿越了？</p>
           <p>整理完记忆的我更加搞不清楚情况了，我需要更多线索。</p>
           <p class="tips">（提示：线索在本节所有已显现的内容中。）</p>
         </span>
         <span hidden data-type="hint-content" data-div="2" data-hint="2">
           <p>车厢的窗外没有任何灯光，如同在漆黑的隧道中一般。</p>
-          <p>嗯？车厢的门上贴了一张<span data-type="hint" data-div="2" data-id="3" data-parent="2" data-hit="0">便签</span>，门边还贴了一张<span data-type="hint" data-div="2" data-id="4" data-parent="2" data-hit="0">涂鸦</span>。以前有这样的东西吗？</p>
+          <p>嗯？车厢的门上贴了一张<span data-type="hint" data-div="2" data-id="3" data-parent="2"
+              data-hit="0">便签</span>，门边还贴了一张<span data-type="hint" data-div="2" data-id="4" data-parent="2"
+              data-hit="0">涂鸦</span>。以前有这样的东西吗？</p>
           <p class="tips">（提示：找齐所有线索->命中关键->故事进入下一节）</p>
         </span>
         <span hidden data-type="hint-content" data-div="2" data-hint="3">
           <p>便签上写着《前进吧，已经没有退路了》。字迹潦草，意义不明。</p>
         </span>
         <span hidden data-type="hint-content" data-div="2" data-hint="4">
-          <p>涂鸦上画了一列长长的地铁，从车头画到车尾。</p>
+          <p>涂鸦上画了一列长长的地铁，从车头一直画到车尾。</p>
           <p>第三节车厢里画了一把钥匙，第六节车厢里画了一个五角星。</p>
-          <p>第七节车厢一直到车尾都被红色蜡笔涂花了。</p>
+          <p>第七节车厢一直到车尾都被血红色笔迹涂花了。</p>
+        </span>
+        <span hidden data-type="hint-combine" data-div="2" data-hint="3,4">
+          <p>这是3和4的组合hint。</p>
         </span>
       </div>
     </main>
@@ -159,9 +166,9 @@
       }
       var notification = document.querySelector('.mdl-js-snackbar');
       notification.MaterialSnackbar.showSnackbar(
-      {
-        message: message
-      });
+        {
+          message: message
+        });
     }
   </script>
 
@@ -172,7 +179,7 @@
     if (!keyDialog.showModal) {
       dialogPolyfill.registerDialog(keyDialog);
     }
-    showKeyDialogButton.addEventListener('click', function() {
+    showKeyDialogButton.addEventListener('click', function () {
       var key = document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="key"]');
       if (key ? key.hidden : true) {
         showNotification('no-key');
@@ -181,10 +188,10 @@
       keyDialog.querySelector('#input-key').value = "";
       keyDialog.showModal();
     });
-    keyDialog.querySelector('.cancel').addEventListener('click', function() {
+    keyDialog.querySelector('.cancel').addEventListener('click', function () {
       keyDialog.close();
     });
-    keyDialog.querySelector('.confirm').addEventListener('click', function() {
+    keyDialog.querySelector('.confirm').addEventListener('click', function () {
       var result = matchKey(keyDialog.querySelector('#input-key').value);
       if (result != 0) {
         showNotification('key-hit');
@@ -209,7 +216,7 @@
     if (!hintDialog.showModal) {
       dialogPolyfill.registerDialog(hintDialog);
     }
-    showHintDialogButton.addEventListener('click', function() {
+    showHintDialogButton.addEventListener('click', function () {
       var key = document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="key"]');
       if (!key ? false : !key.hidden) {
         showNotification('no-hint');
@@ -218,10 +225,10 @@
       hintDialog.querySelector('#input-hint').value = "";
       hintDialog.showModal();
     });
-    hintDialog.querySelector('.cancel').addEventListener('click', function() {
+    hintDialog.querySelector('.cancel').addEventListener('click', function () {
       hintDialog.close();
     });
-    hintDialog.querySelector('.confirm').addEventListener('click', function() {
+    hintDialog.querySelector('.confirm').addEventListener('click', function () {
       var result = matchHint(hintDialog.querySelector('#input-hint').value);
       if (result == -1)
         showNotification('hint-repeat');
@@ -232,8 +239,26 @@
         document.querySelector('.new').classList.remove('new');
         var hitHint = document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="hint"][data-id="' + result + '"]');
         hitHint.dataset.hit = '1';
-        document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="hint-content"][data-hint="' + result + '"]').hidden = false;
-        document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="hint-content"][data-hint="' + result + '"]').classList.add('new');
+        var hitHintContent = document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="hint-content"][data-hint="' + result + '"]');
+        hitHintContent.hidden = false;
+        hitHintContent.classList.add('new');
+        var hintCombineList = document.querySelectorAll('main div[data-id="' + localStorage.p + '"] span[data-type="hint-combine"]');
+        hintCombineList.forEach(function (item) {
+          if (item.hidden) {
+            var parentList = item.dataset.hint.split(',');
+            var parentHit = true;
+            for (i = 0; i < parentList.length; i++) {
+              if (document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="hint"][data-id="' + parentList[i] + '"]').dataset.hit == 0) {
+                parentHit = false;
+                break;
+              }
+            };
+            if (parentHit) {
+              item.hidden = false;
+              item.classList.add('new');
+            }
+          }
+        });
         document.querySelector('main').scrollTop = document.querySelector('main').scrollHeight;
       }
       hintDialog.close();
@@ -280,8 +305,8 @@
             var parentList = hintList[i].dataset.parent.split(',');
             var parentHit = true;
             if (parentList[0] != 0) {
-              for (i = 0; i < parentList.length; i++) {
-                if (currentDiv.querySelector('span[data-id="' + parentList[i] + '"]').dataset.hit == 0) {
+              for (j = 0; j < parentList.length; j++) {
+                if (currentDiv.querySelector('span[data-id="' + parentList[j] + '"]').dataset.hit == 0) {
                   parentHit = false;
                   break;
                 }
@@ -299,7 +324,7 @@
 
   <!-- 存档检测 -->
   <script>
-    if (typeof(Storage) != 'undefined') {
+    if (typeof (Storage) != 'undefined') {
       var p = localStorage.p;
       if (!p)
         localStorage.p = '1';
