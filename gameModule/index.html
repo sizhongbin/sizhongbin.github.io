@@ -31,7 +31,6 @@
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">菜单</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">读取进度</a>
         <a class="mdl-navigation__link" href="">重置进度</a>
       </nav>
     </div>
@@ -82,15 +81,20 @@
         </span>
         <span hidden data-type="hint-combine" data-hint="3,4" data-key="1">
           <p>状况实在过于异常，让我开始感到不安。</p>
-          <p>我决定采取一些行动。总之，先往车<span data-type="key" data-id="1">█</span><span hidden data-type="key-answer" data-id="1" data-nextdiv="3" data-parent="3,4">头</span>方向走吧。</p>
+          <p>我决定采取一些行动。总之，先往车<span data-type="key" data-id="1">█</span><span hidden data-type="key-answer" data-id="1" data-nextdiv="3" data-parent="3,4">头</span><span hidden data-type="key-answer" data-id="2" data-nextdiv="end-bad-1" data-parent="3,4">尾</span>方向走吧。</p>
         </span>
       </div>
       <hr hidden data-id="2">
       <div hidden data-id="3">
-      <span>
-        <p>第三节</p>
+        <span>
+          <p>第三节</p>
         </span>
-        </div>
+      </div>
+      <div hidden data-id="end-bad-1" data-load="2">
+        <span>
+          <p>be1</p>
+        </span>
+      </div>
     </main>
 
     <!-- 页脚功能区 -->
@@ -166,6 +170,9 @@
         case 'no-hint':
           message = '目前不需要更多线索。';
           break;
+        case 'bad-end':
+          message = '已进入BE。请读档。';
+          break;
       }
       var notification = document.querySelector('.mdl-js-snackbar');
       notification.MaterialSnackbar.showSnackbar(
@@ -201,11 +208,16 @@
         document.querySelector('.new').classList.remove('new');
         document.querySelector('main hr[data-id="' + localStorage.p + '"]').hidden = false;
         document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="key"]').hidden = true;
-        document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="key-answer"]').hidden = false;
-        document.querySelector('main div[data-id="' + result + '"]').hidden = false;
-        document.querySelector('main div[data-id="' + result + '"]').classList.add('new');
-        if (result.indexOf('end') == -1)
-          localStorage.p = result;
+        document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="key-answer"][data-id="' + result + '"]').hidden = false;
+        var nextDivId = document.querySelector('main div[data-id="' + localStorage.p + '"] span[data-type="key-answer"][data-id="' + result + '"]').dataset.nextdiv;
+        document.querySelector('main div[data-id="' + nextDivId + '"]').hidden = false;
+        document.querySelector('main div[data-id="' + nextDivId + '"]').classList.add('new');
+        if (nextDivId.indexOf('end') == -1)
+          localStorage.p = nextDivId;
+        else {
+          document.querySelector('#show-key-dialog').hidden = true;
+          document.querySelector('#show-hint-dialog').hidden = true;
+        }
       }
       else showNotification('key-miss');
       keyDialog.close();
@@ -272,7 +284,6 @@
   <script>
     function matchKey(inputKey) {
       var currentDiv = document.querySelector('main div[data-id="' + localStorage.p + '"]');
-
       var keyAnswerList = currentDiv.querySelectorAll('main span[data-type="key-answer"]');
       for (i = 0; i < keyAnswerList.length; i++) {
         if (keyAnswerList[i].innerHTML == inputKey) {
@@ -288,7 +299,7 @@
           }
           if (!parentHit)
             return 0;
-          else return keyAnswerList[i].dataset.nextdiv;
+          else return keyAnswerList[i].dataset.id;
         }
       };
       return 0;
@@ -343,11 +354,13 @@
           document.querySelector('main hr[data-id="' + i + '"]').hidden = false;
           document.querySelector('main div[data-id="' + (i + 1) + '"]').hidden = false;
         }
-        document.querySelector('main div[data-id="' + localStorage.p + '"]').classList.add('new');
-        document.querySelector('main').scrollTop = document.querySelector('main').scrollHeight;
+        document.querySelector('main div[data-id="' + p + '"]').classList.add('new');
       }
     }
     else alert("浏览器不支持本地储存。游戏可能无法正常使用存档功能。");
+    window.onload = function() {
+      document.querySelector('main').scrollTop = document.querySelector('main').scrollHeight;
+    }
   </script>
   <!-- Project -->
   <script src="main.js"></script>
