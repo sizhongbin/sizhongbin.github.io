@@ -1,7 +1,7 @@
 main div p {
-  font-size: 1.5rem;
-  text-indent: 3rem;
-  line-height: 150%;
+  font-size: 1.4rem;
+  text-indent: 2.8rem;
+  line-height: 130%;
 }
 
 main div p span[data-type="key-answer"] {
@@ -14,7 +14,7 @@ main div p span[data-hit="1"] {
   text-decoration: underline;
 }
 
-.new p{
+.new p {
   font-style: italic;
 }
 
@@ -23,17 +23,27 @@ main div p span[data-hit="1"] {
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-.new {
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+  0% {
     opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.new {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  font-family: var(--system-ui);
 }
