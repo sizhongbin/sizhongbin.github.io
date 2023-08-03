@@ -1,15 +1,15 @@
-main div p {
+main p {
   font-size: 1.4rem;
   text-indent: 2.8rem;
   line-height: 130%;
 }
 
-main div p span[data-type="key-answer"] {
+main span[data-type="key-answer"] {
   color: red;
   text-decoration: underline;
 }
 
-main div p span[data-hit="1"] {
+main span[data-hit="1"] {
   color: blue;
   text-decoration: underline;
 }
@@ -40,10 +40,6 @@ main div p span[data-hit="1"] {
   opacity: 0;
 }
 
-:root {
-  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-body {
-  font-family: var(--system-ui);
+div[data-id|="end-bad"] {
+  color: darkgray;
 }
