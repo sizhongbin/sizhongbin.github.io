@@ -1,0 +1,52 @@
+body {
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+div[id^="container-"] {
+  animation-name: fadeIn;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+div[id="container-story"] p {
+  font-size: 1.2rem;
+  text-indent: 2.4rem;
+}
+
+div[id^="clue-"] p {
+  font-size: 1rem;
+  text-indent: 2rem;
+}
+
+span[data-type="key"] {
+  color: red;
+  text-decoration: underline;
+}
+
+.mdui-bottom-nav-fixed .mdui-fab-fixed,
+.mdui-bottom-nav-fixed .mdui-fab-wrapper {
+  position: fixed !important;
+  /* 手机平板上距离屏幕右下角 16px + 56px */
+  bottom: 72px;
+}
+
+@media (min-width: 1024px) {
+
+  .mdui-fab-fixed,
+  .mdui-fab-wrapper {
+    /* 电脑上距离屏幕右下角 24px + 56px */
+    bottom: 80px;
+  }
+}
