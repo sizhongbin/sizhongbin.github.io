@@ -70,7 +70,7 @@
 
         <!-- 全展示 -->
         <button class="mdui-fab mdui-fab-mini mdui-ripple">
-          <i class="mdui-icon material-icons">all_inclusive</i>
+          <i class="mdui-icon material-icons">do_not_disturb</i>
         </button>
 
         <!-- 只展示红标识 -->
@@ -96,9 +96,9 @@
       <!-- 线索001 -->
       <div class="mdui-panel-item" id="clue-1" data-name="我" data-clues="商人,火车,艾音贝赫">
         <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">001：我</div>
+          <div class="mdui-panel-item-title">1：我</div>
           <div class="mdui-panel-item-summary">来源：故事</div>
-          <div class="mdui-panel-item-summary mdui-hidden"><i class="mdui-icon material-icons">flag</i></div>
+          <div class="mdui-panel-item-summary"><i class="mdui-icon material-icons mdui-hidden" data-type="flag">flag</i></div>
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body mdui-container-fluid">
@@ -113,14 +113,14 @@
       </div>
 
       <!-- 线索002 -->
-      <div class="mdui-panel-item" id="clue-002">
+      <div class="mdui-panel-item" id="clue-2" data-name="商人" data-clues="">
         <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">002：商人</div>
-          <div class="mdui-panel-item-summary">来源：001</div>
-          <div class="mdui-panel-item-summary mdui-hidden"><i class="mdui-icon material-icons">flag</i></div>
+          <div class="mdui-panel-item-title">2：商人</div>
+          <div class="mdui-panel-item-summary">来源：线索1</div>
+          <div class="mdui-panel-item-summary"><i class="mdui-icon material-icons mdui-hidden" data-type="flag">flag</i></div>
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
-        <div class="mdui-panel-item-body mdui-container-fluid" id="clue-002">
+        <div class="mdui-panel-item-body mdui-container-fluid"">
           <p>商人就是商人。</p>
           <div class="mdui-panel-item-actions">
             <button class="mdui-btn mdui-btn-icon mdui-ripple" data-type="button-clues-flag"><i class="mdui-icon material-icons">flag</i></button>
@@ -152,10 +152,12 @@
 
   <!-- 标识对话框 -->
   <div class="mdui-dialog" id="dialog-flag">
-    <div class="mdui-dialog-content">Discard draft?</div>
+    <div class="mdui-dialog-content">为线索添加筛选标识</div>
     <div class="mdui-dialog-actions">
-      <button class="mdui-btn mdui-ripple">cancel</button>
-      <button class="mdui-btn mdui-ripple">discard</button>
+      <button class="mdui-btn mdui-btn-icon mdui-ripple" id="dialog-flag-button-none"><i class="mdui-icon material-icons">do_not_disturb</i></button>
+      <button class="mdui-btn mdui-btn-icon mdui-ripple" id="dialog-flag-button-red"><i class="mdui-icon material-icons mdui-text-color-red">flag</i></button>
+      <button class="mdui-btn mdui-btn-icon mdui-ripple" id="dialog-flag-button-green"><i class="mdui-icon material-icons mdui-text-color-green">flag</i></button>
+      <button class="mdui-btn mdui-btn-icon mdui-ripple" id="dialog-flag-button-blue"><i class="mdui-icon material-icons mdui-text-color-blue">flag</i></button>
     </div>
   </div>
 
