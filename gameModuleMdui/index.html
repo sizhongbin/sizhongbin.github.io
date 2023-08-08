@@ -40,13 +40,13 @@
   <div id="container-story" class="mdui-container">
 
     <!-- 故事正文 -->
-    <span id="story-1" data-clues="我,睡,醒,车厢">
-      <p>我从熟睡中醒来，眼前是<span data-type="mask">█</span><span data-type="key" class="mdui-hidden">异常</span>的车厢。
+    <span id="story-1" data-keywords="我,景象">
+      <p>我从熟睡中醒来，眼前是<span data-type="mask">█</span><span data-type="key" class="mdui-hidden">异常</span>的景象。
       </p>
     </span>
 
-    <!-- 全文搜索按钮 -->
-    <button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-pink-accent" id="button-search">
+    <!-- 故事-检索按钮 -->
+    <button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-pink-accent" id="button-story-search">
       <i class="mdui-icon material-icons">find_in_page</i>
     </button>
   </div>
@@ -70,7 +70,7 @@
 
         <!-- 全展示 -->
         <button class="mdui-fab mdui-fab-mini mdui-ripple">
-          <i class="mdui-icon material-icons">do_not_disturb</i>
+          <i class="mdui-icon material-icons">all_inclusive</i>
         </button>
 
         <!-- 只展示红标识 -->
@@ -94,15 +94,15 @@
     <div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion:true}" id="clues-list">
 
       <!-- 线索001 -->
-      <div class="mdui-panel-item" id="clue-1" data-name="我" data-clues="商人,火车,艾音贝赫">
+      <div class="mdui-panel-item" id="clue-1" data-source="story-1" data-key="我" data-keywords="商人,火车,艾音贝赫">
         <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">1：我</div>
+          <div class="mdui-panel-item-title">1：麦德斯</div>
           <div class="mdui-panel-item-summary">来源：故事</div>
           <div class="mdui-panel-item-summary"><i class="mdui-icon material-icons mdui-hidden" data-type="flag">flag</i></div>
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body mdui-container-fluid">
-          <p>我是一名商人，经常会乘坐火车前往艾音贝赫经商。</p>
+          <p>我叫麦德斯，是一名商人。最近我经常乘坐火车前往艾音贝赫采购矿石。</p>
           <div class="mdui-panel-item-actions">
             <button class="mdui-btn mdui-btn-icon mdui-ripple" data-type="button-clues-flag"><i class="mdui-icon material-icons">flag</i></button>
             <button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">find_in_page</i></button>
@@ -120,9 +120,9 @@
           <div class="mdui-panel-item-summary"><i class="mdui-icon material-icons mdui-hidden" data-type="flag">flag</i></div>
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
-        <div class="mdui-panel-item-body mdui-container-fluid"">
+        <div class="mdui-panel-item-body mdui-container-fluid">
           <p>商人就是商人。</p>
-          <div class="mdui-panel-item-actions">
+          <div class=" mdui-panel-item-actions">
             <button class="mdui-btn mdui-btn-icon mdui-ripple" data-type="button-clues-flag"><i class="mdui-icon material-icons">flag</i></button>
             <button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">find_in_page</i></button>
             <button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">merge_type</i></button>
