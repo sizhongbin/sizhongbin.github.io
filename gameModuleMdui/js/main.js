@@ -37,12 +37,13 @@ $('#tab-clues').on('click', function() {
  * 故事-检索按钮功能
  */
 $('#button-story-search').on('click', function() {
-  mdui.prompt('从故事中检索关键词，获取线索。',
+  mdui.prompt('在故事中检索关键词，获取线索。',
     function(value) {
+      // 点击检索的功能
       mdui.alert('你输入了：' + value + '，点击了确认按钮');
     },
     function(value) {
-      mdui.alert('你输入了：' + value + '，点击了取消按钮');
+      // 点击取消的功能
     },
     {
       maxlength: 4,
