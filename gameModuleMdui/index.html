@@ -1,171 +1,244 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
+    />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
-  <meta name="renderer" content="webkit" />
-  <meta name="force-rendering" content="webkit" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- MDUI CSS文件 -->
+    <link rel="stylesheet" href="./css/mdui.min.css" />
 
-  <!-- MDUI CSS文件 -->
-  <link rel="stylesheet" href="./css/mdui.min.css" />
+    <!-- 自定义CSS文件 -->
+    <link rel="stylesheet" href="./css/styles.css" />
 
-  <!-- 自定义CSS文件 -->
-  <link rel="stylesheet" href="./css/styles.css" />
+    <title>Game</title>
+  </head>
 
-  <title>Game Test</title>
-</head>
+  <body class="mdui-bottom-nav-fixed mdui-appbar-with-toolbar">
+    <!-- 页头工具栏 -->
+    <div
+      class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-color-blue-grey-50"
+    >
+      <div class="mdui-toolbar">
+        <!-- 工具栏标题 -->
+        <a href="javascript:;" class="mdui-typo-title">Game</a>
 
-<body class="mdui-bottom-nav-fixed mdui-appbar-with-toolbar">
+        <!-- 工具栏按钮右对齐 -->
+        <div class="mdui-toolbar-spacer"></div>
 
-  <!-- 页头工具栏 -->
-  <div class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-color-blue-grey-50">
-    <div class="mdui-toolbar">
+        <!-- 工具栏按钮 -->
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="button-help">
+          <i class="mdui-icon material-icons">help_outline</i>
+        </a>
+      </div>
+    </div>
 
-      <!-- 工具栏标题 -->
-      <a href="javascript:;" class="mdui-typo-title">Game</a>
+    <!-- 故事容器，与底部标签卡绑定 -->
+    <div id="container-story" class="mdui-container">
+      <!-- 故事正文 -->
+      <span id="story-1" data-keywords="我,景象" data-next="story-2">
+        <p>
+          我从熟睡中醒来，眼前是<span data-type="mask">█</span
+          ><span data-type="key" class="mdui-hidden">异常</span>的景象。
+        </p>
+      </span>
 
-      <!-- 工具栏按钮右对齐 -->
-      <div class="mdui-toolbar-spacer"></div>
+      <!-- 故事-检索按钮 -->
+      <button
+        class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-pink-accent"
+        id="button-story-search"
+      >
+        <i class="mdui-icon material-icons">find_in_page</i>
+      </button>
+    </div>
 
-      <!-- 工具栏按钮 -->
-      <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="button-help">
-        <i class="mdui-icon material-icons">help_outline</i>
+    <!-- 线索容器，与底部标签卡绑定 -->
+    <div id="container-clues" class="mdui-container mdui-hidden mdui-p-t-1">
+      <!-- 筛选按钮 -->
+      <div class="mdui-fab-wrapper" id="button-clues-tools">
+        <button class="mdui-fab mdui-ripple mdui-color-pink-accent">
+          <!-- 默认显示的图标 -->
+          <i class="mdui-icon material-icons">filter_list</i>
+
+          <!-- 拨号菜单开始打开时切换到的图标 -->
+          <i class="mdui-icon mdui-fab-opened material-icons">close</i>
+        </button>
+
+        <!-- 筛选菜单 -->
+        <div class="mdui-fab-dial">
+          <!-- 全展示 -->
+          <button class="mdui-fab mdui-fab-mini mdui-ripple">
+            <i class="mdui-icon material-icons">all_inclusive</i>
+          </button>
+
+          <!-- 只展示红标识 -->
+          <button class="mdui-fab mdui-fab-mini mdui-ripple">
+            <i class="mdui-icon material-icons mdui-text-color-red">flag</i>
+          </button>
+
+          <!-- 只展示绿标识 -->
+          <button class="mdui-fab mdui-fab-mini mdui-ripple">
+            <i class="mdui-icon material-icons mdui-text-color-green">flag</i>
+          </button>
+
+          <!-- 只展示蓝标识 -->
+          <button class="mdui-fab mdui-fab-mini mdui-ripple">
+            <i class="mdui-icon material-icons mdui-text-color-blue">flag</i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 线索列表 -->
+      <div
+        class="mdui-panel mdui-panel-gapless"
+        mdui-panel="{accordion:true}"
+        id="clues-list"
+      >
+        <!-- 线索001 -->
+        <div
+          class="mdui-panel-item"
+          id="clue-1"
+          data-source="story-1"
+          data-key="我"
+          data-keywords="商人,火车,艾音贝赫"
+        >
+          <div class="mdui-panel-item-header">
+            <div class="mdui-panel-item-title">1：麦德斯</div>
+            <div class="mdui-panel-item-summary">来源：故事</div>
+            <div class="mdui-panel-item-summary">
+              <i class="mdui-icon material-icons mdui-hidden" data-type="flag"
+                >flag</i
+              >
+            </div>
+            <i class="mdui-panel-item-arrow mdui-icon material-icons"
+              >keyboard_arrow_down</i
+            >
+          </div>
+          <div class="mdui-panel-item-body mdui-container-fluid">
+            <p>
+              我叫麦德斯，是一名商人。最近我经常乘坐火车前往艾音贝赫采购矿石。
+            </p>
+            <div class="mdui-panel-item-actions">
+              <button
+                class="mdui-btn mdui-btn-icon mdui-ripple"
+                data-type="button-clues-flag"
+              >
+                <i class="mdui-icon material-icons">flag</i>
+              </button>
+              <button class="mdui-btn mdui-btn-icon mdui-ripple">
+                <i class="mdui-icon material-icons">find_in_page</i>
+              </button>
+              <button class="mdui-btn mdui-btn-icon mdui-ripple">
+                <i class="mdui-icon material-icons">merge_type</i>
+              </button>
+              <button class="mdui-btn mdui-btn-icon mdui-ripple">
+                <i class="mdui-icon material-icons mdui-text-color-red"
+                  >play_circle_outline</i
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 线索002 -->
+        <div class="mdui-panel-item" id="clue-2" data-name="商人" data-clues="">
+          <div class="mdui-panel-item-header">
+            <div class="mdui-panel-item-title">2：商人</div>
+            <div class="mdui-panel-item-summary">来源：线索1</div>
+            <div class="mdui-panel-item-summary">
+              <i class="mdui-icon material-icons mdui-hidden" data-type="flag"
+                >flag</i
+              >
+            </div>
+            <i class="mdui-panel-item-arrow mdui-icon material-icons"
+              >keyboard_arrow_down</i
+            >
+          </div>
+          <div class="mdui-panel-item-body mdui-container-fluid">
+            <p>商人就是商人。</p>
+            <div class="mdui-panel-item-actions">
+              <button
+                class="mdui-btn mdui-btn-icon mdui-ripple"
+                data-type="button-clues-flag"
+              >
+                <i class="mdui-icon material-icons">flag</i>
+              </button>
+              <button class="mdui-btn mdui-btn-icon mdui-ripple">
+                <i class="mdui-icon material-icons">find_in_page</i>
+              </button>
+              <button class="mdui-btn mdui-btn-icon mdui-ripple">
+                <i class="mdui-icon material-icons">merge_type</i>
+              </button>
+              <button class="mdui-btn mdui-btn-icon mdui-ripple">
+                <i class="mdui-icon material-icons mdui-text-color-red"
+                  >play_circle_outline</i
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部标签卡 -->
+    <div class="mdui-bottom-nav mdui-color-blue-grey-100">
+      <!-- 故事标签卡 -->
+      <a
+        href="javascript:;"
+        class="mdui-ripple mdui-bottom-nav-active"
+        id="tab-story"
+      >
+        <i class="mdui-icon material-icons">theaters</i>
+        <label>故事</label>
+      </a>
+
+      <!-- 线索标签卡 -->
+      <a href="javascript:;" class="mdui-ripple" id="tab-clues">
+        <i class="mdui-icon material-icons">view_list</i>
+        <label>线索</label>
       </a>
     </div>
-  </div>
 
-  <!-- 故事容器，与底部标签卡绑定 -->
-  <div id="container-story" class="mdui-container">
-
-    <!-- 故事正文 -->
-    <span id="story-1" data-keywords="我,景象" data-next="story-2">
-      <p>我从熟睡中醒来，眼前是<span data-type="mask">█</span><span data-type="key" class="mdui-hidden">异常</span>的景象。
-      </p>
-    </span>
-
-    <!-- 故事-检索按钮 -->
-    <button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-pink-accent" id="button-story-search">
-      <i class="mdui-icon material-icons">find_in_page</i>
-    </button>
-  </div>
-
-  <!-- 线索容器，与底部标签卡绑定 -->
-  <div id="container-clues" class="mdui-container mdui-hidden mdui-p-t-1">
-
-    <!-- 筛选按钮 -->
-    <div class="mdui-fab-wrapper" id="button-clues-tools">
-      <button class="mdui-fab mdui-ripple mdui-color-pink-accent">
-
-        <!-- 默认显示的图标 -->
-        <i class="mdui-icon material-icons">filter_list</i>
-
-        <!-- 拨号菜单开始打开时切换到的图标 -->
-        <i class="mdui-icon mdui-fab-opened material-icons">close</i>
-      </button>
-
-      <!-- 筛选菜单 -->
-      <div class="mdui-fab-dial">
-
-        <!-- 全展示 -->
-        <button class="mdui-fab mdui-fab-mini mdui-ripple">
-          <i class="mdui-icon material-icons">all_inclusive</i>
+    <!-- 标识对话框 -->
+    <div class="mdui-dialog" id="dialog-flag">
+      <div class="mdui-dialog-content">为线索添加筛选标识</div>
+      <div class="mdui-dialog-actions">
+        <button
+          class="mdui-btn mdui-btn-icon mdui-ripple"
+          id="dialog-flag-button-none"
+        >
+          <i class="mdui-icon material-icons">do_not_disturb</i>
         </button>
-
-        <!-- 只展示红标识 -->
-        <button class="mdui-fab mdui-fab-mini mdui-ripple">
+        <button
+          class="mdui-btn mdui-btn-icon mdui-ripple"
+          id="dialog-flag-button-red"
+        >
           <i class="mdui-icon material-icons mdui-text-color-red">flag</i>
         </button>
-
-        <!-- 只展示绿标识 -->
-        <button class="mdui-fab mdui-fab-mini mdui-ripple">
+        <button
+          class="mdui-btn mdui-btn-icon mdui-ripple"
+          id="dialog-flag-button-green"
+        >
           <i class="mdui-icon material-icons mdui-text-color-green">flag</i>
         </button>
-
-        <!-- 只展示蓝标识 -->
-        <button class="mdui-fab mdui-fab-mini mdui-ripple">
+        <button
+          class="mdui-btn mdui-btn-icon mdui-ripple"
+          id="dialog-flag-button-blue"
+        >
           <i class="mdui-icon material-icons mdui-text-color-blue">flag</i>
         </button>
       </div>
     </div>
 
-    <!-- 线索列表 -->
-    <div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion:true}" id="clues-list">
+    <!-- MDUI JS文件 -->
+    <script src="./js/mdui.min.js"></script>
 
-      <!-- 线索001 -->
-      <div class="mdui-panel-item" id="clue-1" data-source="story-1" data-key="我" data-keywords="商人,火车,艾音贝赫">
-        <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">1：麦德斯</div>
-          <div class="mdui-panel-item-summary">来源：故事</div>
-          <div class="mdui-panel-item-summary"><i class="mdui-icon material-icons mdui-hidden" data-type="flag">flag</i></div>
-          <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-        </div>
-        <div class="mdui-panel-item-body mdui-container-fluid">
-          <p>我叫麦德斯，是一名商人。最近我经常乘坐火车前往艾音贝赫采购矿石。</p>
-          <div class="mdui-panel-item-actions">
-            <button class="mdui-btn mdui-btn-icon mdui-ripple" data-type="button-clues-flag"><i class="mdui-icon material-icons">flag</i></button>
-            <button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">find_in_page</i></button>
-            <button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">merge_type</i></button>
-            <button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons mdui-text-color-red">play_circle_outline</i></button>
-          </div>
-        </div>
-      </div>
-
-      <!-- 线索002 -->
-      <div class="mdui-panel-item" id="clue-2" data-name="商人" data-clues="">
-        <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">2：商人</div>
-          <div class="mdui-panel-item-summary">来源：线索1</div>
-          <div class="mdui-panel-item-summary"><i class="mdui-icon material-icons mdui-hidden" data-type="flag">flag</i></div>
-          <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-        </div>
-        <div class="mdui-panel-item-body mdui-container-fluid">
-          <p>商人就是商人。</p>
-          <div class=" mdui-panel-item-actions">
-            <button class="mdui-btn mdui-btn-icon mdui-ripple" data-type="button-clues-flag"><i class="mdui-icon material-icons">flag</i></button>
-            <button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">find_in_page</i></button>
-            <button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">merge_type</i></button>
-            <button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons mdui-text-color-red">play_circle_outline</i></button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- 底部标签卡 -->
-  <div class="mdui-bottom-nav mdui-color-blue-grey-100">
-
-    <!-- 故事标签卡 -->
-    <a href="javascript:;" class="mdui-ripple mdui-bottom-nav-active" id="tab-story">
-      <i class="mdui-icon material-icons">theaters</i>
-      <label>故事</label>
-    </a>
-
-    <!-- 线索标签卡 -->
-    <a href="javascript:;" class="mdui-ripple" id="tab-clues">
-      <i class="mdui-icon material-icons">view_list</i>
-      <label>线索</label>
-    </a>
-  </div>
-
-  <!-- 标识对话框 -->
-  <div class="mdui-dialog" id="dialog-flag">
-    <div class="mdui-dialog-content">为线索添加筛选标识</div>
-    <div class="mdui-dialog-actions">
-      <button class="mdui-btn mdui-btn-icon mdui-ripple" id="dialog-flag-button-none"><i class="mdui-icon material-icons">do_not_disturb</i></button>
-      <button class="mdui-btn mdui-btn-icon mdui-ripple" id="dialog-flag-button-red"><i class="mdui-icon material-icons mdui-text-color-red">flag</i></button>
-      <button class="mdui-btn mdui-btn-icon mdui-ripple" id="dialog-flag-button-green"><i class="mdui-icon material-icons mdui-text-color-green">flag</i></button>
-      <button class="mdui-btn mdui-btn-icon mdui-ripple" id="dialog-flag-button-blue"><i class="mdui-icon material-icons mdui-text-color-blue">flag</i></button>
-    </div>
-  </div>
-
-  <!-- MDUI JS文件 -->
-  <script src="./js/mdui.min.js"></script>
-
-  <!-- 自定义JS文件 -->
-  <script src="./js/main.js"></script>
-</body>
-
+    <!-- 自定义JS文件 -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>
