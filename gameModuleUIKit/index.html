@@ -6,33 +6,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/uikit.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-  <nav class="uk-navbar-container uk-margin">
-    <div class="uk-container">
+  <!-- 导航栏 -->
+  <nav class="uk-navbar-container border-bottom">
+    <div class="uk-container uk-background-secondary uk-light">
       <div uk-navbar>
         <div class="uk-navbar-left">
-          <a class="uk-navbar-toggle" uk-navbar-toggle-icon  uk-toggle="target: #menu"></a>
+          <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #menu"></a>
+          <span id="main-title" class="uk-text-lead uk-text-middle">Sora</span>
         </div>
-
       </div>
     </div>
   </nav>
 
+  <main uk-height-viewport="expand: true" class="uk-background-secondary"></main>
 
 
   <div id="menu" uk-offcanvas="mode: push">
-    <div class="uk-offcanvas-bar">
+    <div uk-height-viewport="expand: true" class="uk-offcanvas-bar border-right uk-padding-remove-horizontal">
+      <p class="uk-padding-small uk-padding-remove-vertical">主线故事</p>
 
-      <h3>Title</h3>
+      <hr>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
+      <div uk-height-viewport="expand: true">
 
+        <p class="uk-padding-small uk-padding-remove-vertical">线索</p>
+        <p class="uk-padding-small uk-padding-remove-vertical">交互</p>
+
+      </div>
+
+      <div class="uk-position-bottom uk-padding-small">
+        <hr>
+
+        <span>收藏夹</span>
+
+        <hr>
+
+        <span>Sora</span>
+      </div>
     </div>
   </div>
   <!-- 游戏标题 -->
