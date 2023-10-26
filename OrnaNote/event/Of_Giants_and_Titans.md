@@ -2,7 +2,7 @@
 
 > Upteted: 26 Oct, 2023
 
-## Quick Start
+## SzHb's Summary
 1. 4 Quests.
 2. Try to get Atlas of Olympia from Olympia Mnemonic, another choice of Berserk pet.
 3. Try to get Stardrop and Moondrop as much as possible from regular dungeon and mystic cave.
@@ -27,7 +27,7 @@
   - **Drop:** (Arisen) Atlas of Olympia
   - **Stance:** Atlas (CD proc 10% up, CD damage 20% up, burning 20% ward on CD proc)
 
-## Event Checklist (Discord summary)
+## Event Checklist (from Discord)
 
 ### Monsters
 

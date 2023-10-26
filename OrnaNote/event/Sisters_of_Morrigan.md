@@ -2,12 +2,12 @@
 
 > Upteted: 26 Oct, 2023
 
-## Quick Start
+## SzHb's Summary
 1. No questline.
 2. Get Fey Chimera, an upgrade of Chimera.
 3. High chance for Arisen Morrigan from summoning scroll. Spare no scrolls if you are looking for fey a.morri gears.
 
-## Event Checklist (Discord summary)
+## Event Checklist (from Discord)
 
 ### Followers
 - ***T6*** Fey Gazer
