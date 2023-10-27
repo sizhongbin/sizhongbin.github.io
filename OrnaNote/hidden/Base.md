@@ -6,21 +6,21 @@
 
 ### Melee skills (Sword Icon)
 
-( ATT x M1 - DEF x DEF.buffs&debuffs / 2 ) x M2 x floating x damage.buff&debuff x faction x element
+( ATT x M1 - DEF x DEF.buffs&debuffs / 2 ) x M2 x floating x ATT.buff&debuff x faction x element
 
 ### Magic skills (Staff Icon)
 
-( MAG x M1 - RES x RES.buffs&debuffs / 2 ) x M2 x floating x damage.buff&debuff x faction x element
+( MAG x M1 - RES x RES.buffs&debuffs / 2 ) x M2 x floating x MAG.buff&debuff x faction x element
 
 ## Damage Formula (Simple Attack)
 
 ### Melee Class
 
-( ATT x damage.buff&debuff x faction - DEF x DEF.buffs&debuffs / 2 ) x floating x element
+( ATT x ATT.buff&debuff - DEF x DEF.buffs&debuffs / 2 ) x floating x faction x element
 
 ### Magic Class
 
-( MAG x damage.buff&debuff x faction - RES x RES.buffs&debuffs / 2 ) x floating  x element
+( MAG x MAG.buff&debuff - RES x RES.buffs&debuffs / 2 ) x floating x faction x element
 
 ## M1 & M2
 
@@ -31,8 +31,8 @@
 ## Buff & Debuff
 
 - All the Buff & Debuff are multiplicative. E.g. Att↑ + Att↑↑ = 1.25 x 1.5 = 1.875x, Def↓ + Def↓↓ = 0.2 x 0.8 = 0.16x.
-- Abilities and Gears effects are multiplicative with buffs & Debuff. E.g. t.All↑↑↑ + 40% crit damage amity + Ymir Brilliant Feathers = 2 * 1.4 * 1.1 = 3.08x faction element crit damage.
-- Damage buff & debuff works directly on ATT/MAG for simple attack, and works on the damage after penetration for skills.
+- ATT/MAG buff & debuff does not affect penetration, except simple attack.
+- DEF/RES buff & debuff affects penetration.
 
 ## Floating
 
