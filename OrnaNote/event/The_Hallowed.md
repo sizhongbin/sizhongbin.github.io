@@ -40,8 +40,8 @@
 
 ### Questline
 
-Talk to Feralia in the world to start a mysterious quest...
+- Talk to Feralia in the world to start questline.
+- Each of the quest monsters has a little pumpkin pail. You'll find them in the world.
+- See a helpful mob-to-item visual here, courtesy of Waifugeddon:
 
-You'll be looking for various candy-seeking monsters in the world! Each of the quest monsters has a little pumpkin pail, and they drop some bonus resources! You'll find them in the world. See a helpful mob-to-item visual here, courtesy of Waifugeddon:
-
-![mob-to-item visual](https://cdn.discordapp.com/attachments/736083414045818880/1158190486054502441/Imagem_do_WhatsApp_de_2023-10-01_as_03.png "mob-to-item visual")
+![visual](./images/The_Hallowed.png "visual")
