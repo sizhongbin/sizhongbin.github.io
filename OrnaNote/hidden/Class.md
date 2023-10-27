@@ -18,11 +18,11 @@
 | Dexterity  | 162    | 129      | 567   |
 | Foresight  | 500    | 500      | 500   |
 
-### Hidden Ability (Origin Only)
+### Hidden Ability
 
 - Melee Class
-- Arcane Immunity
-- Dragon Resistance
+- Arcane Immunity (Origin Only)
+- Dragon Resistance (Origin Only)
 
 ## Heretic
 
@@ -40,11 +40,11 @@
 | Dexterity  | 443    | 443   | 443    |
 | Foresight  | 500    | 500   | 500    |
 
-### Hidden Ability (Origin Only)
+### Hidden Ability
 
 - Magic Class
-- Crit Damage 1.25x
-- Holy/Dark Resistance
+- Crit Damage 1.25x (Origin Only)
+- Holy/Dark Resistance (Origin Only)
 
 ## Realmshifter
 
@@ -62,12 +62,12 @@
 | Dexterity  | 826    | 908    | 826    |
 | Foresight  | 500    | 500    | 500    |
 
-### Hidden Ability (Origin Only)
+### Hidden Ability
 
 - Melee Class
-- Crit Damage 1.25x
-- Holy/Dark Immunity
-- Arcane Resistance
+- Crit Damage 1.25x (Origin Only)
+- Holy/Dark Immunity (Origin Only)
+- Arcane Resistance (Origin Only)
 
 ## Beowulf
 
@@ -85,10 +85,10 @@
 | Dexterity  | 135    | 310    | 135    |
 | Foresight  | 500    | 500    | 500    |
 
-### Hidden Ability (Origin Only)
+### Hidden Ability
 
 - Magic Class
-- Dragon Immunity
+- Dragon Immunity (Origin Only)
 
 ## Grand Summoner
 
@@ -106,11 +106,11 @@
 | Dexterity  | 213    | 213    | 213    |
 | Foresight  | 1000   | 500    | 1000   |
 
-### Hidden Ability (Origin Only)
+### Hidden Ability
 
 - Magic Class
-- Holy/Dark Resistance
 - Cannot use follower
+- Holy/Dark Resistance (Origin Only)
 
 ### Classline Quest
 
@@ -145,7 +145,7 @@ You will be able to find Attuner, the start of Guand Summoner classline, in your
 | Dexterity  | 1058   | 1058  | 1058  |
 | Foresight  | 500    | 500   | 500   |
 
-### Hidden Ability (Origin Only)
+### Hidden Ability
 
 - Melee Class
 
