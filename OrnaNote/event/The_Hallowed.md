@@ -20,7 +20,7 @@
 
 ### Raids ([K]-Kingdom raid, [W]-Summoning scroll, [O]-Others)
 
-(Arisen) Pumpkinless is summoned by (Arisen) Hallowed Summoning Scroll
+(Arisen) Pumpkinless is summoned by (Arisen) Hallowed Summoning Scroll, which can be crafted in Herbalist.
 
 - **[K]** ***T4*** Pumpkin Spider
 - **[K/W]** ***T8*** Pumpkinhead
