@@ -26,7 +26,7 @@
 
 - Every skill has different M1 and M2.
 - M1 = Penetration Multiplier. Works directly on ATT/MAG. High M1 skills are less likely to deal 0 damage.
-- M2 = Damage Multiplier. Works on the damage after penetration. Can be a range like 1~2, means that the multiplier will float from 1x~2x.
+- M2 = Damage Multiplier. Works on the damage after penetration. Can be a range like 1 - 2, means that the multiplier will float from 1x - 2x.
 
 ## Buff & Debuff
 
@@ -36,7 +36,7 @@
 
 ## Floating
 
-- Ranged from 0.925x~1.075x.
+- Ranged from 0.925x - 1.075x.
 
 ## Faction
 
@@ -48,3 +48,19 @@
 - 1.5x damage against weakless element
 - 0.5x damage against resistance element
 - 0x damage against immune element
+
+## Hybrid
+
+Orna has three definitions of Hybrid:
+
+1. 'All skills and spells cast will use both your Attack and Magic stats'
+- All skills and spells will use ( Att + Mag) / 1.66 instead of just Att or Mag
+- This is roughly a 21% damage increase if your attack and magic are equal
+- This has no effect at all on skills that are already hybrid, like Beaststrike or Verse
+- This is not visible on the stats screen
+2. 'Hybrid damage will be increased by %', Selene Hands/Arms, Hybrid Monster
+- Your attack will be increased by % of your magic, and your magic will be increased by % of your attack
+- This stacks additively
+- This effects all skills and spells, since it increases your raw stats and is visible on the stats screen.
+3. Hybrid Skills
+- Hybrid skills use 65% of your attack and 65% of your magic stat. Written as a formula, ( att * 0.65 ) + ( mag * 0.65 )
