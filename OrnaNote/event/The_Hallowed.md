@@ -5,10 +5,11 @@
 ## SzHb's Notes
 1. 7 Quests.
 2. Get ***T10*** Aglovale from quest. Need 5 ***T10*** Old Hallowed Blade from Arisen Pumpkinhead for the quest.
-3. Get some hallowed candle from (Arisen) Pumpkinhead for Exp farming.
-4. Get ***T9*** Onryo pet, which can cause Def↓↓, Res↓↓ and Confused.
-5. Get ***T8*** Very Scary Skeleton skill, which can cause t.Def↓↓ and t.Res↓↓.
-6. Get high quality Arisen Pumpkinless Armor and Leggings if you need, which can increase two-handed damage. Just give up if you don't have much time for world mob grinding.
+3. Get some hallowed candle(5% xp boost) from (Arisen) Pumpkinhead for Exp farming.
+4. Get some Small Bestial Potions(5% follower act), Ichor and Great Monster Remains from ***T4*** Pumpkin Spider.
+5. Get ***T9*** Onryo pet, which can cause Def↓↓, Res↓↓ and Confused.
+6. Get ***T8*** Very Scary Skeleton skill, which can cause t.Def↓↓ and t.Res↓↓.
+7. Get high quality Arisen Pumpkinless Armor and Leggings if you need, which can increase two-handed damage. Just give up if you don't have much time for world mob grinding.
 
 ## Event Checklist (mostly from Discord)
 
