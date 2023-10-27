@@ -1,6 +1,6 @@
 # Base
 
-> Upteted: 27 Oct, 2023
+> Upteted: 28 Oct, 2023
 
 ## Damage Formula (except Simple Attack)
 
@@ -45,9 +45,18 @@
 
 ## Element
 
-- 1.5x damage against weakless element
-- 0.5x damage against resistance element
-- 0x damage against immune element
+- Default
+  - 1.5x damage against weakness element
+  - 0.5x damage against resistance element
+  - 0x damage against immune element
+- Omnimancy skills
+  - 2x damage against weakness element
+  - 0.5x damage against resistance element
+  - 0.125x damage against immune element
+- Ultima
+  - 2.4x damage against weakness element
+  - 1x damage against resistance element
+  - 1x damage against immune element
 
 ## Hybrid
 
