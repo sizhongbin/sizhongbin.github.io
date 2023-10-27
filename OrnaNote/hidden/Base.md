@@ -1,6 +1,6 @@
 # Base
 
-> Upteted: 26 Oct, 2023
+> Upteted: 27 Oct, 2023
 
 ## Damage Formula (except Simple Attack)
 
@@ -49,3 +49,4 @@
 - 1.5x damage against weakless element
 - 0.5x damage against resistance element
 - 0x damage against immune element
+- Works on the damage after penetration for skills.

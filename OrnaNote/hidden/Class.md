@@ -148,3 +148,4 @@ You will be able to find Attuner, the start of Guand Summoner classline, in your
 ### Hidden Ability (Origin Only)
 
 - Melee Class
+
