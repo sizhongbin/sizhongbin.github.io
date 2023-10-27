@@ -31,7 +31,7 @@
 ## Buff & Debuff
 
 - All the Buff & Debuff are multiplicative. E.g. Att↑ + Att↑↑ = 1.25 x 1.5 = 1.875x, Def↓ + Def↓↓ = 0.2 x 0.8 = 0.16x.
-- Abilities and Gears bonus work the same. E.g. t.All↑↑↑ + 40% crit damage amity + Ymir Brilliant Feathers = 2 * 1.4 * 1.1 = 3.08x faction element crit damage.
+- Abilities and Gears effects are multiplicative with buffs & Debuff. E.g. t.All↑↑↑ + 40% crit damage amity + Ymir Brilliant Feathers = 2 * 1.4 * 1.1 = 3.08x faction element crit damage.
 - Damage buff & debuff works directly on ATT/MAG for simple attack, and works on the damage after penetration for skills.
 
 ## Floating
