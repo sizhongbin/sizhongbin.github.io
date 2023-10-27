@@ -44,4 +44,4 @@
 - Each of the quest monsters has a little pumpkin pail. You'll find them in the world.
 - See a helpful mob-to-item visual here, courtesy of Waifugeddon:
 
-![visual](./images/The_Hallowed.png "visual")
+![visual](../images/The_Hallowed.png "visual")
