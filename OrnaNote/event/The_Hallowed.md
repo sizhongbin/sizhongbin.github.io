@@ -8,7 +8,7 @@
 3. Get some hallowed candle from (Arisen) Pumpkinhead for Exp farming.
 4. Get ***T9*** Onryo pet, which can cause Def↓↓, Res↓↓ and Confused.
 5. Get ***T8*** Very Scary Skeleton skill, which can cause t.Def↓↓ and t.Res↓↓.
-6. Get high quality Arisen Pumpkinless Armor and Leggings if you need, which can increase two-handed damage.
+6. Get high quality Arisen Pumpkinless Armor and Leggings if you need, which can increase two-handed damage. Just give up if you don't have much time for world mob grinding.
 
 ## Event Checklist (mostly from Discord)
 
