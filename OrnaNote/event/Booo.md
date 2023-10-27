@@ -3,7 +3,7 @@
 > Upteted: 27 Oct, 2023
 
 ## SzHb's Notes
-1. No quest.
+1. No quests.
 2. Get ***T6*** Scary Skeleton or ***T9*** Very Scary Skeleton pet, which can cause Lulled, T.Def↓↓ and T.Res↓↓.
 3. Get ***T4*** Ectoplasm from the Bosses, which has physical resistance but high chance that you'll fall asleep.
 
