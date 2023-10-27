@@ -4,8 +4,8 @@
 
 ## SzHb's Notes
 1. 4 Quests.
-2. Try to get Atlas of Olympia from Olympia Mnemonic, another choice of Berserk pet.
-3. Try to get Stardrop and Moondrop as much as possible from regular dungeon and mystic cave.
+2. Get ***T10*** Atlas of Olympia pet from Olympia Mnemonic, another choice of Berserk pet.
+3. Get Stardrop and Moondrop as much as possible from regular dungeon and mystic cave.
 4. Keep Stardrop till T10 for Godforge. Spare no Moondrop for exp.
 5. Get the following weapons(any quality) for using stance in endless if you need:
 - ***T6*** Palm Tree Branch / ***T10*** Arisen Palm Branch
@@ -27,7 +27,7 @@
   - **Drop:** (Arisen) Atlas of Olympia
   - **Stance:** Atlas (CD proc 10% up, CD damage 20% up, burning 20% ward on CD proc)
 
-## Event Checklist (from Discord)
+## Event Checklist (mostly from Discord)
 
 ### Monsters
 
