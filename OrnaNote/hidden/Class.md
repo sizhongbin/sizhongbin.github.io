@@ -20,6 +20,7 @@
 
 ### Hidden Ability (Origin Only)
 
+- Melee Class
 - Arcane Immunity
 - Dragon Resistance
 
@@ -41,6 +42,7 @@
 
 ### Hidden Ability (Origin Only)
 
+- Magic Class
 - Crit Damage 1.25x
 - Holy/Dark Resistance
 
@@ -62,6 +64,7 @@
 
 ### Hidden Ability (Origin Only)
 
+- Melee Class
 - Crit Damage 1.25x
 - Holy/Dark Immunity
 - Arcane Resistance
@@ -84,6 +87,7 @@
 
 ### Hidden Ability (Origin Only)
 
+- Magic Class
 - Dragon Immunity
 
 ## Grand Summoner
@@ -104,8 +108,26 @@
 
 ### Hidden Ability (Origin Only)
 
+- Magic Class
 - Holy/Dark Resistance
 - Cannot use follower
+
+### Classline Quest
+
+Find Horus on map after you reach T7 and finish the following 2 quests taken from him:
+
+- THE ARISEN
+  - Defeat Arisen Draconian Lord (1)
+  - Defeat Arisen Minotaur (1)
+  - Defeat Arisen Lord of Wolves (1)
+
+- THE SUMMONERS
+  - Find: Attuning Hood (1)
+  - Find: Attuning Robe (1)
+  - Find: Attuning Shoes (1)
+
+You will be able to find Attuner, the start of Guand Summoner classline, in your class list after that.  
+
 
 ## Deity
 
@@ -125,4 +147,4 @@
 
 ### Hidden Ability (Origin Only)
 
-- None
+- Melee Class

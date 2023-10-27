@@ -4,6 +4,7 @@
 
 - Hidden Info
 
+  - [Base](/hidden/Base.md)
   - [Class](/hidden/Class.md)
 
 - Event Summary
