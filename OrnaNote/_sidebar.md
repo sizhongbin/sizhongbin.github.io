@@ -6,6 +6,7 @@
 
   - [Base](/hidden/Base.md)
   - [Class](/hidden/Class.md)
+  - [Tower](/hidden/Tower.md)
 
 - Event Summary
 
