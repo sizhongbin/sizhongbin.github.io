@@ -3,7 +3,7 @@
 
 # Welcome
 
-> Upteted: 26 Oct, 2023
+> Upteted: 29 Oct, 2023
 
 Welcome!
 
@@ -20,6 +20,7 @@ by SzHb
 - Added tower info
 - Added footnotes in Class
 - Added remarks in some pages
+- Added The Crimson Festival event
 
 28 Oct, 2023
 

@@ -1,6 +1,6 @@
 # Of Giants and Titans
 
-> Upteted: 27 Oct, 2023
+> Upteted: 29 Oct, 2023
 
 ## SzHb's Notes
 1. 4 Quests.
@@ -61,9 +61,9 @@ Summoned by Stardrop.
 - ***T6*** Aegir
 - ***T8*** Eistla
 - ***T8*** Gymir
-- ***T10*** Arisen Aegir
-- ***T10*** Arisen Eistla
-- ***T10*** Arisen Gymir
+- ***T10*** Arisen Aegir (*Godforge aura)
+- ***T10*** Arisen Eistla (*Godforge aura)
+- ***T10*** Arisen Gymir (*Godforge aura)
 
 ### Followers
 
