@@ -2,6 +2,8 @@
 
 > Upteted: 29 Oct, 2023
 
+NOTE: This should be the main event of Nov, which means that there should be something new to be updated.
+
 ## SzHb's Notes
 1. 4 Quests.
 2. Get ***T10*** Atlas of Olympia pet from Olympia Mnemonic, another choice of Berserk pet.
