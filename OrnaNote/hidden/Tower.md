@@ -191,6 +191,6 @@ Cost increase: 1,000
 
 *Remark:*
 
-*Tower is really boring solo content. I always fall asleep IRL when doing tower. Try not to waste shards.*
+*Tower is really boring solo content. When I have trouble sleeping, just start a tower and I will always fall asleep in 10 minutes. Thank you very much NF!.*
 
 *by SzHb*
