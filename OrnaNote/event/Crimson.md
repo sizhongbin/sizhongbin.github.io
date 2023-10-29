@@ -8,7 +8,7 @@
 2. Get some ***T9*** Ferocious Bull's Eye from ***T9*** Ferocious Cerus, a weapon adornment which gives 12 att + 12 mag + 60 mana + 4% crit.
 3. Get some ***T9*** Gorgon's Eye from ***T9*** Noble Perseus, a weapon adornment which gives 4% crit + 3% status protection, but -30 mana.
 4. For summoners, get a ***T9*** Goat's Hood (any quality) from ***T9*** Tricky Aries, which -600 foresight that will make you act after your party member when you need to.
-5. For realmshifters, get high quality ***T9*** Serpentslayer's chest and leg from ***T9*** Untarnished Perseus. They both give 400 mana, 20 att and 2% stats protection, which are good for horde sweep build. (My head was eaten by Mightiest Mimic so i don't need the head piece)
+5. For realms and gilgaU, get high quality ***T9*** Serpentslayer's chest and leg from ***T9*** Untarnished Perseus. They both give 400 mana, 20 att and 2% stats protection, which are good for horde sweep build. (My head was eaten by Mightiest Mimic so i don't need the head piece)
 
 ## Event Checklist (mostly from Discord)
 
