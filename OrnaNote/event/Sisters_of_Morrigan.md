@@ -25,6 +25,6 @@
 
 *Remark:*
 
-*Don't do too much a.morri in short time. Or you will burned out.*
+*Don't do too many a.morri in short time. Or you will burned out.*
 
 *by SzHb*
