@@ -96,6 +96,6 @@ Quests A2 and B1 are available after completing A1, and B2 is available after co
 
 *Remark:*
 
-*Good event, especially for summoners. Ophion Banner is a MUST for deep endless. *
+*Good event, especially for summoners. Ophion Banner is a MUST for deep endless.*
 
 *by SzHb*
