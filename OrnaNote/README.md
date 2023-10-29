@@ -21,7 +21,7 @@ by SzHb
 
 28 Oct, 2023
 
-- Updated element in Base
+- Updated Element in Base
 - Added Hybrid in Base
 
 27 Oct, 2023:
