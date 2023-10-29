@@ -91,3 +91,11 @@ Quests A2 and B1 are available after completing A1, and B2 is available after co
 - Quest B1: Gather a Moondrop (see monsters above)
 - Quest B2: Gather 20 Moondrops (see monsters above)
   - **Reward:** Olympia Mnemonic
+
+---
+
+*Remark:*
+
+*Good event, especially for summoners. Ophion Banner is a MUST for deep endless. *
+
+*by SzHb*

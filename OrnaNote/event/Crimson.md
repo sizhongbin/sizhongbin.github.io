@@ -54,6 +54,6 @@ Event monsters have the same name but 3 different tiers.
 
 *Remark:*
 
-*One of the best event in Orna. The two 4% crit weapon adornments are very important for crit build. Personally i will try to get 10 of both.*
+*One of the best event in Orna. 4% crit weapon adornment is a MUST for crit build. Personally i will try to get at least 10 of both.*
 
 *by SzHb*
