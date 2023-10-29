@@ -1,6 +1,6 @@
-# Base
+# Battle
 
-> Upteted: 28 Oct, 2023
+> Upteted: 29 Oct, 2023
 
 ## Damage Formula (except Simple Attack)
 
@@ -73,3 +73,11 @@ Orna has three definitions of Hybrid:
 - This effects all skills and spells, since it increases your raw stats and is visible on the stats screen.
 3. Hybrid Skills
 - Hybrid skills use 65% of your attack and 65% of your magic stat. Written as a formula, ( att * 0.65 ) + ( mag * 0.65 )
+
+---
+
+*Remark:*
+
+*Orna is a social game. You don't need to know too much about battle if you don't want to.*
+
+*by SzHb*

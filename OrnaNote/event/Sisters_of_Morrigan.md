@@ -1,6 +1,6 @@
 # Sisters of Morrigan
 
-> Upteted: 27 Oct, 2023
+> Upteted: 29 Oct, 2023
 
 ## SzHb's Notes
 1. No quests.
@@ -20,3 +20,11 @@
 - **[K/W]** ***T7*** Sister Badb
 - **[K/W]** ***T8*** Sister Macha
 - **[K/W]** ***T10*** Arisen Morrigan
+
+---
+
+*Remark:*
+
+*Don't do too much a.morri in short time. Or you will burned out.*
+
+*by SzHb*

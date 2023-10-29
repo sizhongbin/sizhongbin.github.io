@@ -1,6 +1,6 @@
 # Class
 
-> Upteted: 26 Oct, 2023
+> Upteted: 29 Oct, 2023
 
 ## Gilgamesh
 
@@ -20,7 +20,7 @@
 
 ### Hidden Ability
 
-- Melee Class
+- Melee Class[^1] 
 - Arcane Immunity (Origin Only)
 - Dragon Resistance (Origin Only)
 
@@ -42,7 +42,7 @@
 
 ### Hidden Ability
 
-- Magic Class
+- Magic Class[^2] 
 - Crit Damage 1.25x (Origin Only)
 - Holy/Dark Resistance (Origin Only)
 
@@ -149,3 +149,14 @@ You will be able to find Attuner, the start of Guand Summoner classline, in your
 
 - Melee Class
 
+[^1]: Melee Class: ATTACK is based on Att and has 5% crit chance.
+
+[^2]: Magic Class: ATTACK is based on Mag and has 1% crit chance.
+
+---
+
+*Remark:*
+
+*There is no best class in Orna. You always have to suffer in some contents, no metter which class you choose. So just play the class you like the most.*
+
+*by SzHb*

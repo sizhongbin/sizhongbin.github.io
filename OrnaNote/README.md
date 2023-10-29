@@ -18,6 +18,8 @@ by SzHb
 29 Oct, 2023:
 
 - Added tower info
+- Added footnotes in Class
+- Added remarks in some pages
 
 28 Oct, 2023
 
@@ -31,7 +33,7 @@ by SzHb
 
 26 Oct, 2023:
 
-- Page deployed
+- Deployed on Github Page
 - Added Nov 2023 events
 - Added Base and Class
 

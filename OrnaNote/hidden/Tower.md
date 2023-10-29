@@ -186,3 +186,11 @@ Cost increase: 1,000
 | Quarterstaff | Val/Sum | ×  | -      | -    | -      | 1170  | -   | 180 | -   | -    | 24   | 360       | 5     | +8% summon stats   |
 | Staff        | Mage    | ×  | -      | -    | -      | 1230  | -   | 210 | -   | 2    | 22   | 120       | 5     | -                  |
 | Thinblade    | Melee   | ×  | 210    | -    | 1230   | -     | -   | -   | 115 | 4    | -    | -         | 5     | -                  |
+
+---
+
+*Remark:*
+
+*Tower is really boring solo content. I always fall asleep IRL when doing tower. Try not to waste shards.*
+
+*by SzHb*

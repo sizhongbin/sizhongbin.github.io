@@ -4,7 +4,7 @@
 
 - Hidden Info
 
-  - [Base](/hidden/Base.md)
+  - [Battle](/hidden/Battle.md)
   - [Class](/hidden/Class.md)
   - [Tower](/hidden/Tower.md)
 
