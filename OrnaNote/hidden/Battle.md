@@ -30,7 +30,7 @@
 
 ## Buff & Debuff
 
-- All the Buff & Debuff are multiplicative. E.g. Att↑ + Att↑↑ = 1.25 x 1.5 = 1.875x, Def↓ + Def↓↓ = 0.2 x 0.8 = 0.16x.
+- All the Buff & Debuff are multiplicative. E.g. Att↑ + Att↑↑ = 1.25 x 1.5 = 1.875x, Def↓ + Def↓↓ = 0.8 x 0.2 = 0.16x.
 - ATT/MAG buff & debuff does not affect penetration, except simple attack.
 - DEF/RES buff & debuff affects penetration.
 
@@ -40,7 +40,7 @@
 
 ## Faction
 
-- 1.25x damage for faction element
+- 1.25x damage using faction element
 - 0.8x damage against faction element
 
 ## Element
@@ -78,6 +78,6 @@ Orna has three definitions of Hybrid:
 
 *Remark:*
 
-*Orna is a social game. You don't need to know too much about battle if you don't want to.*
+*Take it easy. Orna is a GPS social game. You don't need to know too much about battle if you don't want to.*
 
 *by SzHb*
