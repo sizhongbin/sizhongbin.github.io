@@ -1,6 +1,6 @@
 # The Crimson Festival
 
-> Upteted: 30 Oct, 2023
+> Last Update: 30 Oct, 2023
 
 ## SzHb's Notes
 

@@ -1,6 +1,6 @@
 # BoooOOOOooooOOOooo
 
-> Upteted: 27 Oct, 2023
+> Last Update: 27 Oct, 2023
 
 ## SzHb's Notes
 1. No quests.

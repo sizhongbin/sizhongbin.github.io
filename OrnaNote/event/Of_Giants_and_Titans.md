@@ -1,6 +1,6 @@
 # Of Giants and Titans
 
-> Upteted: 29 Oct, 2023
+> Last Update: 29 Oct, 2023
 
 NOTE: This should be the main event of Nov, which means that there should be something new to be updated.
 

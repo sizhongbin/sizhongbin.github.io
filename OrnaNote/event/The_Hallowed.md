@@ -1,6 +1,6 @@
 # The Hallowed!
 
-> Upteted: 29 Oct, 2023
+> Last Update: 29 Oct, 2023
 
 ## SzHb's Notes
 1. 7 Quests.

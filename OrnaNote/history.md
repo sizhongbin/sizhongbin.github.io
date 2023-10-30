@@ -2,6 +2,7 @@
 
 - 30 Oct, 2023:
   - Updated The Crimson Festival
+  - Fixed typo
 
 - 29 Oct, 2023:
   - Added tower info
