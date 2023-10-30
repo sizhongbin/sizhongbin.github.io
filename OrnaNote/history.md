@@ -2,6 +2,9 @@
 
 > Upteted: 29 Oct, 2023
 
+- 30 Oct, 2023:
+  - Updated The Crimson Festival
+
 - 29 Oct, 2023:
   - Added tower info
   - Added footnotes in Class

@@ -15,10 +15,5 @@ by SzHb
 
 ## What's new
 
-- 29 Oct, 2023:
-
-  - Added tower info
-  - Added footnotes in Class
-  - Added remarks in some pages
-  - Added The Crimson Festival event
-  - Updated typography
+- 30 Oct, 2023:
+  - Updated The Crimson Festival
