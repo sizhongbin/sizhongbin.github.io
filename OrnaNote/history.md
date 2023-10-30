@@ -1,7 +1,5 @@
 # Update History
 
-> Upteted: 29 Oct, 2023
-
 - 30 Oct, 2023:
   - Updated The Crimson Festival
 

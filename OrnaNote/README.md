@@ -3,8 +3,6 @@
 
 # Welcome
 
-> Upteted: 29 Oct, 2023
-
 Welcome!
 
 This is a personal note for some of the hidden info and events in Orna.
