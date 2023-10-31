@@ -11,6 +11,6 @@ by SzHb
 
 ## What's new
 
-- 30 Oct, 2023:
-  - Updated The Crimson Festival
-  - Fixed typo
+- 31 Oct, 2023:
+  - Added Amity
+

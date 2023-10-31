@@ -1,5 +1,8 @@
 # Update History
 
+- 31 Oct, 2023:
+  - Added Amity
+
 - 30 Oct, 2023:
   - Updated The Crimson Festival
   - Fixed typo

@@ -8,6 +8,7 @@
   - [Battle](/hidden/Battle.md)
   - [Class](/hidden/Class.md)
   - [Tower](/hidden/Tower.md)
+  - [Amity](/hidden/Amity.md)
 
 - Event Summary
 
