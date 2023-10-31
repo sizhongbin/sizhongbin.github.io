@@ -17,31 +17,34 @@
 
 ## Very Important Amities
 
-| Bonus                                                                                 | Max value             |
-|---------------------------------------------------------------------------------------|-----------------------|
-| Critical hits will be % more effective                                                | 40%                   |
-| Positive status effects will last % longer                                            | 50%                   |
-| You will gain % additional view distance                                              | 5%                    |
-| You will receive % additional rewards when completing memories                        | 100%                  |
-| Your accessories will be % more effective                                             | 25%                   |
+- Critical hits will be 40% more effective
+- Positive status effects will last 50% longer
+- You will gain 5% additional view distance
+- You will receive 100% additional rewards when completing memories
+- Your accessories will be 25% more effective
 
 ## Frequently Used Amities
 
-| Bonus                                                                                 | Max value             |
-|---------------------------------------------------------------------------------------|-----------------------|
-| Defending in battle will reduce an additional % damage                                | 75%                   |
-| Increases arcane/dragon damage by %                                                   | 30%                   |
-| Increases dark/holy/earthen/fire/lightning/water damage by %                          | 20%                   |
-| Simple attacks will deal % more damage                                                | 40%                   |
-| You have a % chance to be protected from attacks that would deal % of your maximum HP | 20% 100%              |
-| You will begin battle with # ward turns activated                                     | 5#                  |
-| You will recover % of your maximum HP per turn                                        | 5%                    |
-| You will recover % of your maximum mana per turn                                      | 5%                    |
-| You will recover % of your missing HP per turn                                        | 5%                    |
-| You will recover % ward each turn                                                     | 5%                    |
-| Your follower is % more likely to protect you in battle                               | 7%                    |
-| Your follower's stats will be increased by %                                          | 15%                   |
-| Your summons will be % stronger                                                       | 30%                   |
+- Defending in battle will reduce an additional 75% damage
+- Increases arcane damage by 30%
+- Increases dragon damage by 30%
+- Increases dark damage by 20%
+- Increases earthen damage by 20%
+- Increases fire damage by 20%
+- Increases holy damage by 20%
+- Increases lightning damage by 20%
+- Increases water damage by 20%
+- Simple attacks will deal 40% more damage
+- You have a 20% chance to be protected from attacks that would deal 100% of your maximum HP
+- You will begin battle with 5 ward turns activated
+- You will recover 5% of your maximum HP per turn
+- You will recover 5% of your maximum mana per turn
+- You will recover 5% of your missing HP per turn
+- You will recover 5% of your missing Mana per turn
+- You will recover 5% ward each turn
+- Your follower is 7% more likely to protect you in battle
+- Your follower's stats will be increased by 15%
+- Your summons will be 30% stronger
 
 ---
 
