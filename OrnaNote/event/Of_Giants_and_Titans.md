@@ -44,6 +44,7 @@
 - ***T8*** Globe Holder / ***T10*** Arisen Globe Holder
   - **Drop:** (Arisen) Atlas of Olympia
   - **Stance:** Atlas (CD proc 10% up, CD damage 20% up, burning 20% ward on CD proc)
+6. Get some adorns(any quality) if you need.
 
 ## Event Checklist (mostly from Discord)
 
