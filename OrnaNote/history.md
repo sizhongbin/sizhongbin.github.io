@@ -1,5 +1,8 @@
 # Update History
 
+- 2 Nov, 2023:
+  - Updated Of Giants and Titans
+
 - 31 Oct, 2023:
   - Added Amity
 

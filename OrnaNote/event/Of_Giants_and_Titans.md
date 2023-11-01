@@ -1,8 +1,24 @@
 # Of Giants and Titans
 
-> Last Update: 29 Oct, 2023
+> Last Update: 2 Nov, 2023
 
-NOTE: This should be the main event of Nov, which means that there should be something new to be updated.
+## What's new in 2023
+
+- Weapon Adorns
+  - Orichalcum Mortar (Ophion)
+    - Increase Positive status duration by ??
+  - Sand Mortar (Atlas)
+    - Boost collateral damage by 5%
+  - Solarite Mortar (Asteria)
+    - Boosts Att/Mag stats by 2% each if wielding a 2h weapon (like a Trev charm)
+
+- Armor Adorns
+  - Mountain Acorn (Aegir)
+    - Regen 0.5% of max mana every turn
+  - Tree Nut (Gymir)
+    - Increase chance of collateral damage by 3%
+  - Pistachio (Eistla)
+    - Increases negative status dropoff by ??
 
 ## SzHb's Notes
 1. 4 Quests.
@@ -96,6 +112,6 @@ Quests A2 and B1 are available after completing A1, and B2 is available after co
 
 *Remark:*
 
-*Good event, especially for summoners. Ophion Banner is a MUST for deep endless.*
+*Good event, especially for summoners. Ophion Banner is a MUST for summoner deep endless. Delicious xp and Godforge.*
 
 *by SzHb*
