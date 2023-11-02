@@ -45,6 +45,7 @@
   - **Drop:** (Arisen) Atlas of Olympia
   - **Stance:** Atlas (CD proc 10% up, CD damage 20% up, burning 20% ward on CD proc)
 6. Get some adorns(any quality) if you need.
+7. Get high quality ***T10*** Omega Olympia Warbow if you need, which has highest Dex bonus in weapons(630 Godforged, equal to lv20 celestial greatbow).
 
 ## Event Checklist (mostly from Discord)
 
