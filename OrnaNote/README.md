@@ -11,6 +11,6 @@ by SzHb
 
 ## What's new
 
-- 2 Nov, 2023:
-  - Updated Of Giants and Titans
+- 3 Nov, 2023:
+  - Added Visible Abilities for realm in Class
 

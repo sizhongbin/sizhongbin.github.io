@@ -1,6 +1,6 @@
 # Class
 
-> Last Update: 29 Oct, 2023
+> Last Update: 3 Nov, 2023
 
 ## Gilgamesh
 
@@ -62,12 +62,28 @@
 | Dexterity  | 826    | 908    | 826    |
 | Foresight  | 500    | 500    | 500    |
 
-### Hidden Ability
+### Visible Abilities
+
+- Resurgence: Up to 2x base def/res/dex/mag/atk at 1hp, starts at 50% HP.
+- Resurgence II: Up to 2.2x base def/res/dex/mag/atk at 1hp, starts at 50% HP.
+- Recharge: Restores 25% of your max HP and mana on critical hits.
+- Mystic Feather: Up to 70% dodge at 1hp, starts at 50%.
+- High Tenacity: Damage taken from Berserk I/II/III will not fully deplete your HP.
+- Saboteur II: 2.25x ward damage, chance of t.def- and t.def--.
+- Avidity II: 15% Chance to gain an extra turn.
+- Avidity III: 25% Chance to gain an extra turn.
+- Realm's Light: 1.2x view distance, chance of blind.
+- Dorado's Guard: 3% ward regen and 6 turns ward from start.
+- Dorado: Dodge/Hit/Status protection/Status dropoff bonus based on your dex, capped at 3000.
+- Critical Chain: up to 2x critical damage, capped at 10 hit in a row. (Pots don't reset the chain. Can keep from floor to floor in dungeons)
+
+### Hidden Abilities
 
 - Melee Class
 - Crit Damage 1.25x (Origin Only)
 - Holy/Dark Immunity (Origin Only)
 - Arcane Resistance (Origin Only)
+
 
 ## Beowulf
 
