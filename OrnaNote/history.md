@@ -1,7 +1,7 @@
 # Update History
 
 - 3 Nov, 2023:
-  - Added Visible Abilities for realm in Class
+  - Added some Visible Abilities and Main Skills data in Class
 
 - 2 Nov, 2023:
   - Updated Of Giants and Titans
