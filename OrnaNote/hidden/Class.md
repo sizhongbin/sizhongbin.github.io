@@ -64,9 +64,9 @@
 
 ### Visible Abilities
 
-- Resurgence I/II: Up to 2x/2.2x base def/res/dex/mag/atk at 1hp, starts at 50% HP.
+- Resurgence I/II: Up to 2x/2.2x base def/res/dex/mag/atk at 1 HP, starts at 50% HP.
 - Recharge: Restores 25% of your max HP and mana on critical hits.
-- Mystic Feather: Up to 70% dodge at 1hp, starts at 50%.
+- Mystic Feather: Up to 70% dodge at 1 HP, starts at 50% HP.
 - High Tenacity: Damage taken from Berserk I/II/III will not fully deplete your HP.
 - Saboteur II: 2.25x ward damage, chance of t.def- and t.def--.
 - Avidity II/III: 15%/25% Chance to gain an extra turn.
