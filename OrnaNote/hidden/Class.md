@@ -64,14 +64,12 @@
 
 ### Visible Abilities
 
-- Resurgence: Up to 2x base def/res/dex/mag/atk at 1hp, starts at 50% HP.
-- Resurgence II: Up to 2.2x base def/res/dex/mag/atk at 1hp, starts at 50% HP.
+- Resurgence I/II: Up to 2x/2.2x base def/res/dex/mag/atk at 1hp, starts at 50% HP.
 - Recharge: Restores 25% of your max HP and mana on critical hits.
 - Mystic Feather: Up to 70% dodge at 1hp, starts at 50%.
 - High Tenacity: Damage taken from Berserk I/II/III will not fully deplete your HP.
 - Saboteur II: 2.25x ward damage, chance of t.def- and t.def--.
-- Avidity II: 15% Chance to gain an extra turn.
-- Avidity III: 25% Chance to gain an extra turn.
+- Avidity II/III: 15%/25% Chance to gain an extra turn.
 - Realm's Light: 1.2x view distance, chance of blind.
 - Dorado's Guard: 3% ward regen and 6 turns ward from start.
 - Dorado: Dodge/Hit/Status protection/Status dropoff bonus based on your dex, capped at 3000.
