@@ -28,15 +28,18 @@
 
 - Spiked Shield
   - M1 = 3
-  - M2 = ( Current Ward * 0.1 ) / 5000
+  - Gilgamesh: M2 = ( Current Ward * 0.1 ) / 5000
+  - Other classes: M2 = ( Current Ward * 0.1 ) / 10000
 
 - Spiked Shield II / Chained Shield
   - M1 = 2.4
-  - M2 = ( Current Ward * 0.15 ) / 5000
+  - Gilgamesh: M2 = ( Current Ward * 0.15 ) / 5000
+  - Other classes: M2 = ( Current Ward * 0.15 ) / 10000
 
 - Spiked Shield III
   - M1 = 2
-  - M2 = ( Current Ward * 0.3 ) / 5000
+  - Gilgamesh: M2 = ( Current Ward * 0.3 ) / 5000
+  - Other classes: M2 = ( Current Ward * 0.3 ) / 10000
 
 ## Heretic
 
