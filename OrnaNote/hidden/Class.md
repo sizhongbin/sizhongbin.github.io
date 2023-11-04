@@ -18,7 +18,11 @@
 | Dexterity  | 162    | 129      | 567   |
 | Foresight  | 500    | 500      | 500   |
 
-### Hidden Ability
+### Visible Abilities
+
+- Bastille *I/II*: *5%/7%* ward regen and *10/12* turns ward from start, but battle starts with *50%/60%* ward only. Up to *1.5x/1.6x* base def/res/dex/mag/atk at 100% ward.
+
+### Hidden Abilities
 
 - Melee Class[^1] 
 - Arcane Immunity (Origin Only)
@@ -26,20 +30,16 @@
 
 ### Main Skills
 
-- Spiked Shield
-  - M1 = 3
-  - Gilgamesh: M2 = ( Current Ward * 0.1 ) / 5000
-  - Other classes: M2 = ( Current Ward * 0.1 ) / 10000
+- Spiked Shield *I/II/III*
+  - M1 = *3/2.4/2*
+  - Gilgamesh: M2 = ( Current Ward * *0.1/0.15/0.3* ) / 5000
+  - Other classes: M2 = ( Current Ward * *0.1/0.15/0.3* ) / 10000
+  - Fixed 5% miss chance, ignoring enemy's dodge from dex
 
-- Spiked Shield II / Chained Shield
-  - M1 = 2.4
-  - Gilgamesh: M2 = ( Current Ward * 0.15 ) / 5000
-  - Other classes: M2 = ( Current Ward * 0.15 ) / 10000
-
-- Spiked Shield III
-  - M1 = 2
-  - Gilgamesh: M2 = ( Current Ward * 0.3 ) / 5000
-  - Other classes: M2 = ( Current Ward * 0.3 ) / 10000
+- Horizontal Slash III
+  - M1 = 2.6
+  - M2 = 1
+  - 50% chance cause def-
 
 ## Heretic
 
@@ -81,12 +81,12 @@
 
 ### Visible Abilities
 
-- Resurgence I/II: Up to 2x/2.2x base def/res/dex/mag/atk at 1 HP, starts at 50% HP.
+- Resurgence *I/II*: Up to *2x/2.2x* base def/res/dex/mag/atk at 1 HP, starts at 50% HP.
 - Recharge: Restores 25% of your max HP and mana on critical hits.
 - Mystic Feather: Up to 70% dodge at 1 HP, starts at 50% HP.
 - High Tenacity: Damage taken from Berserk I/II/III will not fully deplete your HP.
 - Saboteur II: 2.25x ward damage, chance of t.def- and t.def--.
-- Avidity II/III: 15%/25% Chance to gain an extra turn.
+- Avidity *II/III*: *15%/25%* Chance to gain an extra turn.
 - Realm's Light: 1.2x view distance, chance of blind.
 - Dorado's Guard: 3% ward regen and 6 turns ward from start.
 - Dorado: Dodge/Hit/Status protection/Status dropoff bonus based on your dex, capped at 3000.
