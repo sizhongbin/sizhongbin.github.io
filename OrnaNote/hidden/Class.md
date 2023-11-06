@@ -21,6 +21,14 @@
 ### Visible Abilities
 
 - Bastille *I/II*: *5%/7%* ward regen and *10/12* turns ward from start, but battle starts with *50%/60%* ward only. Up to *1.5x/1.6x* base def/res/dex/mag/atk at 100% ward.
+- Collateral Damage *IV/V*: 15% chance on hit to deal *30%/40%* of amount of elementless damage. Focus the lowest HP enemy in battle.
+- Siphon Ward: 1% of ward dmg taken turns into Mana.
+- Second Chance: 50% chance to survive a lethal hit, but reduced chance for subsequent triggers.
+- Steadfast II: 50% status protection.
+- Guardian: 1.1x base def/res/dex/mag/atk when defending territories.
+- Hercules: 1.15x off-hand stats.
+- Crest of Avalon: 1.2x base def/res/dex/mag/atk when full charged.
+- Ursa: 1.15x two-handed weapon att. Ward is calculated with ( hp + mana ) / 5 instead of 2. Chance to counter attack.
 
 ### Hidden Abilities
 
@@ -35,6 +43,10 @@
   - Gilgamesh: M2 = ( Current Ward * *0.1/0.15/0.3* ) / 5000
   - Other classes: M2 = ( Current Ward * *0.1/0.15/0.3* ) / 10000
   - Fixed 5% miss chance, ignoring enemy's dodge from dex
+
+- Chained Shield:
+  - M1&M2 = Spiked Shield II
+  - 66% proc for additional hit. Focus the highest HP enemy in battle.
 
 - Horizontal Slash III
   - M1 = 2.6

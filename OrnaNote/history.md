@@ -1,5 +1,8 @@
 # Update History
 
+- 6 Nov, 2023:
+  - Added some more Visible Abilities and Main Skills data in Class
+
 - 4 Nov, 2023:
   - Added some more Visible Abilities and Main Skills data in Class
 
