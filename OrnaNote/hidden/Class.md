@@ -43,15 +43,17 @@
   - Gilgamesh: M2 = ( Current Ward * *0.1/0.15/0.3* ) / 5000
   - Other classes: M2 = ( Current Ward * *0.1/0.15/0.3* ) / 10000
   - Fixed 5% miss chance, ignoring enemy's dodge from dex
+  - No crit
 
 - Chained Shield:
-  - M1&M2 = Spiked Shield II
+  - Mostly same as Spiked Shield II
   - 66% proc for additional hit. Focus the highest HP enemy in battle.
 
 - Horizontal Slash III
   - M1 = 2.6
   - M2 = 1
   - 50% chance cause def-
+  - 5% crit chance
 
 ## Heretic
 
@@ -110,6 +112,20 @@
 - Crit Damage 1.25x (Origin Only)
 - Holy/Dark Immunity (Origin Only)
 - Arcane Resistance (Origin Only)
+
+### Main Skills
+
+- Realm Strikes *I/II*
+  - M1 = 1
+  - M2 = [0.75, 1.25] x 4
+  - *0.85x/0.9x* hit chance
+  - 20% crit chance
+
+- Sortie *I/II*
+  - M1 = *1.8/1.9*
+  - M2 = 1
+  - *15%/18%* crit chance
+  - Gives 1 ward turn
 
 
 ## Beowulf
