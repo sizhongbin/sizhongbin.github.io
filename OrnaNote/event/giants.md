@@ -1,6 +1,6 @@
 # Of Giants and Titans
 
-> Last Update: 2 Nov, 2023
+> Last Update: 9 Nov, 2023
 
 ## What's new in 2023
 
@@ -25,7 +25,7 @@
 2. Get ***T10*** Atlas of Olympia pet from Olympia Mnemonic, another choice of Berserk pet.
 3. Get Stardrop and Moondrop as much as possible from regular dungeon and mystic cave.
 4. Keep Stardrop till T10 for Godforge. Spare no Moondrop for exp.
-5. Get the following weapons(any quality) for using stance in endless if you need:
+5. Get the following weapons (any quality) for using stance in endless if you need:
 - ***T6*** Palm Tree Branch / ***T10*** Arisen Palm Branch
   - **Drop:** (Arisen) Aegir
   - **Stance:** Aegir (def/res 2x up, att 90% down, mag 30% down)
@@ -44,7 +44,7 @@
 - ***T8*** Globe Holder / ***T10*** Arisen Globe Holder
   - **Drop:** (Arisen) Atlas of Olympia
   - **Stance:** Atlas (CD proc 10% up, CD damage 20% up, burning 20% ward on CD proc)
-6. Get some adorns(any quality) if you need.
+6. Get some adorns (any quality) if you need. Focus on mana regen, CD damage and two-handed bonus.
 7. Get high quality ***T10*** Omega Olympia Warbow if you need, which has highest Dex bonus in weapons(630 Godforged, equal to lv20 celestial greatbow).
 
 ## Event Checklist (mostly from Discord)

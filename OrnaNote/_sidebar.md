@@ -12,6 +12,7 @@
 
 - Event Summary
 
+  - [A Year's End - Dec 2023](/event/yearsend.md)
   - [Of Giants And Titans - Nov 2023](/event/giants.md)
   - [Sisters of Morrigan - Nov 2023](/event/morrigan.md)
   - [The Crimson Festival - Nov 2023](/event/crimson.md)

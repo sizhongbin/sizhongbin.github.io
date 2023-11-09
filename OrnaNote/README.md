@@ -13,5 +13,6 @@ by SzHb
 
 - 9 Nov, 2023:
   - Added some more Visible Abilities and Main Skills data in Class
-  - Add Comment
+  - Added A year's End event info
+  - You can now make comment 
 
