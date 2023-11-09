@@ -1,7 +1,7 @@
 <!-- OrnaNote/_sidebar.md -->
 
 - [Welcome](/)
-- [Update History](/history.md)
+<!-- [Update History](/history.md) -->
 
 - Hidden Info
 

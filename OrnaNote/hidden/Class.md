@@ -1,6 +1,6 @@
 # Class
 
-> Last Update: 3 Nov, 2023
+> Last Update: 9 Nov, 2023
 
 ## Gilgamesh
 
@@ -127,6 +127,17 @@
   - *15%/18%* crit chance
   - Gives 1 ward turn
 
+- Bloodshift
+  - 1.1x base def/res/dex/mag/atk
+  - 5% crit chance
+  - Cannot be healed
+  - Temporary buff, 15% chance to fade
+
+- Realmshift *I/II*
+  - 100% chance gives t.att+/t.mag+/t.def+/t.res+
+  - *5%/8%* chance gives t.att++/t.mag++/t.def++/t.res++
+  - *25%/28%* chance gives t.att-/t.mag-/t.def-/t.res-
+  - *5%/8%* chance gives t.att--/t.mag--/t.def--/t.res--
 
 ## Beowulf
 
