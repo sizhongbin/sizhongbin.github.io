@@ -27,8 +27,6 @@
   <script src="./js/plugins/footnotes.min.js"></script>
   <script src="./js/plugins/gitalk.min.js"></script>
   <script>
-    var index = location.href.lastIndexOf('/');
-    var title = location.href.substring(index + 1, location.href.length);
     const gitalk = new Gitalk({
       clientID: 'e8f2447a186aa46f6db3',
       clientSecret: '11435605773ead3dcc2304538fa469580cfbb5ad',
@@ -37,10 +35,15 @@
       admin: [
       'sizhongbin',
     ],
-      id: 'OrnaNotes/' + title,
+      id: 'OrnaNote/' + location.hash.match(/#(.*?)([?]|$)/)[1],
       // facebook-like distraction free mode
       distractionFreeMode: false,
     });
+    window.onhashchange = function(event) {
+        if (event.newURL.split('?')[0] !== event.oldURL.split('?')[0]) {
+          location.reload()
+        }
+    }
   </script>
 </body>
 
