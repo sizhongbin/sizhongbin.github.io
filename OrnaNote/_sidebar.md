@@ -5,10 +5,10 @@
 
 - Hidden Info
 
-  - [Battle](/hidden/Battle.md)
-  - [Class](/hidden/Class.md)
-  - [Tower](/hidden/Tower.md)
-  - [Amity](/hidden/Amity.md)
+  - [Battle](/hidden/battle.md)
+  - [Class](/hidden/class.md)
+  - [Tower](/hidden/tower.md)
+  - [Amity](/hidden/amity.md)
 
 - Event Summary
 
