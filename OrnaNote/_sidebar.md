@@ -12,8 +12,8 @@
 
 - Event Summary
 
-  - [Of Giants And Titans - Nov 2023](/event/Of_Giants_and_Titans.md)
-  - [Sisters of Morrigan - Nov 2023](/event/Sisters_of_Morrigan.md)
-  - [The Crimson Festival - Nov 2023](/event/Crimson.md)
-  - [The Hallowed! - Oct 2023](/event/The_Hallowed.md)
-  - [BoooOOOOooooOOOooo - Oct 2023](/event/Booo.md)
+  - [Of Giants And Titans - Nov 2023](/event/event_giants.md)
+  - [Sisters of Morrigan - Nov 2023](/event/event_morrigan.md)
+  - [The Crimson Festival - Nov 2023](/event/event_crimson.md)
+  - [The Hallowed! - Oct 2023](/event/event_hallowed.md)
+  - [BoooOOOOooooOOOooo - Oct 2023](/event/event_booo.md)
