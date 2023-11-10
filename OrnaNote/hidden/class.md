@@ -1,6 +1,6 @@
 # Class
 
-> Last Update: 9 Nov, 2023
+> Last Update: 10 Nov, 2023
 
 ## Gilgamesh
 
@@ -54,6 +54,12 @@
   - M2 = 1
   - 50% chance cause def-
   - 5% crit chance
+
+- Ward of Light III
+  - M1 = 1.7
+  - M2 = 1
+  - Recover 20% ward when hit
+  - 18% chance causes blind
 
 ## Heretic
 
