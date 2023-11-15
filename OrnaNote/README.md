@@ -13,6 +13,6 @@ by SzHb
 
 ## What's new
 
-- 10 Nov, 2023:
+- 15 Nov, 2023:
   - Added some more info in Class
 

@@ -1,6 +1,6 @@
 # Class
 
-> Last Update: 10 Nov, 2023
+> Last Update: 15 Nov, 2023
 
 ## Gilgamesh
 
@@ -60,6 +60,11 @@
   - M2 = 1
   - Recover 20% ward when hit
   - 18% chance causes blind
+
+- Guarding Strikes *III/IV*
+  - M1 = *1.8/2.1*
+  - M2 = [1, 1.4]
+  - Gives 3 ward turns
 
 ## Heretic
 
@@ -161,7 +166,19 @@
 | Dexterity  | 135    | 310    | 135    |
 | Foresight  | 500    | 500    | 500    |
 
-### Hidden Ability
+### Visible Abilities
+
+- Valhallan Strength II: +7% crit chance, chance to cause blight, +110% pet stat increase and +7% chance to cast non-protect skills.
+- Valhallan Dissonance *I/II*: +*90%/110%* pet stat increase and +*12%/14%* chance to cast non-protect skills. Up to 2.25x base pet att/mag at low hp, starts at 50% HP and is 2.5%stats/1%HP.
+- Valhallan Protection: +12% pet block chance.
+- Ascension Synergy: Pet stat * ( 1 + ( AscensionLevel / 100 ) ).
+- Mana Siphon: 50% chance for skill to consume no mana.
+- Hybrid Monster *II/III*: Increases att and mag by *30%/40%* of each other.
+- Auriga: Pet has 25% chance to act twice per turn.
+- Dragon Slayer: 1.2x base def/res/dex/mag/atk when full charged.
+- Recharge: Restores 25% of your max HP and mana on critical hits.
+
+### Hidden Abilities
 
 - Magic Class
 - Dragon Immunity (Origin Only)
@@ -225,9 +242,9 @@ You will be able to find Attuner, the start of Guand Summoner classline, in your
 
 - Melee Class
 
-[^1]: Melee Class: ATTACK is based on Att and has 5% crit chance.
+[^1]: Melee Class: ATTACK is based on Att. Has 5% base crit chance.
 
-[^2]: Magic Class: ATTACK is based on Mag and has 1% crit chance.
+[^2]: Magic Class: ATTACK is based on Mag. Has 1% base crit chance.
 
 ---
 
