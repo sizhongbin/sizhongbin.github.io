@@ -1,10 +1,10 @@
 # The Crimson Festival
 
-> Last Update: 30 Oct, 2023
+> Last Update: 20 Nov, 2023
 
 ## SzHb's Notes
 
-1. No quest. (If I remember correctly)
+1. 1 quest. 
 2. Get some ***T9*** Ferocious Bull's Eye from ***T9*** Ferocious Cerus, a weapon adornment which gives 12 att + 12 mag + 60 mana + 4% crit.
 3. Get some ***T9*** Gorgon's Eye from ***T9*** Noble Perseus, a weapon adornment which gives 4% crit + 3% status protection, but -30 mana.
 4. For summoners, get a ***T9*** Goat's Hood (any quality) from ***T9*** Tricky Aries, which -600 foresight that will make you act after your party member when you need to.
@@ -50,6 +50,13 @@ Event monsters have the same name but 3 different tiers.
 - ***T10*** Aries Acolyte
 - ***T10*** Cerus Acolyte
 - ***T10*** Perseus Acolyte
+
+### Quests
+
+1. Ariadne's Request
+- Find Crimson Summoning Scroll (Aries) (1)
+- Find Crimson Summoning Scroll (Cerus) (1)
+- Find Crimson Summoning Scroll (Perseus) (1)
 
 ---
 

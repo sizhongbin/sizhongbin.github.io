@@ -58,7 +58,8 @@
 - Ward of Light III
   - M1 = 1.7
   - M2 = 1
-  - Recover 20% ward when hit
+  - Restore 20% ward on hit
+  - Heal 25% of damage dealt
   - 18% chance causes blind
 
 - Guarding Strikes *III/IV*
