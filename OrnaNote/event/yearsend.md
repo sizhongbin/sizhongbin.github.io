@@ -1,6 +1,6 @@
 # A Year's End 
 
-> Last Update: 9 Nov, 2023
+> Last Update: 28 Nov, 2023
 
 ## What's new in 2023
 
@@ -9,9 +9,9 @@ Don't know yet.
 ## SzHb's Notes
 
 1. Get ***T5*** / ***T9*** / ***T10*** Jolly Stockings (any quality) from Raids, which is the only leg piece with luck bonus (1.725x when Godforged).
-2. Get high quality ***T10*** Scrugg weapons only if you really don't want to use Jolly Stockings / Unfelled Concord + Dowsing Rod for full luck bonus. (My head was eaten by Mightiest Mimic so a 1.875x is automatically calculated)
+2. Get high quality ***T10*** Scrugg weapons only if you don't want to use Jolly Stockings / Unfelled Concord + Dowsing Rod for full luck bonus. (My head was eaten by Mightiest Mimic so a 1.875x is automatically calculated)
 3. For Heretic, get high quality ***T10*** Arisen North Star for Mana Burn II, which can burn your mana quickly for higher Iconoclast stats bonus.
-4. Get some Stranger's Gifts from event mobs and bosses. Open them on Christmas Day with Alfar Trinket. Merry Christmas!
+4. Get some Stranger's Gifts from event mobs and bosses. Open them on Christmas Day with Alfar Trinket. 
 
 ## Event Checklist (mostly from Discord)
 
@@ -24,7 +24,7 @@ Don't know yet.
 
 ### Monsters
 
-Can be found in Goblin Fortress.
+Can be found in Goblin Fortress. The Arisen ones can be also found in Valley of The God.
 
 - ***T4*** Alfar
 - ***T5*** Alfar Mage
@@ -33,10 +33,10 @@ Can be found in Goblin Fortress.
 
 ### Bosses
 
-Can be found in Goblin Fortress.
+Can be found in Goblin Fortress. The Arisen one can be also found in Valley of The God.
 
 - ***T5*** Alfar Lord
-- ***T9*** Arisen Alfar Lord
+- ***T9*** Arisen Alfar Lord (*Godforge aura)
 
 ### Raids ([K]-Kingdom raid, [W]-Summoning scroll, [O]-Others)
 

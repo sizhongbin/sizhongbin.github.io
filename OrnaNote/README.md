@@ -13,6 +13,7 @@ by SzHb
 
 ## What's new
 
-- 15 Nov, 2023:
-  - Added some more info in Class
+- 28 Nov, 2023:
+  - Added Dec Mini event
+  - Updated Dec Main event
 

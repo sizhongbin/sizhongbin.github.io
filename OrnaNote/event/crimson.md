@@ -35,6 +35,7 @@ In order to summon the [O] raids, you'll need to craft Crimson Summoning Scrolls
 - **[K/O]** ***T9*** Untarnished Perseus
 
 ### Boss
+
 - ***T10*** Medusa (*Godforge aura)
 
 ### Monsters
