@@ -13,7 +13,6 @@ by SzHb
 
 ## What's new
 
-- 28 Nov, 2023:
-  - Added Dec Mini event
-  - Updated Dec Main event
+- 30 Nov, 2023:
+  - Updated Winter Wild Hunt
 

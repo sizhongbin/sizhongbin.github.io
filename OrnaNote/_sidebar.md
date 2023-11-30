@@ -15,7 +15,7 @@
   - [A Year's End - Dec 2023 Main](/event/yearsend.md)
   - [Balor Invades - Dec 2023 Mini](/event/balor.md)
   - [Friendship - Dec 2023 Mini](/event/friendship.md)
-  - [Winter(event name not sure) - Dec 2023 Mini](/event/winter.md)
+  - [Winter Wild Hunt - Dec 2023 Mini](/event/winter.md)
   - [Of Giants And Titans - Nov 2023 Main](/event/giants.md)
   - [Sisters of Morrigan - Nov 2023 Mini](/event/morrigan.md)
   - [The Crimson Festival - Nov 2023 Mini](/event/crimson.md)
