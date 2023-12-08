@@ -1,6 +1,6 @@
-# Friendship
+# Friends & Family
 
-> Last Update: 28 Nov, 2023
+> Last Update: 08 Dec, 2023
 
 ## SzHb's Notes
 1. Just try to get what you have missed in past events.

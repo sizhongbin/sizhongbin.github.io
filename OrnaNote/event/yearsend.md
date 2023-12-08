@@ -1,10 +1,11 @@
-# A Year's End 
+# Stop Scruug!
 
-> Last Update: 28 Nov, 2023
+> Last Update: 08 Dec, 2023
 
 ## What's new in 2023
 
-Don't know yet.
+1. Event name changed.
+2. Mobs and Bosses can be found in Regular Dungeon rather than Goblin Fortress.
 
 ## SzHb's Notes
 
@@ -24,7 +25,7 @@ Don't know yet.
 
 ### Monsters
 
-Can be found in Goblin Fortress. The Arisen ones can be also found in Valley of The God.
+Can be found in Regular Dungeon. The Arisen ones can be also found in Valley of The God.
 
 - ***T4*** Alfar
 - ***T5*** Alfar Mage
@@ -33,7 +34,7 @@ Can be found in Goblin Fortress. The Arisen ones can be also found in Valley of 
 
 ### Bosses
 
-Can be found in Goblin Fortress. The Arisen one can be also found in Valley of The God.
+Can be found in Regular Dungeon. The Arisen one can be also found in Valley of The God.
 
 - ***T5*** Alfar Lord
 - ***T9*** Arisen Alfar Lord (*Godforge aura)

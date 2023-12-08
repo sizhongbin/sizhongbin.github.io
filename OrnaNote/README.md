@@ -13,6 +13,6 @@ by SzHb
 
 ## What's new
 
-- 30 Nov, 2023:
-  - Updated Winter Wild Hunt
+- 08 Dec, 2023:
+  - Updated some Dec event info
 

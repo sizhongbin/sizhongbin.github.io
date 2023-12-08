@@ -12,9 +12,9 @@
 
 - Event Summary
 
-  - [A Year's End - Dec 2023 Main](/event/yearsend.md)
+  - [Stop Scruug! - Dec 2023 Main](/event/yearsend.md)
   - [Balor Invades - Dec 2023 Mini](/event/balor.md)
-  - [Friendship - Dec 2023 Mini](/event/friendship.md)
+  - [Friends & Family - Dec 2023 Mini](/event/friendship.md)
   - [Winter Wild Hunt - Dec 2023 Mini](/event/winter.md)
   - [Of Giants And Titans - Nov 2023 Main](/event/giants.md)
   - [Sisters of Morrigan - Nov 2023 Mini](/event/morrigan.md)
