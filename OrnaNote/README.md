@@ -7,7 +7,7 @@ This is a personal note for some of the hidden info and events in Orna.
 
 Feel free to look for what you need here. Hope it helps.
 
-Please tell me in comment if you find anything not correct.
+Please tell me in game or Discord if you find anything not correct.
 
 by SzHb
 
