@@ -12,6 +12,7 @@
 
 - Event Summary
 
+  - [Rise of the Phoenix - Jan 2024 Main](/event/phoenix.md)
   - [Stop Scruug! - Dec 2023 Main](/event/yearsend.md)
   - [Balor Invades - Dec 2023 Mini](/event/balor.md)
   - [Friends & Family - Dec 2023 Mini](/event/friendship.md)

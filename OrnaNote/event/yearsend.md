@@ -14,7 +14,7 @@
 3. For Heretic, get high quality ***T10*** Arisen North Star for Mana Burn II, which can burn your mana quickly for higher Iconoclast stats bonus.
 4. Get some Stranger's Gifts from event mobs and bosses. Open them on Christmas Day with Alfar Trinket. 
 
-## Event Checklist (mostly from Discord)
+## Event Checklist (mostly from community)
 
 ### Followers
 
