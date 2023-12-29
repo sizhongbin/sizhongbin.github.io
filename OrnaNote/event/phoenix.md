@@ -1,4 +1,4 @@
-# Rise of the Phoenix
+# Phoenixrise
 
 > Last Update: 29 Dec, 2023
 
