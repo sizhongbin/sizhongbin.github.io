@@ -13,6 +13,6 @@ by SzHb
 
 ## What's new
 
-- 26 Dec, 2023:
-  - Added Jan main event info
+- 29 Dec, 2023:
+  - Updated Jan main event info
 
