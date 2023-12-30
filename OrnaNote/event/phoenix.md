@@ -5,7 +5,7 @@
 ## What's new in 2024
 
 1. New Mobs and Bosses.
-2. New currency for Monument Guild.
+2. New event currency for Monument Guild dropped by event mobs and bossed.
 
 ## SzHb's Notes
 
