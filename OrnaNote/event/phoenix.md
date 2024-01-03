@@ -1,11 +1,12 @@
 # Phoenixrise
 
-> Last Update: 29 Dec, 2023
+> Last Update: 3 Jan, 2024
 
 ## What's new in 2024
 
 1. New Mobs and Bosses.
 2. New event currency for Monument Guild dropped by event mobs and bossed.
+3. New Summon Skills
 
 ## SzHb's Notes
 
@@ -21,6 +22,15 @@
 
 - ***T8*** Phoenix
 - ***T10*** Ashen Phoenix
+
+### Summons(NEW)
+
+- ***T9*** Summon Great Phoenix Pledge
+- ***T10*** Summon Failed Phoenix
+
+Phoenixrise Ritual only deals damage to targets marked by the Phoenix's Pledge. Strikes = Target's Tier. M2 = Target's Tier × 1.2. 
+
+e.g. T10 target will take 10 strikes, and the total M2 is 1.2 × 10 = 12.
 
 ### Raids ([K]-Kingdom raid, [W]-Summoning scroll, [O]-Others)
 
