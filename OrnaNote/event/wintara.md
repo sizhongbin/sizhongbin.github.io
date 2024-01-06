@@ -67,5 +67,10 @@ The following mobs will spawn in Regular Dungeon and Beast Den.
 - ***T8*** Summon Buggane
 - ***T10*** Summon Glashtyn
 
+---
 
+*Remark:*
 
+*All Wintara gears will reduce your def. If you are Beowulf / Deity with Swash / Finesse spec, you can also try them for higher spec bonus.*
+
+*by SzHb*
