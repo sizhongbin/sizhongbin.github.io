@@ -53,3 +53,13 @@ They all have longer names and Godforged aura in game.
 - **[K]** ***T5*** Tatzelwurms
 - **[K]** ***T8*** Orochi
 - **[K/W]** ***T10*** Arisen Quetzalcoatl
+
+---
+
+*Remark:*
+
+*One of the best event in Orna. JoC is one of the best armor adorn. Ymir Vritra is one of the best accessory. Rare VD head. Many good gears from Ymir.*
+
+*Try to do as much regular and roost as possible.*
+
+*by SzHb*
