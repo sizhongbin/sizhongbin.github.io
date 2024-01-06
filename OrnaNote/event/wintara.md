@@ -5,10 +5,10 @@
 ## SzHb's Notes
 
 1. Gears from different house have different specific effect.
-- Autumna: Debuffs will be easier to cast on your opponent. Additionally, it increases the maximum damage of status effects on your opponent.
-- Nocturna: You will tame your opponent's followers and summons, causing them to deal less damage to you.
-- Sumner: Skills that target multiple opponents will deal additional damage. Additionally, skills will seldomly hit more than one opponent.
-- Wintara: Buffs cast by its wearer may transfer to a party mate. Additionally, positive status effects will last longer.
+- Nocturna: Less damage from opponents' followers/summons.
+- Autumna: Better debuff application. More debuff damage on opponents.
+- Sumner: More AoE damage. Sometimes single target skills will hit a second target.
+- Wintara: Buffs sometimes also apply to party mates. Positive status effects last longer.
 2. All gears from House of Wintara event bosses except the ones summoned by crest have Wintara effect. All gears from Paths of Fomoria event bosses summoned by crest have all weakened house effects.
 3. Get Summon Buggane if you are summoner (attuner) classline.
 4.Get the following immune gears if you need. Useable by magic user only.
