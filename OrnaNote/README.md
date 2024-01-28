@@ -13,5 +13,5 @@ by SzHb
 
 ## What's new
 
-- 6 Jan, 2024:
-  - Updated Wintara event info
+- 28 Jan, 2024:
+  - Updated Feb event info
