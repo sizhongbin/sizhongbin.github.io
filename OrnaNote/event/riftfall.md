@@ -8,7 +8,7 @@
 3. **[Summoner]** Get Ornate ***T10*** Charon's Grimoire from Arisen Shade of Charon, provides off-hand skill that can summon Fey Gaze which is very good for endless.
 4. **[Crit Build]** Get Ornate ***T10*** Arisen Riftrogue Boots from Arisen Achlys if you can wield thief equipment. It's BiS crit build gear. Chestplate and Helmet are also good crit gears.
 5. **[SS/CS Build]** Get Ornate ***T10*** Spiked Greatshield from Arisen Rhada, provides 1.2x SS/CS damage.
-6. Finish The questline for ***T6*** Omega Riftlock.
+6. **[Summoner]** Finish The questline for ***T6*** Omega Riftlock, provides 25% chance (50% with 2) instant summon. 
 
 ## Event Checklist (mostly from community)
 
@@ -29,6 +29,8 @@
 
 ### Bosses
 
+Can be found in World and Regular Dungeon last floor.
+
 - ***T5*** Shadow of Achlys
 - ***T6*** Shadow of Rhada
 - ***T7*** Shadow of Charon
@@ -37,6 +39,8 @@
 - ***T9*** Shade of Charon
 
 ### Monsters
+
+Can be found in World and Regular Dungeon.
 
 - ***T5*** Rift Rogue
 - ***T8*** Elite Rift Rogue
@@ -47,3 +51,11 @@
 - ***T10*** Arisen Shade of Achlys
 - ***T10*** Arisen Shade of Rhada
 - ***T10*** Arisen Shade of Charon
+
+---
+
+*Remark:*
+
+*One of The best event. Most classes / builds can get something important during this event.*
+
+*by SzHb*
