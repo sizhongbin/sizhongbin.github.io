@@ -9,7 +9,7 @@ Don't know yet.
 ## SzHb's Notes
 
 1. **[Heretic]** Get ***T10*** Arisen Feral Archistaff from Arisen Kerberos, a solid mage weapon that provides good Mag and 7% follower act.
-2. Get ***T10*** Arisen Wolven Tower Shield from Arisen Kerberosa if you prefer high Def/Res to high ward.
+2. Get ***T10*** Arisen Wolven Tower Shield from Arisen Kerberosa if you prefer high Def/Res and don't care much about the Att/Mag penalty.
 3. Get at least 5 superior or higher ***T9*** Blackened Eye of Kerberos from Kin of Kerberos (with Godforged Aura), a 2% follower act weapon adorn, plus foresight and 2% ward and bonus stats.
 4. Get superior or higher ***T5*** Dark Eye of Kerberos from Kin of Kerberos (without Godforged Aura) instead of blackened eyes if your tier is lower than T9.
 
