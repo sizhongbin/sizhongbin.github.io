@@ -71,6 +71,6 @@ The following mobs will spawn in Regular Dungeon and Beast Den.
 
 *Remark:*
 
-*All Wintara gears will reduce your def. If you are playing Swash / Finesse spec, you can also try them for higher spec bonus.*
+*All Wintara gears will reduce your def. If you are playing Swash / Finesse spec, you can also try them for higher spec bonus. But don't forget they are useable by magic user only.*
 
 *by SzHb*
