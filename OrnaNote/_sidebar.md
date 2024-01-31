@@ -15,6 +15,7 @@
   - [Beastfelled - Feb 2024 Main](/event/kerberos.md)
   - [Riftfall - Feb 2024 Mini](/event/riftfall.md)
   - [Rift Distortion  - Feb 2024 Mini](/event/dostortion.md)
+  - [The Dioscuri  - Feb 2024 Mini](/event/dioscuri.md)
   - [Phoenixrise - Jan 2024 Main](/event/phoenix.md)
   - [Wyrmhunt - Jan 2024 Mini](/event/wyrm.md)
   - [Paths of Fomoria - House of Wintara - Jan 2024 Mini](/event/wintara.md)
