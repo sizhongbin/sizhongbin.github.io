@@ -1,6 +1,6 @@
 # Riftfall
 
-> Last Update: 28 Jan, 2024
+> Last Update: 31 Jan, 2024
 
 ## SzHb's Notes
 1. **[Ultima Build]** Get at least 10 ***T9*** Soul of Achlys from (Arisen) Shade of Achlys, a weapon adorn that provides 1.02x Holy & Dark damage.
@@ -9,6 +9,7 @@
 4. **[Crit Build]** Get Ornate ***T10*** Arisen Riftrogue Boots from Arisen Achlys if you can wield thief equipment. It's BiS crit build gear. Chestplate and Helmet are also good crit gears.
 5. **[SS/CS Build]** Get Ornate ***T10*** Spiked Greatshield from Arisen Rhada, provides 1.2x SS/CS damage.
 6. **[Summoner]** Finish The questline for ***T6*** Omega Riftlock, provides 25% chance (50% with 2) instant summon. 
+7. Theta Riftlocks from Shades and Shadows can be used to craft Distortion event summoning scrolls.
 
 ## Event Checklist (mostly from community)
 
