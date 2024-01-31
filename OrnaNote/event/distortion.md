@@ -19,6 +19,8 @@ Can be summoned by event summoning scrolls from Herbalist.
 - **[O]** ***T8*** Rift Judgement (Scroll of Rift Distortion)
 - **[O]** ***T10*** Arisen Rift Judgement (Scroll of Arisen Rift Distortion)
 
+---
+
 *Remark:*
 
 *Most of the gears are too distorted to use.*

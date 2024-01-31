@@ -9,7 +9,7 @@
 
 ### Bosses
 
-Can be found in Regular Dungeons.
+Can be found in Regular Dungeon.
 
 - ***T5*** Castor
 - ***T8*** Pollux
@@ -22,6 +22,8 @@ Can be found in Regular Dungeons.
 
 - ***T6*** Castor
 - ***T9*** Pollux
+
+---
 
 *Remark:*
 
