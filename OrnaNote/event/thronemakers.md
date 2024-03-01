@@ -8,7 +8,8 @@ Brand new event.
 
 ## SzHb's Notes
 1. Get ***T8*** Tail of a Sphinx from event questline, which allow items of higher quality to be found more often.
-2. WIP
+2. **[Realmshifter]** Get Orante(or Broken for swash build) ***T10*** Arisen Aaru Boots from ***T10*** Arisen Thronemaker Sekhmet, a boot with Crit, high Ward, high Dex and Cursed immunity. 
+3. WIP
 
 ## Event Checklist (mostly from community)
 

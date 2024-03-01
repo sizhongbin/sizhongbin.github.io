@@ -14,7 +14,7 @@
 3. Get at least 5 superior or higher ***T9*** Blackened Eye of Kerberos from Kin of Kerberos (with Godforged Aura), a 2% follower act weapon adorn, plus foresight and 2% ward and bonus stats.
 4. Get superior or higher ***T5*** Dark Eye of Kerberos from Kin of Kerberos (without Godforged Aura) instead of blackened eyes if your tier is lower than T9.
 5. Get Ornate ***T10*** Beastfelled Garb if you need, a thief chestpiece that gives your pet the ability to use Berserk.
-6. Get Ornate ***T10*** Beastfelled Legwear  if you need. All pants allow your pet to use Ward of Ortanite.
+6. Get Ornate ***T10*** Beastfelled Legwear if you need. All pants allow your pet to use Ward of Ortanite.
 
 ## Event Checklist (mostly from community)
 
