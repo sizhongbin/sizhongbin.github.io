@@ -1,105 +1,42 @@
-Aaru Cobra 7
-FollowersThronemakers
+🍄 **__The Mischievous Clurichauns - March 2023 Event Checklist__** 🍄
+The fairies are back again again! Naggeneen and their legion of clurichauns have returned to the world of Orna! 
 
-Aaru Viper 10
-FollowersThronemakers
+**Duration:** <t:1679529600:f> to <t:1680307200:f>
 
-Sphinx Cub 3
-FollowersThronemakers
+🍄 **__Followers__** 🍄
+○ T6 - Naggeneen
+○ T8 - Amadan
+○ T9 - Arisen Naggeneen
 
-Sphinx Kit 10
-FollowersThronemakers
+🍄 **__Raids__** 🍄
+`KWO` = Kingdom, World Raid, Other Means
+○ `KW ` T7 - Naggeneen
+○ `KW ` T9 - Arisen Naggeneen
 
-Sphinx Cub 3
-MonstersThronemakers
+The monsters and bosses for this event are **split** among many themed dungeons. Namely, all Tier 4 monsters can be found in **Goblin Fortresses** <:fort:901749420620664852>, tier 6 mobs can be found in **Mystic Caves** <:mystic_cave:901749480456585226>, and tier 8 mobs can be found in **Chaos Portals** <:chaos_portal:901749614875643914>.
 
-Sphinx Kit 10
-MonstersThronemakers
+🍄 **__Boss__** 🍄
+○ T8 - Amadan
 
-Arisen Thronemaker Neith 10
-RaidsThronemakers
+🍄 **__Monsters__** 🍄
+○ T4 - Aine
+○ T4 - Conall
+○ T4 - Finn
+○ T6 - Amergin
+○ T6 - Bricriu
+○ T6 - Cormac
+○ T8 - Beag
+○ T8 - Fergus
 
-Arisen Thronemaker Ptah 10
-RaidsThronemakers
+🍄 **__Items of Interest__** 🍄
+○ **Naggeneen's Brew** - With this (plus a Panacea), you can proc all single-up buffs in one turn!
+○ **Sour & Smelly Mushrooms** - One is berserk, one procs offensive stat buffs!
+○ **Naggeneen's Shoes** - among the best shoes for people in Tier 8.
+○ **Clurichaun Offhands** - these give solid boosts to gold! 
+○ **Bricriu's Bow (T6) & Amadan's Staff (T8)** - both give AoE skills!
 
-Arisen Thronemaker Sekhmet 10
-RaidsThronemakers
-
-Great Sphinx 10
-RaidsThronemakers
-
-Thronemaker Neith 6
-RaidsThronemakers
-
-Thronemaker Ptah 8
-RaidsThronemakers
-
-Thronemaker Sekhmet 7
-RaidsThronemakers
-
-OrnaRPG 记录
-
-标签
-搜索
-工具
-Home
- » 
-Events
-2024年3月主题活动 造王者
-主题活动
-March 1, 2024
- · FQEGG
-造王者
-活动翻译名称来源：Thronemakers 第一印象 King Maker ，刚好想起个名字 造王者 。
-
-Boss
-T3 斯芬克斯幼兽
-T10 斯芬克斯幼崽
-Raid
-T6 造王者涅伊特
-T6 造王者塞赫麦特
-T8 造王者普塔
-T10 重生造王者涅伊特
-T10 重生造王者塞赫麦特
-T10 重生造王者普塔
-T10 斯芬克斯
-活动卷轴限定
-
-追随者
-T3 斯芬克斯幼兽
-T10 斯芬克斯幼崽
-召唤术
-T10 斯芬克斯幼崽召唤
-活动制作
-？？？卷轴
-
-旧里昂内斯印记 x4
-旧安温印记 x4
-旧阿瓦隆印记 x4
-T10 东方王权象征
-
-旧里昂内斯印记 x3
-旧安温印记 x3
-旧阿瓦隆印记 x3
-活动任务
-T4
-
-使用技能雅卢之沙完成战斗 x3
-完成一场与三只野兽对抗的战斗 x3
-获得一定数量的药水
-T5
-
-击败土匪 x40
-击败山贼王 x10
-T6
-
-击败使用奥术魔法的敌人 x50
-T8
-
-完成图鉴：造王者涅伊特
-完成图鉴：造王者塞赫麦特
-完成图鉴：造王者普塔
-战斗活动华丽物品 x20
-获得任务物品 斯芬克斯之尾
-
-注意事项
+📘 **__Notes__** 📘
+○ While the raids have many status immunities (including a **Petrify** immunity, so bring a **Gargoyle**), the mobs and boss have none! **Just get their moves and their drop once**. These 9 are easy codex entries.
+○ Both Naggeneen have 4 elemental resistances/immunities, which are **Water, Lightning, Holy, and Earthen**. 
+○ Pack yourself some **Toxic immunity**, or a way to clear it when you get it. Thanks to things like **Briny Pendant** from the Kraken, though, it's easier to manage.
+○ Stock up on those consumables! **Smelly Mushroom can proc a Berserk III effect**, and both are great if you're looking to speedrun things.
