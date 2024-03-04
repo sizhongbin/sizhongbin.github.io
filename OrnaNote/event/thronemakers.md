@@ -41,7 +41,7 @@ Great Sphinx can be summoned with crafted scrolls.
 
 ### Summons
 
-- ***T10** Summon Sphinx Kit
+- ***T10*** Summon Sphinx Kit
 
 ---
 
