@@ -1,15 +1,17 @@
 # Thronemakers
 
-> Last Update: 1 Mar, 2024
+> Last Update: 4 Mar, 2024
 
 ## What's new in 2024
 
 Brand new event.
 
 ## SzHb's Notes
-1. Get ***T8*** Tail of a Sphinx from event questline, which allow items of higher quality to be found more often.
-2. **[Realmshifter]** Get Orante(or Broken for swash build) ***T10*** Arisen Aaru Boots from ***T10*** Arisen Thronemaker Sekhmet, a boot with Crit, high Ward, high Dex and Cursed immunity. 
-3. WIP
+1. ***T8*** Tail of a Sphinx from event questline, which allow items of higher quality to be found more often.
+2. **[Thief]** ***T10*** Arisen Aaru Boots from ***T10*** Arisen Thronemaker Sekhmet, a Legs piece with Crit, high Ward, high Dex and Cursed immunity. 
+3. **[Warrior]** ***T10*** Arisen Aaru Leggings from ***T10*** Arisen Thronemaker Neith, a Legs piece with highest Ward and start Ward.
+4. **[Mage]** ***T10*** Arisen Aaru Robe from ***T10*** Arisen Thronemaker Ptah, a Torso piece that gives your follower Great Meditation skill.
+5. **[Mage/Warrior]** ***T10*** Any Mage/Warrior piece of Dynasty from ***T10*** Great Sphinx, gives you access to "Gods/Walls of Aaru", which is a 2 turn DC/DB.
 
 ## Event Checklist (mostly from community)
 
