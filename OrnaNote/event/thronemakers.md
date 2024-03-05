@@ -1,13 +1,13 @@
 # Thronemakers
 
-> Last Update: 4 Mar, 2024
+> Last Update: 5 Mar, 2024
 
 ## What's new in 2024
 
 Brand new event.
 
 ## SzHb's Notes
-1. ***T8*** Tail of a Sphinx from event questline, which allow items of higher quality to be found more often.
+1. ***T8*** Tail of a Sphinx from event questline, an accessory which allow items of higher quality to be found more often.
 2. **[Thief]** ***T10*** Arisen Aaru Boots from ***T10*** Arisen Thronemaker Sekhmet, a Legs piece with Crit, high Ward, high Dex and Cursed immunity. 
 3. **[Warrior]** ***T10*** Arisen Aaru Leggings from ***T10*** Arisen Thronemaker Neith, a Legs piece with highest Ward and start Ward.
 4. **[Mage]** ***T10*** Arisen Aaru Robe from ***T10*** Arisen Thronemaker Ptah, a Torso piece that gives your follower Great Meditation skill.

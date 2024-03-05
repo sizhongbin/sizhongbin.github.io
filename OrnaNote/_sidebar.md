@@ -12,6 +12,7 @@
 
 - Event Summary
 
+  - [The Mischievous Clurichauns](event/clurichauns.md)
   - [Thronemakers - Mar 2024 Main](/event/thronemakers.md)
   - [Balor Invades - Mar 2024 Mini](/event/balor.md)
   - [Beastfelled - Feb 2024 Main](/event/kerberos.md)
