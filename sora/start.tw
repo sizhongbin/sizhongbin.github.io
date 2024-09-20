@@ -1,0 +1,16 @@
+:: StoryData
+{
+  "ifid": "F902F873-D76D-4122-A5A4-78BFEE66F209",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Start",
+  "zoom": 1
+}
+
+:: StoryTitle
+Sora
+
+:: StoryInit
+
+:: Start
+!Sora
