@@ -36,9 +36,12 @@ jobs:
           
       - name: Build game
         run: |
+          ls
           mkdir -p tweego/storyformats
+          ls
           cp -r sugarcube-2/dist tweego/storyformats/sugarcube-2
           cd tweego
+          ls
           go get
           go install
           cd ..
