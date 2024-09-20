@@ -12,7 +12,7 @@ jobs:
       id-token: write
       contents: write
     steps:
-      - name: Check out repo
+      - name: Check Out Repo
         uses: actions/checkout@v4
 
       - name: Install Go
@@ -20,7 +20,7 @@ jobs:
         with:
           go-version: '1.13.1'
           
-      - name: Clone tweego
+      - name: Clone Tweego
         uses: GuillaumeFalourd/clone-github-repo-action@v2.3 
         with:
           owner: 'sizhongbin'
@@ -34,7 +34,7 @@ jobs:
           repository: 'sugarcube-2'
           branch: 'v2-develop'
           
-      - name: Build game
+      - name: Build index.html
         run: |
           mkdir storyformats
           cp -r sugarcube-2/dist storyformats/sugarcube-2
@@ -42,9 +42,8 @@ jobs:
           go get
           go install
           cd ..
-          mkdir -p dist/sora && touch dist/index.html dist/sora/index.html
+          mkdir -p dist && touch dist/index.html
           tweego home -o dist/index.html
-          tweego sora -o dist/sora/index.html
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
