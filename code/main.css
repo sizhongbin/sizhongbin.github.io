@@ -1,0 +1,20 @@
+.icon {
+  font-family: sc-icons !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  speak: never;
+  text-rendering: auto;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.h-center {
+  justify-content: center;
+}

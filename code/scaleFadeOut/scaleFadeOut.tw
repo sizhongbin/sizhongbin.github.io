@@ -1,0 +1,15 @@
+:: Scale Fade Out
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis risus vel lorem suscipit, nec malesuada elit convallis. Quisque accumsan, libero ut venenatis commodo, augue nibh fringilla magna, sit amet imperdiet arcu eros eget leo. Praesent consequat purus a nibh ornare suscipit. Proin sit amet lectus id sapien luctus tempus ut vel mi. Suspendisse potenti. Sed aliquet leo et pharetra feugiat.
+
+Ut nisi mi, interdum ut fringilla a, aliquet non massa. Praesent eleifend nibh ante, vitae pulvinar justo porta vel. Aenean vehicula sapien vitae risus pulvinar, vitae elementum odio lobortis. Nunc hendrerit dolor eget eleifend cursus. Nullam porta mauris a sem egestas eleifend. Donec egestas libero quis est vestibulum, porttitor pellentesque neque faucibus.
+<<nobr>>
+  <<link "Fade">>
+    <<script>>
+      $("body").attr("class", "scale-fade-out");
+      setTimeout(() => {
+        Engine.play("Start");
+        $("body").removeAttr("class");
+      }, 2000);  
+    <</script>>
+  <</link>>
+<</nobr>>

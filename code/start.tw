@@ -1,0 +1,68 @@
+:: StoryData
+{
+  "ifid": "1203D4EF-07D2-4E6B-AF22-6720D0194B1B",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Start",
+  "zoom": 1
+}
+
+:: StoryTitle
+SzHb's Dreamland
+
+:: StoryInit
+<<script>>
+  Config.ui.stowBarInitially = true;
+  Config.history.controls = false;
+  Config.history.maxStates = 1;
+  Config.saves.isAllowed = function (saveType) {
+    switch (saveType) {
+      case Save.Type.Auto:
+        return true;
+      case Save.Type.Disk:
+      case Save.Type.Slot:
+        return false;
+      case Save.Type.Base64:
+        return true;
+	  }
+  };
+  $(document).one(':storyready', function (ev) {
+    $("#menu-core").remove();
+});
+<</script>>
+
+:: StoryAuthor
+Author
+
+:: StoryBanner
+Banner
+
+:: StoryCaption
+Caption
+
+:: StoryMenu
+<<link "<span class='icon'>&#xf011;</span> Restart" "Start">><<run UIBar.stow()>><</link>>
+
+:: StorySubtitle
+Subtitle
+
+:: StoryDisplayTitle
+Title
+
+:: Start
+!SzHb's Dreamland
+I'm not a developer.
+I'm a dreamer, who is achieving my childhood dream.
+Currently trying to do something with [[SugarCube|https://github.com/tmedwards/sugarcube-2]].
+
+!!System
+a
+
+!!Feature
+a
+
+!!Visual
+<ol>
+<<link "<li>Glitch Text</li>" "Glitch">><<run UIBar.stow()>><</link>>
+<<link "<li>Scale Fade Out</li>" "Scale Fade Out">><<run UIBar.stow()>><</link>>
+</ol>

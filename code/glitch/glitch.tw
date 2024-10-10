@@ -1,0 +1,6 @@
+:: Glitch
+<<nobr>>
+  <div class="flex-box h-center">
+    <span class="glitch-text glitch layers" data-text="Text">Text</span>
+  </div>
+<</nobr>>

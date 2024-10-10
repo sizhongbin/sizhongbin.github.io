@@ -43,7 +43,8 @@ jobs:
           go install
           cd ..
           mkdir -p dist && touch dist/index.html
-          tweego home -o dist/index.html
+          tweego code -o dist/index.html
+          echo "zsi.us.kg" > dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
