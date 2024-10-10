@@ -63,6 +63,6 @@ a
 
 !!Visual
 <ol>
-<<link "<li>Glitch Text</li>" "Glitch">><<run UIBar.stow()>><</link>>
-<<link "<li>Scale Fade Out</li>" "Scale Fade Out">><<run UIBar.stow()>><</link>>
+<<link "<li>Glitch Text</li>" "Glitch">><</link>>
+<<link "<li>Scale Fade Out</li>" "Scale Fade Out">><</link>>
 </ol>
