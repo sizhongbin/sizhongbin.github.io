@@ -1,0 +1,22 @@
+:: LBS
+!!You: 
+* HP: <<= setup.you.hp>>
+
+!!Enemy:
+* HP: <<= setup.enemy.hp>>
+
+<<link "Emulate">>
+  <<emulate>>
+<</link>>
+
+<<nobr>>
+  <div id="log">
+    test
+  </div>
+<</nobr>>
+
+<<widget "emulate">>
+  <<script>>
+    $("#log").html("log");
+  <</script>>
+<</widget>>

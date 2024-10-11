@@ -56,7 +56,9 @@ I'm a dreamer, who is achieving my childhood dream.
 Currently trying to do something with [[SugarCube|https://github.com/tmedwards/sugarcube-2]].
 
 !!System
-a
+<ol>
+<<link "<li>LBS - Logging Battle System</li>" "LBS">><</link>>
+</ol>
 
 !!Feature
 a
