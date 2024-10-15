@@ -27,3 +27,22 @@ export async function signUp(mail, pass, db) {
     }
   })
 }
+
+export async function signIn(mail, pass, db) {
+  return new Promise(async resolve => {
+    try {
+      const { results } = await db.prepare(
+        "SELECT * FROM Account WHERE MAIL = ?"
+      )
+        .bind(mail)
+        .all();
+      console.log(results);
+      if (results.PASS === pass) 
+        resolve({ error: null, results: results[0].ID });
+      else 
+        resolve({ error: "Incorrect PASS", results: null });
+    } catch (e) {
+      resolve({ error: e.message, results: null });
+    }
+  })
+}

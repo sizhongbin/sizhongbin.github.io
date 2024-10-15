@@ -51,8 +51,27 @@ export default {
     };
 
     // Sign in
-    if (url.pathname === "/api/signup") {
+    if (url.pathname === "/api/signin") {
+      // Get mail and pass param
+      const mail = url.searchParams.get("mail");
+      const pass = url.searchParams.get("pass");
 
+      // Sign in
+      const guid = await signIn(mail, pass, db);
+      if (guid.error == "Incorrect PASS") {
+        return new Response(null, {
+          status: 403,
+        });
+      }
+      else if (guid.error) {
+        return new Response(guid.error, {
+          status: 500,
+        });
+      };
+      return new Response(guid.results, {
+        status: 200,
+        // headers: { 'Content-Type': 'application/json' }
+      });
     }
 
     // default response

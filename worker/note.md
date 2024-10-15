@@ -9,7 +9,15 @@ npx wrangler d1 execute sora-data --local --command="SELECT * FROM Enemy"
 
 SELECT * FROM Customers WHERE CompanyName = ?
 
+select * from sqlite_master
+
 SELECT lower( hex(randomblob(4)) || '-' || hex(randomblob(2)) || '-' || hex(randomblob(2)) || '-' || hex(randomblob(2)) || '-' || hex(randomblob(6)) ) GUID
+
+DROP TABLE IF EXISTS Account;
+CREATE TABLE IF NOT EXISTS Account (ID TEXT PRIMARY KEY, MAIL TEXT, PASS TEXT);
+
+DELETE FROM Account;
+DELETE FROM Account WHERE ID = 7;
 
 200	OK	请求成功。一般用于GET与POST请求
 201	Created	已创建。成功请求并创建了新的资源
