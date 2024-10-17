@@ -1,4 +1,4 @@
-export async function selectAccountByMail(mail, db) {
+export async function selectByMail(mail, db) {
   return new Promise(async resolve => {
     try {
       const { results } = await db.prepare(

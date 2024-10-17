@@ -1,4 +1,4 @@
-export async function selectCharacterByAccount(account, db) {
+export async function selectByAccount(account, db) {
   return new Promise(async resolve => {
     try {
       const { results } = await db.prepare(
@@ -13,7 +13,7 @@ export async function selectCharacterByAccount(account, db) {
   })
 }
 
-export async function selectCharacterById(id, db) {
+export async function selectById(id, db) {
   return new Promise(async resolve => {
     try {
       const { results } = await db.prepare(
@@ -28,7 +28,7 @@ export async function selectCharacterById(id, db) {
   })
 }
 
-export async function selectCharacterByName(name, db) {
+export async function selectByName(name, db) {
   return new Promise(async resolve => {
     try {
       const { results } = await db.prepare(
@@ -43,7 +43,7 @@ export async function selectCharacterByName(name, db) {
   })
 }
 
-export async function createCharacter(name, account, db) {
+export async function create(name, account, db) {
   return new Promise(async resolve => {
     try {
       const patternName = /^.{4,16}$/;
@@ -62,11 +62,11 @@ export async function createCharacter(name, account, db) {
   })
 }
 
-export async function deleteCharacter(name, db) {
+export async function deactive(name, db) {
 
 }
 
-export async function updateCharacter(name, publicInfo = null, privateInfo = null, db) {
+export async function update(name, publicInfo = null, privateInfo = null, db) {
   if (publicInfo) {
     Object.keys(publicInfo).map(key => {
       console.log(key);

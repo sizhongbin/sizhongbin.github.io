@@ -9,14 +9,25 @@
  */
 
 import { hello } from "./hello.js"
-import { selectAccountByMail, signUp, signIn } from "./account.js"
-import { selectCharacterByAccount, /*selectCharacterById,*/ selectCharacterByName, createCharacter/*, deleteCharacter*/ } from "./character.js"
+import * as account from "./account.js"
+import * as character from "./character.js"
+import * as admin from "./admin.js"
 
 export default {
   async fetch(request, env) {
+    /***************/
+    /* Maintenance */
+    /***************/
+    // return new Response(
+    //   "Maintenance"
+    // );
+    
     const db = env.DB;
     const url = new URL(request.url);
 
+    /*******************/
+    /* Account feature */
+    /*******************/
     // Sign up
     if (url.pathname === "/api/signup") {
       // Get mail and pass param
@@ -31,7 +42,7 @@ export default {
       };
 
       // Check conflict
-      const conflict = await selectAccountByMail(mail, db);
+      const conflict = await account.selectByMail(mail, db);
       console.log("conflict:", conflict);
       if (conflict.error) {
         return new Response(conflict.error, {
@@ -45,7 +56,7 @@ export default {
       };
 
       // Create account and get ID
-      const guid = await signUp(mail, pass, db);
+      const guid = await account.signUp(mail, pass, db);
       console.log("guid:", guid.results);
       if (guid.error === "Invaild MAIL format") {
         return new Response(guid.error, {
@@ -82,7 +93,7 @@ export default {
       };
 
       // Get ID
-      const guid = await signIn(mail, pass, db);
+      const guid = await account.signIn(mail, pass, db);
       if (guid.error === "Incorrect PASS") {
         return new Response(guid.error, {
           status: 401,
@@ -104,6 +115,9 @@ export default {
       });
     }
 
+    /*********************/
+    /* Character feature */
+    /*********************/
     // List characters in account
     if (url.pathname === "/api/listCharacter") {
       // Get account id param
@@ -117,7 +131,7 @@ export default {
       };
 
       // Get characters
-      const characters = await selectCharacterByAccount(account, db);
+      const characters = await character.selectByAccount(account, db);
       if (characters.error) {
         return new Response(characters.error, {
           status: 500,
@@ -143,7 +157,7 @@ export default {
       };
 
       // Check conflict
-      const conflict = await selectCharacterByName(name, db);
+      const conflict = await character.selectByName(name, db);
       console.log("conflict:", conflict);
       if (conflict.error) {
         return new Response(conflict.error, {
@@ -155,7 +169,7 @@ export default {
           status: 409,
         });
       };
-      const list = await selectCharacterByAccount(account, db);
+      const list = await character.selectByAccount(account, db);
       console.log("list:", list);
       if (list.error) {
         return new Response(list.error, {
@@ -169,7 +183,7 @@ export default {
       };
 
       // Create characters
-      const guid = await createCharacter(name, account, db);
+      const guid = await character.create(name, account, db);
       console.log("guid:", guid.results);
       if (guid.error === "Invaild NAME format") {
         return new Response(guid.error, {
@@ -187,9 +201,44 @@ export default {
       });
     }
 
-    // default response
+    /*****************/
+    /* Admin feature */
+    /*****************/
+    // Create enemy (admin)
+    if (url.pathname === "/admin/createEnemy") {
+      const enemy = await admin.createEnemy(db);
+      console.log("enemy:", enemy.results);
+      if (enemy.error) {
+        return new Response(enemy.error, {
+          status: 500,
+        });
+      };
+      return new Response(JSON.stringify(enemy.results), {
+        status: 201,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
+    // Update enemy (admin)
+    if (url.pathname === "/admin/updateEnemy") {
+      const enemy = await admin.updateEnemy(db);
+      console.log("enemy:", enemy.results);
+      if (enemy.error) {
+        return new Response(enemy.error, {
+          status: 500,
+        });
+      };
+      return new Response(JSON.stringify(enemy.results), {
+        status: 201,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
+    /********************/
+    /* Default Response */
+    /********************/
     return new Response(
       hello()
     );
-  },
+  }
 };
