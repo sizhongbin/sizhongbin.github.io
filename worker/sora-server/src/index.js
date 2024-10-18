@@ -9,9 +9,10 @@
  */
 
 import { hello } from "./hello.js"
-import * as account from "./account.js"
+import account from "./account.js"
 import * as character from "./character.js"
 import * as admin from "./admin.js"
+import test from "./test.js"
 
 export default {
   async fetch(request, env) {
@@ -22,98 +23,18 @@ export default {
     //   "Maintenance"
     // );
     
+    
     const db = env.DB;
     const url = new URL(request.url);
+    let response;
+
+    console.log("api: ", url.pathname.split(('/'))[1]);
 
     /*******************/
     /* Account feature */
     /*******************/
-    // Sign up
-    if (url.pathname === "/api/signup") {
-      // Get mail and pass param
-      const mail = url.searchParams.get("mail");
-      const pass = url.searchParams.get("pass");
-
-      // Check param
-      if (!mail || !pass) {
-        return new Response(null, {
-          status: 406,
-        });
-      };
-
-      // Check conflict
-      const conflict = await account.selectByMail(mail, db);
-      console.log("conflict:", conflict);
-      if (conflict.error) {
-        return new Response(conflict.error, {
-          status: 500,
-        });
-      };
-      if (conflict.results.length != 0) {
-        return new Response(null, {
-          status: 409,
-        });
-      };
-
-      // Create account and get ID
-      const guid = await account.signUp(mail, pass, db);
-      console.log("guid:", guid.results);
-      if (guid.error === "Invaild MAIL format") {
-        return new Response(guid.error, {
-          status: 406,
-        });
-      }
-      else if (guid.error === "Invaild PASS format") {
-        return new Response(guid.error, {
-          status: 406,
-        });
-      }
-      else if (guid.error) {
-        return new Response(guid.error, {
-          status: 500,
-        });
-      };
-      return new Response(guid.results, {
-        status: 201,
-        // headers: { 'Content-Type': 'application/json' }
-      });
-    };
-
-    // Sign in
-    if (url.pathname === "/api/signin") {
-      // Get mail and pass param
-      const mail = url.searchParams.get("mail");
-      const pass = url.searchParams.get("pass");
-
-      // Check param
-      if (!mail || !pass) {
-        return new Response(null, {
-          status: 406,
-        });
-      };
-
-      // Get ID
-      const guid = await account.signIn(mail, pass, db);
-      if (guid.error === "Incorrect PASS") {
-        return new Response(guid.error, {
-          status: 401,
-        });
-      }
-      else if (guid.error === "Incorrect MAIL") {
-        return new Response(guid.error, {
-          status: 401,
-        });
-      }
-      else if (guid.error) {
-        return new Response(guid.error, {
-          status: 500,
-        });
-      };
-      return new Response(guid.results, {
-        status: 200,
-        // headers: { 'Content-Type': 'application/json' }
-      });
-    }
+    if (url.pathname.split(('/'))[1] === "account")
+      response = await account(request, env);
 
     /*********************/
     /* Character feature */
@@ -234,11 +155,9 @@ export default {
       });
     }
 
-    /********************/
-    /* Default Response */
-    /********************/
-    return new Response(
-      hello()
-    );
+    /************/
+    /* Response */
+    /************/
+    return response;
   }
 };
