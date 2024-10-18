@@ -1,1 +1,1 @@
-DELETE FROM Account;
+DELETE FROM Enemy;

@@ -1,47 +1,87 @@
-export async function createEnemy(db) {
+import now from "./now.js"
+
+async function createEnemy(db) {
   return new Promise(async resolve => {
     try {
       const info = JSON.stringify({ hp: 10, str: 2 });
       const { results } = await db.prepare(
-        "INSERT INTO Enemy (ID, NAME, INFO) VALUES (?1, ?2, ?3) RETURNING *"
+        "INSERT INTO Enemy (ID, CREATE_TIME, UPDATE_TIME, IS_DELETED, NAME, INFO) VALUES (?1, ?2, ?3, ?4, ?5, ?6) RETURNING *"
       )
-        .bind("10001", "Test Enemy", info)
+        .bind("10001", now(), now(), 0, "Test Enemy", info)
         .all();
-      resolve({ error: null, results: results });
+      return resolve({ error: null, data: results });
     } catch (e) {
-      resolve({ error: e.message, results: null });
+      return resolve({ error: e.message, data: null });
     }
   })
 }
 
-export async function updateEnemy(db) {
+async function updateEnemy(db) {
   return new Promise(async resolve => {
     try {
       const info = JSON.stringify({ hp: 10, str: 1 });
       const { results } = await db.prepare(
-        "UPDATE Enemy SET NAME = ?1, INFO = ?2 WHERE ID = ?3 RETURNING *"
+        "UPDATE Enemy SET UPDATE_TIME = ?1, NAME = ?2, INFO = ?3 WHERE ID = ?4 RETURNING *"
       )
-        .bind("Test Enemy", info, "10001")
+        .bind(now(), "木桩子", info, "10001")
         .all();
-      resolve({ error: null, results: results });
+      return resolve({ error: null, data: results });
     } catch (e) {
-      resolve({ error: e.message, results: null });
+      return resolve({ error: e.message, data: null });
     }
   })
 }
 
-export async function deleteEnemy(db) {
+async function deleteEnemy(db) {
+  
+}
+
+export default async function (request, env) {
   return new Promise(async resolve => {
-    try {
-      const info = JSON.stringify({ hp: 10, str: 1 });
-      const { results } = await db.prepare(
-        "UPDATE Enemy SET NAME = ?1, INFO = ?2 WHERE ID = ?3 RETURNING *"
-      )
-        .bind("Test Enemy", info, "10001")
-        .all();
-      resolve({ error: null, results: results });
-    } catch (e) {
-      resolve({ error: e.message, results: null });
+    console.log("$$$$$ Call Admin API $$$$$");
+    const db = env.DB;
+    const url = new URL(request.url);
+    console.log("> Path: ", url.pathname);
+    var results;
+
+    // Create enemy
+    if (url.pathname === "/admin/createEnemy") {
+      console.log("### Create enemy ###");
+
+      results = await createEnemy(db);
+      if (results.error) {
+        console.log(`X [500] ${results.error}.`);
+        console.log("### Create enemy End ###");
+        return resolve(new Response(results.error, {
+          status: 500,
+        }));
+      };
+      console.log(`O [201] Enemy created. Data: ${results.data}`);
+      console.log("### Create enemy End ###");
+      return resolve(new Response(JSON.stringify(results.data), {
+        status: 201,
+        headers: { 'Content-Type': 'application/json' }
+      }));
+    }
+
+    // Update enemy
+    if (url.pathname === "/admin/updateEnemy") {
+      console.log("### Update enemy ###");
+
+      results = await updateEnemy(db);
+      if (results.error) {
+        console.log(`X [500] ${results.error}.`);
+        console.log("### Update enemy End ###");
+        return resolve(new Response(results.error, {
+          status: 500,
+        }));
+      };
+      console.log(`O [201] Enemy updated. Data: ${results.data}`);
+      console.log("### Update enemy End ###");
+      return resolve(new Response(JSON.stringify(results.data), {
+        status: 201,
+        headers: { 'Content-Type': 'application/json' }
+      }));
     }
   })
 }
