@@ -8,9 +8,10 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
+import admin from "./admin.js"
 import account from "./account.js"
 import character from "./character.js"
-import admin from "./admin.js"
+import party from "./party.js"
 
 export default {
   async fetch(request, env) {
@@ -37,6 +38,10 @@ export default {
     // Character
     if (url.pathname.split(('/'))[1] === "character")
       response = await character(request, env);
+
+    // Party
+    if (url.pathname.split(('/'))[1] === "party")
+      response = await party(request, env);
 
     // Response
     console.log("$$$$$ Response $$$$$");

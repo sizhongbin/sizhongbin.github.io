@@ -7,6 +7,8 @@ npx wrangler publish src/index.js --name sora-server
 npx wrangler d1 execute sora-data --local --file=./schema.sql
 npx wrangler d1 execute sora-data --local --command="SELECT * FROM Enemy"
 
+npm update wrangler --save
+
 SELECT * FROM Customers WHERE CompanyName = ?
 
 select * from sqlite_master
@@ -18,6 +20,13 @@ CREATE TABLE IF NOT EXISTS Account (ID TEXT PRIMARY KEY, MAIL TEXT, PASS TEXT);
 
 DELETE FROM Account;
 DELETE FROM Account WHERE ID = 7;
+
+ALTER TABLE Account
+ADD COLUMN IS_GM INTEGER;
+
+UPDATE Account
+SET
+  IS_GM = 0 WHERE MAIL = "178958037@qq.com";
 
 200	OK	请求成功。一般用于GET与POST请求
 201	Created	已创建。成功请求并创建了新的资源

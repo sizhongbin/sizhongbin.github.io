@@ -82,7 +82,7 @@ export default async function (request, env) {
     if (url.pathname === "/account/signup") {
       console.log("### Sign Up ###");
 
-      // Get mail and pass param
+      // Get param
       const mail = url.searchParams.get("mail");
       const pass = url.searchParams.get("pass");
       console.log(`> Param: mail: ${mail} pass: ${pass}`)
@@ -105,7 +105,7 @@ export default async function (request, env) {
           status: 500,
         }));
       };
-      if (results.data.length != 0) {
+      if (results.data.length !== 0) {
         console.log(`X [409] Account conflict.`);
         console.log("### Sign Up End ###");
         return resolve(new Response(null, {
@@ -143,7 +143,7 @@ export default async function (request, env) {
     if (url.pathname === "/account/signin") {
       console.log("### Sign In ###");
 
-      // Get mail and pass param
+      // Get param
       const mail = url.searchParams.get("mail");
       const pass = url.searchParams.get("pass");
       console.log(`> Param: mail: ${mail} pass: ${pass}`)

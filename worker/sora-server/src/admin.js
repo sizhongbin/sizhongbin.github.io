@@ -1,4 +1,5 @@
 import now from "./now.js"
+import { selectById as checkAccount } from "./account.js"
 
 async function createEnemy(db) {
   return new Promise(async resolve => {
@@ -43,6 +44,37 @@ export default async function (request, env) {
     const url = new URL(request.url);
     console.log("> Path: ", url.pathname);
     var results;
+
+    // Get param
+    const account = url.searchParams.get("account");
+    console.log(`> Param: account: ${account}`)
+
+    // Check param
+    if (!account) {
+      console.log("X [406] Params not acceptable.");
+      console.log("### Admin End ###");
+      return resolve(new Response(null, {
+        status: 406,
+      }));
+    };
+
+    // Check if account is GM
+    results = await checkAccount(account, db);
+    if (results.error) {
+      console.log(`X [500] ${results.error}.`);
+      console.log("### Admin End ###");
+      return resolve(new Response(results.error, {
+        status: 500,
+      }));
+    };
+    if (results.data[0].IS_GM === 0) {
+      console.log(`X [406] Account is not GM.`);
+      console.log("### Admin End ###");
+      return resolve(new Response(null, {
+        status: 406,
+      }));
+    };
+    console.log("O GM Account exists.");
 
     // Create enemy
     if (url.pathname === "/admin/createEnemy") {

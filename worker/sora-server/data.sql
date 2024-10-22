@@ -1,1 +1,4 @@
-DELETE FROM Enemy;
+SELECT
+  *
+FROM
+  Party;
